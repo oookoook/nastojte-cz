@@ -1,6 +1,8 @@
 <template>
   <nav id="menu" class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
-    <a class="navbar-brand" href="#">Nastojte.cz &ndash; {{ title }}</a>
+    <a class="navbar-brand" href="#">
+        <img src="../assets/favicon-dark.png" class="d-inline-block align-top" alt="">
+        Nastojte.cz &ndash; {{ title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +21,7 @@
           <a class="dropdown-item" href="#">Jak mě kontaktovat</a>
           <a class="dropdown-item" href="#">Co dělám</a>
           <a class="dropdown-item" href="#">Jak vypadá můj kód</a>
-          <a class="dropdown-item" href="#">Technologie, které znám</a>
+          <a class="dropdown-item" href="#">Co používám</a>
         </div>
       </li>
     </ul>

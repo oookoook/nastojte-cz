@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path');
+const webpack = require('webpack');
 
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -76,6 +77,10 @@ module.exports = {
       template: 'src/index.html',
       favicon: 'assets/favicon.ico',
       inject: true
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery", 
+      jQuery: "jquery"
     })
   ]
 };

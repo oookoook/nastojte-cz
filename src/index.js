@@ -16,3 +16,8 @@ var app = new Vue({
   el: '#app',
   render: h => h(App)
 });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
