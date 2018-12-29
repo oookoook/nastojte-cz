@@ -9,8 +9,8 @@
             <h1>Kdo jsem</h1>
             <h1>Jak mě kontaktovat</h1>
             <h1>Co dělám</h1>
-            <div class="row">
-            <div v-for="(c, index) in cards" :key="index" class="card-wrapper col-sm-6 col-md-6 col-lg-4">
+            <div class="card-columns">
+            <div v-for="(c, index) in cards" :key="index" class="card-wrapper">
                 <Card v-bind:card="c" />
             </div>
             </div>
@@ -122,7 +122,29 @@
     }
 </script>
 <style scoped>
+/*
 div.card-wrapper {
     padding-bottom: 10px;
 }
+*/
+
+div.card-wrapper {
+    display: inline-block;
+}
+
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
 </style>
