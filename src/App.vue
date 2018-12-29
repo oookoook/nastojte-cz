@@ -6,16 +6,21 @@
             </li>
         </Menu>
         <div class="container-fluid">
-            <h1>Kdo jsem</h1>
-            <h1>Jak mě kontaktovat</h1>
-            <h1>Co dělám</h1>
-            <div class="card-columns">
-            <div v-for="(c, index) in cards" :key="index" class="card-wrapper">
-                <Card v-bind:card="c" />
+            <h1 class="display-3">Kdo jsem</h1>
+            <h1 class="display-3">Jak mě kontaktovat</h1>
+            <h1 class="display-3">Co dělám</h1>
+            <div class="cards">
+                <div v-for="(d, di) in decks" :key="di" class="card-deck">
+                    <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
+                    <!--
+                    <div v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index" class="card-wrapper"> 
+                        <Card v-bind:card="c" />
+                    </div>
+                    -->
+                </div>
             </div>
-            </div>
-            <h1>Jak vypadá můj kód</h1>
-            <h1>Technologie, které znám</h1>
+            <h1 class="display-3">Jak vypadá můj kód</h1>
+            <h1 class="display-3">Technologie, které znám</h1>
 
         </div>
   </div>
@@ -25,14 +30,14 @@
     import Card from './Card.vue';
     import Menu from './Menu.vue';
     export default {
-        name: 'Nastojte.cz - Adam Kučera',
+        name: 'nastojteApp',
         components: {
             Card,
             Menu
         },
         data: function () {
             return {
-                title: 'Adam Kučera, softwarový vývojář',
+                title: 'Adam Kučera',
                 cards: [
                 {
                     category: 'MU',
@@ -41,14 +46,14 @@
                     description: 'Vývoj systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: '',
                     technologies: ['Archibus', 'Apache Tomcat', 'Javascript', 'Java', 'SQL', 'Git']
-                }, {
+                }, /*{
                     category: 'MU',
                     title: 'BMS MU',
                     img: require('../assets/code.png'),
                     link: '',
                     description: 'Inteligentní budovy - systémová správa a údržba existující aplikace.',
                     technologies: ['IIS', 'Windows Server', 'SVN', 'NLB', 'DFS']
-                }, {
+                },*/ {
                     category: 'MU',
                     title: 'BMS Sentinel',
                     img: require('../assets/code.png'),
@@ -109,11 +114,11 @@
                     description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS', 
                     technologies: ['Javascript', 'Vue.js', 'Webpack', 'Bootstrap', 'AWS Route 53', 'AWS CloudFront', 'AWS S3', 'aws-sdk']
                 },
-                ]
+                ],
             }
         },
         computed: {
-                
+            decks: function() { return new Array(Math.ceil(this.cards.length / 3)) },        
         },
         methods: {
         },
@@ -122,29 +127,5 @@
     }
 </script>
 <style scoped>
-/*
-div.card-wrapper {
-    padding-bottom: 10px;
-}
-*/
-
-div.card-wrapper {
-    display: inline-block;
-}
-
-.card-columns {
-  @include media-breakpoint-only(sm) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(md) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(lg) {
-    column-count: 3;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 4;
-  }
-}
 
 </style>

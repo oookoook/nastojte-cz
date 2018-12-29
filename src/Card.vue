@@ -38,7 +38,7 @@
     }
 </script>
 <style scoped>
-.cardx {
-   width: 36rem; 
+.card {
+   margin-bottom: 1rem; 
 }
 </style>
