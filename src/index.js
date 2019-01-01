@@ -3,6 +3,7 @@ import './style.css';
 import '../assets/favicon.ico';
 
 import 'bootstrap';
+
 import Vue from 'vue';
 import App from './App.vue';
 
