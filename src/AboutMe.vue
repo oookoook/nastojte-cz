@@ -138,7 +138,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
                     year: 2018,
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/joolca.png'),
                     link: '',
                     description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
                     + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
@@ -148,15 +148,15 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Microton',
                     title: 'Dropair (USA)',
                     year: 'od 2017',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/dropair.png'),
                     description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
                     + ' vývoj nových crawlerů, scraperů a parserů.', 
                     technologies: ['Javascript', {name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate']
                 }, {
                     category: 'Microton',
-                    title: 'Bookování letenek',
+                    title: 'Bookování letenek (USA)',
                     year: '2018',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/planes.png'),
                     description: 'Plugin do Chrome, který sleduje nabídku letů na tránkách jednoho z dopravců. Když se objeví nový let ze zadaných letišť,'
                     + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
                     technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
@@ -164,7 +164,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Volná noha',
                     title: 'Maják',
                     year: '2018',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/majak.png'),
                     link: 'https://github.com/oookoook/majak',
                     description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
                     + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
@@ -182,7 +182,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Volná noha',
                     title: 'Mapa cen stavebních pozemků',
                     year: '2019',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/reality.png'),
                     link: 'https://reality.nastojte.cz',
                     repo: 'https://github.com/oookoook/reality-price-map',
                     description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
@@ -191,7 +191,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Volná noha',
                     title: 'Nastojte.cz',
                     year: '2019',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/nastojte.png'),
                     repo: 'https://github.com/oookoook/nastojte-cz',
                     description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3' ]
@@ -199,7 +199,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Volná noha',
                     title: 'Coffee to Home',
                     year: '2014',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/cth.png'),
                     description: 'Jednoduchá landing page pro (tehdy) začínající předplatné kávových balíčků. Cílem bylo s co nejnižším množstvím vynaloženého času na vývoj '
                         + 'umožnit zákazníků objednat produkt, aby mohla firma začít co nejdříve začít fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
                         + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
@@ -208,7 +208,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'MU',
                     title: 'CAFM',
                     year: 'od 2013',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/archibus.png'),
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: 'http://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'https://archibus.com/wp-content/uploads/2018/02/retina_logo_black.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'https://vignette.wikia.nocookie.net/logopedia/images/8/80/SQLServer.png' }, 'Git']
@@ -222,7 +222,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'MU',
                     title: 'BMS Sentinel',
                     year: '2010',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/bmssentinel.png'),
                     link: 'https://is.muni.cz/th/i3416/',
                     description: 'Dohledový systém pro automatizační protokol BACnet.',
                     technologies: [ { name: '.NET Framework', cname: 'dotnet'}, {name: 'C#', icon: 'https://developer.fedoraproject.org/static/logo/csharp.png'}, { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
@@ -230,7 +230,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'MU',
                     title: 'Semantic BMS',
                     year: '2017',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/sbms.png'),
                     link: 'https://is.muni.cz/th/umgby',
                     repo: 'https://gitlab.fi.muni.cz/xkucer16/semanticBMS',
                     description: 'Sémantický model pro data z inteligentních budov.',
@@ -239,7 +239,7 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'MU',
                     title: 'EsserNet-BACnet Gateway',
                     year: '2014',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/esser.png'),
                     link: 'http://safecontrol.cz/index.php/vyvoj-software',
                     description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
                     technologies: ['Java', { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
