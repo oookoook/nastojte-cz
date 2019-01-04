@@ -42,7 +42,7 @@ zaměstnaný od roku 2008.</p>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
 <code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
 </ul>
-            <h1 class="display-4">Jak mě kontaktovat</h1>
+            <h1 class="display-4" id="contact">Jak mě kontaktovat</h1>
             <ul class="list-unstyled">
                 <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">LinkedIn</a></code-li>
                 <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
@@ -51,7 +51,7 @@ zaměstnaný od roku 2008.</p>
 
             </ul>
 
-            <h1 class="display-4">Co dělám</h1>
+            <h1 id="what" class="display-4">Co dělám</h1>
             
 <p>V současné době mám kapacitu buď na menší jednorázové projekty jako například:</p>
     <ul class="list-unstyled">
@@ -74,13 +74,13 @@ ale vyžadují pouze menší množství času.</p>
                     <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
                 </div>
             </div>
-            <h1>Jak vypadá můj kód</h1>
+            <h1 id="repos">Jak vypadá můj kód</h1>
             <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
             <ul>
                 <code-li><a href="https://github.com/oookoook?tab=repositories">GitHub</a></code-li>
                 <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS">GitLab @ FI MU</a></code-li>
             </ul>
-            <h1>Co používám</h1>
+            <h1 id="tools">Co používám</h1>
             <p>Konkrétněm technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
@@ -114,7 +114,7 @@ ale vyžadují pouze menší množství času.</p>
                 <a href="https://svgporn.com/" target="_blank">SVG Porn</a>.</p>
 
             <p>Nakonec, o obrázku z favicon a hlavičky si víc můžete přečíst 
-                <a href="#nastojte">tady</a>.</p>
+                <router-link to="/vonnegut">tady</router-link>.</p>
 
   </div>
 </template>

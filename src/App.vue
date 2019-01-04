@@ -1,27 +1,40 @@
 <template>
   <div id="app">
-       <Menu v-bind:title="title">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Toto je z App</a>
-            </li>
+       <Menu :title="title" :ico="icon">
+           <li class="nav-item">
+            <router-link class="nav-link" to="/vonnegut">Proč Nastojte?</router-link>
+        </li>
+        <li class="nav-item dropdown">
+        <router-link class="nav-link dropdown-toggle" to="/" id="navbarAuthorMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        O autorovi
+        </router-link>
+        <div class="dropdown-menu" aria-labelledby="navbarAuthorMenuLink">
+          <router-link class="dropdown-item" to="/">Kdo jsem</router-link>
+          <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
+          <router-link class="dropdown-item" to="/#what">Co dělám</router-link>
+          <router-link class="dropdown-item" to="/#repos">Jak vypadá můj kód</router-link>
+          <router-link class="dropdown-item" to="/#tools">Co používám</router-link>
+        </div>
+      </li>
         </Menu>
-        <about-me />
+        <router-view>
+        </router-view>
   </div>
 </template>
 
 <script>
     
     import Menu from './Menu.vue';
-    import AboutMe from './AboutMe.vue';
     export default {
         name: 'nastojteApp',
         components: {
             Menu,
-            AboutMe
         },
         data: function () {
             return {
                 title: 'Adam Kučera',
+                icon: require('../assets/favicon-dark.png'),
+                
             }
         },
         computed: {

@@ -18,11 +18,20 @@ Vue.use(VueTimers);
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/about', component: AboutMe },
+  { path: '/', component: AboutMe },
   { path: '/vonnegut', component: AboutVonnegut }
 ]
 
 const router = new VueRouter({
+  scrollBehavior: function(to, from, savedPosition) {
+    if (to.hash) {
+        //alert(to.hash);
+        //return { x: 0, y: 0 };
+        return {selector: to.hash}
+    } else {
+        return { x: 0, y: 0 }
+    }
+},
   routes // short for `routes: routes`
 })
 
