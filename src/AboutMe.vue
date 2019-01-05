@@ -2,10 +2,12 @@
   <div class="container" id="content">
       <h1 class="display-4">Kdo jsem</h1>
  
-
-<div class="media mb-3">
-  <img src="../assets/photo.jpg" class="align-self-center mr-5 rounded photo" alt="My face">
-  <div class="media-body">
+<!-- https://codepen.io/machal/pen/mqmNyz -->
+<div class="d-flex flex-column flex-md-row">
+    <p class="mb-3 mb-md-0 mr-md-3 w-50">
+        <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
+    </p>
+    <div>
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
     </p>
@@ -86,7 +88,7 @@ ale vyžadují pouze menší množství času.</p>
             <p>Konkrétněm technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
-            
+            <div class="table-responsive">
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -103,7 +105,7 @@ ale vyžadují pouze menší množství času.</p>
                 </tr>
                 </tbody>
                 </table>
-         
+            </div>
             <h2>Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
@@ -282,6 +284,7 @@ ale vyžadují pouze menší množství času.</p>
 <style scoped>
 
 img.photo {
-    width: 100px;
+    width: 200px;
 }
+
 </style>
