@@ -5,9 +5,9 @@
             <router-link class="nav-link" to="/vonnegut">Proč Nastojte?</router-link>
         </li>
         <li class="nav-item dropdown">
-        <router-link class="nav-link dropdown-toggle" to="/" id="navbarAuthorMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarAuthorMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         O autorovi
-        </router-link>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarAuthorMenuLink">
           <router-link class="dropdown-item" to="/">Kdo jsem</router-link>
           <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>

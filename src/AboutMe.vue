@@ -69,11 +69,13 @@ ale vyžadují pouze menší množství času.</p>
 že pro mnoho zákazníků je to preferovaná varianta.</p>
 
             <h2>Reference</h2>
+         
             <div class="cards">
                 <div v-for="(d, di) in decks" :key="di" class="card-deck">
                     <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
                 </div>
             </div>
+         
             <h1 id="repos">Jak vypadá můj kód</h1>
             <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
             <ul>
@@ -84,6 +86,7 @@ ale vyžadují pouze menší množství času.</p>
             <p>Konkrétněm technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
+            
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -100,7 +103,7 @@ ale vyžadují pouze menší množství času.</p>
                 </tr>
                 </tbody>
                 </table>
-
+         
             <h2>Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
@@ -279,6 +282,6 @@ ale vyžadují pouze menší množství času.</p>
 <style scoped>
 
 img.photo {
-    width: 200px;
+    width: 100px;
 }
 </style>
