@@ -32,7 +32,7 @@
         },
         data: function () {
             return {
-                title: 'Adam Kučera',
+                title: 'Nastojte.cz',
                 icon: require('../assets/favicon-dark.png'),
                 
             }

@@ -2,10 +2,11 @@
   <div class="container" id="content">
         <h1 class="display-4">Proč Nastojte.cz?</h1>
         
-        <div class="media mb-3">
-            <div class="media-body">
+        <div class="d-flex flex-column flex-md-row mb-3">
+            <div>
             Říkal jsem si, že když už jsem si vybral tuto doménu, měl bych vysvětlit, kde jsem k názvu přišel. Vězte, že jsem toto slovo potkal v díle 
-        amerického spisovatele <a href="https://cs.wikipedia.org/wiki/Kurt_Vonnegut" target="_blank">Kurta Vonneguta</a>. Vpravo můžete vidět jeho autoportrét.
+        amerického spisovatele <a href="https://cs.wikipedia.org/wiki/Kurt_Vonnegut" target="_blank">Kurta Vonneguta</a>. Vpravo (nebo dole, pokud koukáte z mobilu) 
+        můžete vidět jeho autoportrét.
         Do češtiny ho překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" target="_blank">Jaroslava Kořán</a> (a později George Popel).
         Jeho knížky rozhodně doporučuji k přečtení, ale ve které přesně bylo to předmětné <em>Nastojte</em>, to už nevím. Nejspíš <em>Kolíbka</em> nebo <em>Jatka č. 5</em>. 
                 <div class="media mt-4">
@@ -16,7 +17,9 @@
                     </div>
                 </div>
             </div>
-            <img src="../assets/kurt-vonnegut-signature-self-portrait.jpg" class="align-self-center ml-5" alt="Kurt Vonnegut - autoportrét"/>
+            <p class="mb-3 mb-md-0 mr-md-3 w-75">
+            <img src="../assets/kurt-vonnegut-signature-self-portrait.jpg" class="img-fluid" alt="Kurt Vonnegut - autoportrét"/>
+            </p>
         </div>
         <p>Ale co to slovo vlastně znamená? Mám za to, že <em>Nastojte!</em> znamená něco ve smyslu <em>slyšte</em> nebo <em>pohleďte.</em> Myslím, že obecně je to vnímáno takhle.
         To mi potvrzuje i příspěvek na jednom fóru:</p>
