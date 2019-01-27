@@ -1,3 +1,7 @@
+# About
+
+The code for the <https://nastojte.cz> site.
+
 # Notes
 
 + <http://blog.pixelastic.com/2017/09/12/importing-iframe-with-webpack-and-vue-js/>
