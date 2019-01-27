@@ -4,7 +4,7 @@
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
 <div class="d-flex flex-column flex-md-row">
-    <p class="mb-3 mb-md-0 mr-md-3 w-50">
+    <p class="mb-3 mr-md-3 w-50">
         <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
     </p>
     <div>
@@ -20,8 +20,9 @@ zaměstnaný od roku 2008.</p>
                 se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie).</p>
   </div>
 </div>
-<div class="jumbotron">
+<div class="jumbotron bg-light border border-info">
 <p class="lead">Proč si vybrat právě mě?</p>
+<hr>
  <ul class="list-unstyled">
 <code-li>Znám všechny aspekty vývoje: od analýzy přes návrh včetně datového modelu přes implementaci až po dlouhodobý provoz systémů.</code-li>
 <code-li>Znám nejenom programovací jazyky, ale i infrastrukturu, ve které kód běží: běhová prostředí (JRE, CLR), cloudová prostředí (AWS), aplikační servery (Tomcat, IIS, HTTPD), databáze (T-SQL, MySQL, DynamoDB), sítě, operační systémy (Windows, Linux).</code-li>
@@ -29,13 +30,13 @@ zaměstnaný od roku 2008.</p>
 <code-li>Znám široké spektrum dostupných platforem, jazyků a nástrojů. Na některé věci je nejlepší Java, na jiné .NET, někdy je nejlepší Python a jindy stačí PowerShell. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.</code-li>
 <code-li>Věřím, že je důležité nevynalézat znovu kolo a do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.</code-li>
 <code-li>Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud máte vše na vlastních serverech na flatformě .NET. nebud vám cpát serverless řešení v Amazon cloudu. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě. Snažím se řešit existující problémy, ne vytvářet nové.</code-li>
-<code-li>Chápu, že nejdůležitější jsou požadavky uživatele. Aplikace, je pro uživatele nepřehledná nebo nepohodlná, nebudou ji používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho.Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.</code-li>
+<code-li>Chápu, že nejdůležitější jsou požadavky uživatele. Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho. Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.</code-li>
 <code-li>Uvědomuji si, že zdaleka nevím všechno, a rád se učím - ať už úplně nové technologie, nebo vhodné best practices.</code-li>
 </ul>
 </div>
 <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
-    I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Nemá také smysl u mě poptávat jednoduchou
-     firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
+    I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
+    Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
 <h2>Dr. Kompjůtr</h2>
 <p>Kromě práce jsem sem absolvoval i postgraduální studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
@@ -140,32 +141,6 @@ ale vyžadují pouze menší množství času.</p>
                 mail: 'adam@nastojte.cz',
                 cards: [
                 {
-                    category: 'Microton',
-                    title: 'Joolca troubleshooting (AUS)',
-                    year: 2018,
-                    img: require('../assets/refs/joolca.png'),
-                    link: '',
-                    description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
-                    + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
-                    + ' Google spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.',
-                    technologies: ['Zendesk', 'Javascript', 'jQuery', 'REST', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Google GSuite']
-                }, {
-                    category: 'Microton',
-                    title: 'Dropair (USA)',
-                    year: 'od 2017',
-                    img: require('../assets/refs/dropair.png'),
-                    description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
-                    + ' vývoj nových crawlerů, scraperů a parserů.', 
-                    technologies: ['Javascript', {name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate']
-                }, {
-                    category: 'Microton',
-                    title: 'Bookování letenek (USA)',
-                    year: '2018',
-                    img: require('../assets/refs/planes.png'),
-                    description: 'Plugin do Chrome, který sleduje nabídku letů na tránkách jednoho z dopravců. Když se objeví nový let ze zadaných letišť,'
-                    + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
-                    technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
-                }, {
                     category: 'Volná noha',
                     title: 'Maják',
                     year: '2018',
@@ -178,10 +153,11 @@ ale vyžadují pouze menší množství času.</p>
                     category: 'Volná noha',
                     title: 'Mapa poštovních schránek',
                     year: '2019',
-                    img: require('../assets/code.png'),
+                    img: require('../assets/refs/schranky.png'),
                     link: 'https://schranky.nastojte.cz',
-                    repo: 'https://github.com/oookoook/schranky',
-                    description: 'Mapa poštovních schránek', 
+                    repo: 'https://github.com/oookoook/postboxes-frontend',
+                    description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
+                    + ' Služba běží v AWS, pro ukládání dat je využívána noSQL databáze DynamoDB.', 
                     technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS Lambda', 'AWS DynamoDB']
                 }, {
                     category: 'Volná noha',
@@ -201,6 +177,40 @@ ale vyžadují pouze menší množství času.</p>
                     description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3' ]
                 }, {
+                    category: 'Microton',
+                    title: 'Joolca troubleshooting (AUS)',
+                    year: 2018,
+                    img: require('../assets/refs/joolca.png'),
+                    link: '',
+                    description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
+                    + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
+                    + ' Google Spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.',
+                    technologies: ['Zendesk', 'jQuery', 'REST', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Google GSuite']
+                }, {
+                    category: 'Microton',
+                    title: 'Dropair (USA)',
+                    year: 'od 2017',
+                    img: require('../assets/refs/dropair.png'),
+                    description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
+                    + ' vývoj nových crawlerů, scraperů a parserů.', 
+                    technologies: [{name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate']
+                }, {
+                    category: 'Microton',
+                    title: 'Giftcard Checker (USA)',
+                    year: '2018',
+                    img: require('../assets/refs/gcchecker.png'),
+                    description: 'Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče,'
+                    + ' frontend je vytvořený jako plugin do Google Spreadsheet.', 
+                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST']
+                }, {
+                    category: 'Microton',
+                    title: 'Bookování letenek (USA)',
+                    year: '2018',
+                    img: require('../assets/refs/planes.png'),
+                    description: 'Plugin do Chrome, který sleduje nabídku letů na tránkách jednoho z dopravců. Když se objeví nový let ze zadaných letišť,'
+                    + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
+                    technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
+                }, {
                     category: 'Volná noha',
                     title: 'Coffee to Home',
                     year: '2014',
@@ -209,7 +219,7 @@ ale vyžadují pouze menší množství času.</p>
                         + 'umožnit zákazníků objednat produkt, aby mohla firma začít co nejdříve začít fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
                         + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
                     technologies: [ 'Javascript', 'Bootstrap', 'PHP' ]
-                }, {
+                }, /*{{
                     category: 'MU',
                     title: 'CAFM',
                     year: 'od 2013',
@@ -217,7 +227,7 @@ ale vyžadují pouze menší množství času.</p>
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: 'http://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'https://archibus.com/wp-content/uploads/2018/02/retina_logo_black.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'https://vignette.wikia.nocookie.net/logopedia/images/8/80/SQLServer.png' }, 'Git']
-                }, /*{
+                }, 
                     category: 'MU',
                     title: 'BMS MU',
                     img: require('../assets/code.png')
