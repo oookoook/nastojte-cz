@@ -3,8 +3,10 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const { VueLoaderPlugin } = require('vue-loader')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 
 module.exports = {
   mode: 'production',
@@ -86,6 +88,15 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
+    }),
+    new PrerenderSPAPlugin({
+      staticDir: path.join(__dirname, 'dist'),
+      routes: [ '/', '/vonnegut'],
+
+      renderer: new Renderer({
+        headless: false,
+        renderAfterDocumentEvent: 'render-event'
+      })
     })
   ]
 };

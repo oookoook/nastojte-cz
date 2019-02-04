@@ -38,7 +38,10 @@ const router = new VueRouter({
 var app = new Vue({
   el: '#app',
   render: h => h(App),
-  router
+  router,
+  mounted () {
+    document.dispatchEvent(new Event('render-event'));
+  }
 });
 
 
