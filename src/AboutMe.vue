@@ -39,7 +39,7 @@ zaměstnaný od roku 2008.</p>
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
 <h2>Dr. Kompjůtr</h2>
-<p>Kromě práce jsem sem absolvoval i postgraduální studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
+<p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
 <code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
@@ -49,9 +49,7 @@ zaměstnaný od roku 2008.</p>
             <ul class="list-unstyled">
                 <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">LinkedIn</a></code-li>
                 <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
-                <code-li>IČ: 06422268</code-li>
-                <code-li>Sídlo: Voříškova 45, Brno</code-li>
-
+                <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
             </ul>
 
             <h1 id="what" class="display-4">Co dělám</h1>
@@ -142,6 +140,16 @@ ale vyžadují pouze menší množství času.</p>
                 cards: [
                 {
                     category: 'Volná noha',
+                    title: 'Mapa poštovních schránek',
+                    year: '2019',
+                    img: require('../assets/refs/schranky.png'),
+                    link: 'https://schranky.nastojte.cz',
+                    repo: 'https://github.com/oookoook/postboxes-frontend',
+                    description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
+                    + ' Služba běží v AWS (frontend S3+CloudFront, backend Lambda + ECS), pro ukládání dat je využívána noSQL databáze DynamoDB.', 
+                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
+                }, {
+                    category: 'Volná noha',
                     title: 'Maják',
                     year: '2018',
                     img: require('../assets/refs/majak.png'),
@@ -149,25 +157,6 @@ ale vyžadují pouze menší množství času.</p>
                     description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
                     + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Mapa poštovních schránek',
-                    year: '2019',
-                    img: require('../assets/refs/schranky.png'),
-                    link: 'https://schranky.nastojte.cz',
-                    repo: 'https://github.com/oookoook/postboxes-frontend',
-                    description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
-                    + ' Služba běží v AWS, pro ukládání dat je využívána noSQL databáze DynamoDB.', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS Lambda', 'AWS DynamoDB']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Mapa cen stavebních pozemků',
-                    year: '2019',
-                    img: require('../assets/refs/reality.png'),
-                    link: 'https://reality.nastojte.cz',
-                    repo: 'https://github.com/oookoook/reality-price-map',
-                    description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda', {name: 'Apify', icon: 'https://www.apify.com/img/logos/logo-notext.svg' }]
                 }, {
                     category: 'Volná noha',
                     title: 'Nastojte.cz',
@@ -207,7 +196,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'Bookování letenek (USA)',
                     year: '2018',
                     img: require('../assets/refs/planes.png'),
-                    description: 'Plugin do Chrome, který sleduje nabídku letů na tránkách jednoho z dopravců. Když se objeví nový let ze zadaných letišť,'
+                    description: 'Plugin do Chrome, který sleduje nabídku letů na stránkách jednoho z dopravců. Prohlížeč běží ve VPS. Když se objeví nový let ze zadaných letišť,'
                     + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
                     technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
                 }, {
@@ -216,7 +205,7 @@ ale vyžadují pouze menší množství času.</p>
                     year: '2014',
                     img: require('../assets/refs/cth.png'),
                     description: 'Jednoduchá landing page pro (tehdy) začínající předplatné kávových balíčků. Cílem bylo s co nejnižším množstvím vynaloženého času na vývoj '
-                        + 'umožnit zákazníků objednat produkt, aby mohla firma začít co nejdříve začít fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
+                        + 'umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
                         + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
                     technologies: [ 'Javascript', 'Bootstrap', 'PHP' ]
                 }, /*{{
@@ -258,6 +247,15 @@ ale vyžadují pouze menší množství času.</p>
                     link: 'http://safecontrol.cz/index.php/vyvoj-software',
                     description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
                     technologies: ['Java', { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
+                }, {
+                    category: 'Volná noha',
+                    title: 'Mapa cen stavebních pozemků',
+                    year: '2019',
+                    img: require('../assets/refs/reality.png'),
+                    link: 'https://reality.nastojte.cz',
+                    repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
+                    description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda', {name: 'Apify', icon: 'https://www.apify.com/img/logos/logo-notext.svg' }]
                 }, 
                 ],
                 tools: [
@@ -275,6 +273,8 @@ ale vyžadují pouze menší množství času.</p>
                     { category: 'Komunikace a rozhraní',
                         like: [ 'REST' ], know: [ { name: 'WCF', text: true, color: '#f00' }, 'SOAP' ] },
                     */
+                   { category: 'OS, servery, platformy',
+                        like: [ {name: 'Windows', cname: 'microsoft-windows' }, 'AWS' ], know: [ {name: 'Linux', cname: 'linux-tux'}, 'OpenStack', 'Tomcat' ] },
                     { category: 'Vývojová prostředí',
                          like: [ 'Eclipse', { name: 'Visual Studio Code', icon: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg' }, ], know: [ 'NetBeans', ] },
                     { category: 'Správa kódu a závislostí',
