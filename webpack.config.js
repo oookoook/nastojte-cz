@@ -5,8 +5,8 @@ const webpack = require('webpack');
 
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 
 module.exports = {
   mode: 'production',
@@ -88,15 +88,25 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
-    }),
-    new PrerenderSPAPlugin({
+    })].concat(process.env.NODE_ENV === 'development' ? [] : 
+    [new PrerenderSpaPlugin({
+      // Path to compiled app
       staticDir: path.join(__dirname, 'dist'),
+      // List of endpoints you wish to prerender
       routes: [ '/', '/vonnegut'],
+      // Optional minification.
+      minify: {
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true,
+        decodeEntities: true,
+        keepClosingSlash: true,
+        sortAttributes: true
+      },
 
       renderer: new Renderer({
+        renderAfterDocumentEvent: 'render-event',
         headless: false,
-        renderAfterDocumentEvent: 'render-event'
       })
-    })
-  ]
+    }),
+  ])
 };
