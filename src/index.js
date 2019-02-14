@@ -27,7 +27,7 @@ const router = new VueRouter({
     if (to.hash) {
         //alert(to.hash);
         //return { x: 0, y: 0 };
-        return {selector: to.hash}
+        return {selector: to.hash, offset : { x: 0, y: 50 }}
     } else {
         return { x: 0, y: 0 }
     }
@@ -46,5 +46,7 @@ var app = new Vue({
 
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  $('.popover-dismiss').popover({trigger: 'focus'});
 })

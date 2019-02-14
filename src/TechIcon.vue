@@ -2,7 +2,7 @@
   <span>
   <img v-if="!tech.text" class="icon m-1" :src="getLink(tech)" :alt="getAlt(tech)" 
                 data-toggle="tooltip" data-placement="top" :title="getAlt(tech)" /><span 
-  class="text m-1" v-if="tech.text" :style="{ backgroundColor: tech.color }">{{ tech.name }}</span>
+  class="m-1 badge badge-pill badge-success" v-if="tech.text" :style="{ backgroundColor: tech.color }">{{ tech.name }}</span>
   </span>
 </template>
 

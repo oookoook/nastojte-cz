@@ -38,53 +38,8 @@ zaměstnaný od roku 2008.</p>
     I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
-<h2>Dr. Kompjůtr</h2>
-<p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
-<ul class="list-unstyled">
-<code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
-<code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
-<code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
-</ul>
-            <h1 class="display-4" id="contact">Jak mě kontaktovat</h1>
-            <ul class="list-unstyled">
-                <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">LinkedIn</a></code-li>
-                <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
-                <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
-            </ul>
-
-            <h1 id="what" class="display-4">Co dělám</h1>
-            
-<p>V současné době mám kapacitu buď na menší jednorázové projekty jako například:</p>
-    <ul class="list-unstyled">
-    <code-li>Mikroslužby;</code-li>
-    <code-li>Jednoduché webové aplikace;</code-li> 
-    <code-li>Jednoúčelové pluginy pro prohlížeče.</code-li> 
-    </ul>
-<p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
-ale vyžadují pouze menší množství času.</p>
-
-            <h2>Co za to?</h2> 
-
-<p>Dávám přednost účtování hodinovou sazbou. Základní sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH.</p>
-<p>I pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
-že pro mnoho zákazníků je to preferovaná varianta.</p>
-
-            <h2>Reference</h2>
-         
-            <div class="cards">
-                <div v-for="(d, di) in decks" :key="di" class="card-deck">
-                    <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
-                </div>
-            </div>
-         
-            <h1 id="repos">Jak vypadá můj kód</h1>
-            <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
-            <ul>
-                <code-li><a href="https://github.com/oookoook?tab=repositories">GitHub</a></code-li>
-                <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS">GitLab @ FI MU</a></code-li>
-            </ul>
-            <h1 id="tools">Co používám</h1>
-            <p>Konkrétněm technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
+    <h2 class="display-4" id="tools">Co umím</h2>
+            <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
             <div class="table-responsive">
@@ -105,6 +60,65 @@ ale vyžadují pouze menší množství času.</p>
                 </tbody>
                 </table>
             </div>
+
+        <h2 id="repos">Jak vypadá můj kód</h2>
+            <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
+            <ul>
+                <code-li><a href="https://github.com/oookoook?tab=repositories">GitHub</a></code-li>
+                <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS">GitLab @ FI MU</a></code-li>
+            </ul>
+
+ <h2>Bzukot</h2>
+        <p>V IT jsou poměrně oblíbená tzv. buzzwords. Jasně, jsou to jenom takové nálepky, pod kterými si každý představuje něco jiného a které samy o sobě žádnou zvláštní informaci nenesou. Ale přesto - rád bych
+        zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.</p>
+        <p>
+        <!--
+        <span class="m-1 p-3 badge badge-pill badge-dark" v-for="(b, bi) in buzzwords" :key="bi"
+        data-toggle="tooltip" data-placement="top" :title="b.title" :data-content="b.text">{{ b.badge }}</span>
+        -->
+        <a href="#" v-for="(b, bi) in buzzwords" :key="bi" 
+        tabindex="0" class="badge badge-pill badge-dark  m-1 p-3" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" 
+        :title="b.title" :data-content="b.text" v-on:click.prevent>{{ b.badge }}</a>
+        </p>
+<h2>Dr. Kompjůtr</h2>
+<p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
+<ul class="list-unstyled">
+<code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
+<code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
+<code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
+</ul>
+            <h2 class="display-4" id="contact">Jak mě kontaktovat</h2>
+            <ul class="list-unstyled">
+                <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">LinkedIn</a></code-li>
+                <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
+                <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
+            </ul>
+
+            <h2 id="what" class="display-4">Co nabízím</h2>
+            
+<p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
+    <ul class="list-unstyled">
+    <code-li>Mikroslužby a API;</code-li>
+    <code-li>Jednoduché webové aplikace;</code-li> 
+    <code-li>Jednoúčelové pluginy pro prohlížeče.</code-li> 
+    </ul>
+<p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
+ale vyžadují pouze menší množství času.</p>
+
+            <h2>Co za to?</h2> 
+
+<p>Dávám přednost účtování hodinovou sazbou. Moje aktuální sazba je <strong>800 Kč/hod</strong>. Nejsem plátcem DPH.</p>
+<p>I pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
+že pro mnoho zákazníků je to preferovaná varianta.</p>
+
+            <h2  class="display-4" id="refs">Reference</h2>
+         
+            <div class="cards">
+                <div v-for="(d, di) in decks" :key="di" class="card-deck">
+                    <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
+                </div>
+            </div>
+
             <h2>Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
@@ -137,6 +151,69 @@ ale vyžadují pouze menší množství času.</p>
         data: function () {
             return {
                 mail: 'adam@nastojte.cz',
+                buzzwords: [
+                    { 
+                        badge: 'Microservices',
+                        title: 'Mikroslužby',
+                        text: 'Dekompozice složitých aplikací do jednoduchých nezávislých API.',
+                    }, { 
+                        badge: 'SOA',
+                        title: 'Service oriented architecture',
+                        text: 'Komponenty aplikace si navzájem poskytují služby skrze API a komunikují přes síť.',
+                    }, { 
+                        badge: 'JAMstack',
+                        title: 'Javascript, APIs, Markup stack',
+                        text: 'Frontent napsaný čistě v Javascriptu a hostovaný jako statická stránka (např. v AWS S3). S backendem komunikuje výhradně přes síť a API (REST, mikroslužby, SOA).',
+                    }, { 
+                        badge: 'Headless',
+                        title: 'Headless systems',
+                        text: 'Aplikační logika a funkce jsou poskytovány pouze přes API, ke kterému se připojují klienti (vytvoření pomocí JAMstack). Dokonalý loose coupling mezi frontendem a backendem.',
+                    }, { 
+                        badge: 'SPA',
+                        title: 'Single Page Applications',
+                        text: 'Moderní Javascriptové aplikace, kdy je obsah vytvářen v některém z moderních frameworků (React, Angular, Vue). Navigace v aplikaci probíhá pouze pomocí Javascriptu, nikoliv načítáním různých stránek ze serveru.',
+                    }, { 
+                        badge: 'REST',
+                        title: 'Representational State Transfer',
+                        text: 'Současný standard pro Webová API. Textový protokol využívající HTTP(S).',
+                    }, { 
+                        badge: 'noSQL',
+                        title: 'noSQL',
+                        text: 'Moderní databázové systémy, které vynikají výkonem a volnější strukturou ukládaných dat. Pro mnohé aplikace jsou vhodnější než tradiční relační DB.',
+                    }, { 
+                        badge: 'Responsiveness',
+                        title: 'Responzivní design',
+                        text: 'Design webu, který se přizpůsobuje připojenému klientu a vypadá dobře (a také dobře funguje) jak na 30" monitoru, tak na smartphone.',
+                    }, { 
+                        badge: 'Mobile-first',
+                        title: 'Mobile-first',
+                        text: 'Způsob návrhu webových aplikací, kdy je zdůrazňována a preferována správná funkce pro mobilní zařízení. Google ve výsledcích vyhledávání zvýhodňuje mobile-first stránky.',
+                    }, { 
+                        badge: 'Material design',
+                        title: 'Google Material design',
+                        text: 'Designový jazyk prosazovaný Googlem, který sjednocuje zobrazení a ovládání webových a mobilních aplikací. Byl navržen primárně pro systém Android a jeho použití na webu tedy umožňuje vývoj responzivních mobile-first aplikací.',
+                    }, { 
+                        badge: 'SaaS',
+                        title: 'Software as a Service',
+                        text: 'Software jako služba je model distribuce a licencování, kdy si uživatel nekupuje krabicovou licenci, ale platí předplatné a může využívat webové verze aplikací (např. Google Suite, Office 365). Jsem schopný takto poskytovat na zakázku vyrobené aplikace.',
+                    }, { 
+                        badge: 'PaaS',
+                        title: 'Platform as a Service',
+                        text: 'Platforma jako služba popisuje moderní cloudová řešení typu Amazon Web Services nebo Microsoft Azure. Vývojáři již nemusí řešit vlastní servery. A to jak fyzické, tak ani virtuální. Výkon je poskytovatelem dodáván podle potřeby, aplikace tedy skvěle škálují a jejich provoz nikoho nezruinuje. PaaS využívám pro běh vlastních aplikací.',
+                    }, { 
+                        badge: 'Serveless',
+                        title: 'Serverless deployment',
+                        text: 'Běh aplikace v cloudu bez dedikovaného serveru (např. v AWS Lambda, ECS, Dynamo DB, AppSync a další). V podstatě synomymum k PaaS, lépe řečeno PaaS umožňuje provoz serverless aplikací.',
+                    }, { 
+                        badge: 'Agile',
+                        title: 'Agilní vývoj software',
+                        text: 'Agilní metodiky jsou zaměřeny na rychlé dodání funkčního software zákazníkovi a úzkou spolupráci vývojáře s klientem, aby byl výsledek spolupráce co nejlepší. I když se neřídím žádnou ucelenou metodikou, inkrementální způsob vývoje s častými aktualizacemi a úpravami je mi blízký.',
+                    }, { 
+                        badge: 'CI/CD',
+                        title: 'Continuous Itegration/Continuous Delivery',
+                        text: 'V podstatě jde o to, že když vývojář udělá Git Commit a Push, software se automaticky sestaví, otestuje, a pokud projde testy, i nasadí do produkce. Přiznám se, že v tomto zatím sbírám zkušenosti, ale nepochybně je to cesta, která je nyní už dobře použitelná a neuvěřitelně praktická.',
+                    },
+                ],
                 cards: [
                 {
                     category: 'Volná noha',
@@ -297,4 +374,7 @@ img.photo {
     width: 200px;
 }
 
+a.badge-pill {
+     outline: none;
+}
 </style>

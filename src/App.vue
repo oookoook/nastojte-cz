@@ -10,10 +10,12 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarAuthorMenuLink">
           <router-link class="dropdown-item" to="/">Kdo jsem</router-link>
-          <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
-          <router-link class="dropdown-item" to="/#what">Co dělám</router-link>
+          <router-link class="dropdown-item" to="/#tools">Co umím</router-link>
           <router-link class="dropdown-item" to="/#repos">Jak vypadá můj kód</router-link>
-          <router-link class="dropdown-item" to="/#tools">Co používám</router-link>
+          <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
+          <router-link class="dropdown-item" to="/#what">Co nabízím</router-link>
+          
+          
         </div>
       </li>
         </Menu>
