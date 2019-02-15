@@ -105,7 +105,7 @@ module.exports = {
 
       renderer: new Renderer({
         renderAfterDocumentEvent: 'render-event',
-        headless: false,
+        headless: true,
       })
     }),
   ])
