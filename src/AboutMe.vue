@@ -240,8 +240,8 @@ ale vyžadují pouze menší množství času.</p>
                     year: '2019',
                     img: require('../assets/refs/nastojte.png'),
                     repo: 'https://github.com/oookoook/nastojte-cz',
-                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3' ]
+                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS COdePipeline, CodeBuild a CodeDeploy.', 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3', 'AWS CodeDeploy']
                 }, {
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
@@ -365,7 +365,13 @@ ale vyžadují pouze menší množství času.</p>
         methods: {
         },
         created() {
-         }
+        },
+        mounted() {
+            // must be here because of the router - this might get rendered after the app init when comming from other pages
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+            $('.popover-dismiss').popover({trigger: 'focus'});
+        }
     }
 </script>
 <style scoped>
