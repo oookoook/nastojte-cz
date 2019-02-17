@@ -232,7 +232,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'Maják',
                     year: '2018',
                     img: require('../assets/refs/majak.png'),
-                    link: 'https://github.com/oookoook/majak',
+                    repo: 'https://github.com/oookoook/majak',
                     description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
                     + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
@@ -249,7 +249,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'Joolca troubleshooting (AUS)',
                     year: 2018,
                     img: require('../assets/refs/joolca.png'),
-                    link: '',
+                    //link: '',
                     description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
                     + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
                     + ' Google Spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.',
@@ -306,7 +306,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'BMS Sentinel',
                     year: '2010',
                     img: require('../assets/refs/bmssentinel.png'),
-                    link: 'https://is.muni.cz/th/i3416/',
+                    about: 'https://is.muni.cz/th/i3416/',
                     description: 'Dohledový systém pro automatizační protokol BACnet.',
                     technologies: [ { name: '.NET Framework', cname: 'dotnet'}, {name: 'C#', icon: 'https://developer.fedoraproject.org/static/logo/csharp.png'}, { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
                 }, {
@@ -314,7 +314,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'Semantic BMS',
                     year: '2017',
                     img: require('../assets/refs/sbms.png'),
-                    link: 'https://is.muni.cz/th/umgby',
+                    about: 'https://is.muni.cz/th/umgby',
                     repo: 'https://gitlab.fi.muni.cz/xkucer16/semanticBMS',
                     description: 'Sémantický model pro data z inteligentních budov.',
                     technologies: ['Java', 'REST', { name: 'Apache Jena', icon: 'https://jena.apache.org/images/jena-logo/jena-logo-jumbotron.png' }, 'jQuery', { name: 'Apache Tomcat', cname:'tomcat' }, { name: 'Web Ontology Language', icon: 'https://www.w3.org/Icons/SW/Buttons/sw-owl-blue-v.svg' }]
@@ -323,7 +323,7 @@ ale vyžadují pouze menší množství času.</p>
                     title: 'EsserNet-BACnet Gateway',
                     year: '2014',
                     img: require('../assets/refs/esser.png'),
-                    link: 'http://safecontrol.cz/index.php/vyvoj-software',
+                    about: 'http://safecontrol.cz/index.php/vyvoj-software',
                     description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
                     technologies: ['Java', { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
                 }, {
