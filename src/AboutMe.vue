@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="content">
-      <h1 class="display-4">Kdo jsem</h1>
+    <h1 class="display-4">Kdo jsem</h1>
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
 <div class="d-flex flex-column flex-md-row">
@@ -38,6 +38,19 @@ zaměstnaný od roku 2008.</p>
     I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
+ <h2 id="what" class="display-4">Co nabízím</h2>
+            
+<p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
+    <ul class="list-unstyled">
+    <code-li>Mikroslužby a API;</code-li>
+    <code-li>Webové aplikace;</code-li> 
+    <code-li>Rozšíření pro prohlížeče (Chrome, Firefox);</code-li>
+    <code-li>Rozšíření existujících softwarových systémů &ndash; ať už na míru nebo komerčních řešení s podporou pro rozšíření (nová funkcionalita, datový model, UI, API);</code-li>
+    <code-li>Konzultace v oblasti návrhu software a nasazení (např. v cloudových PaaS, zejména AWS).</code-li>  
+    </ul>
+<p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
+ale vyžadují pouze menší množství času.</p>
+
     <h2 class="display-4" id="tools">Co umím</h2>
             <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
@@ -61,14 +74,14 @@ zaměstnaný od roku 2008.</p>
                 </table>
             </div>
 
-        <h2 id="repos">Jak vypadá můj kód</h2>
+        <h3 id="repos">Jak vypadá můj kód</h3>
             <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
             <ul>
                 <code-li><a href="https://github.com/oookoook?tab=repositories">GitHub</a></code-li>
                 <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS">GitLab @ FI MU</a></code-li>
             </ul>
 
- <h2>Bzukot</h2>
+ <h3>Bzukot</h3>
         <p>V IT jsou poměrně oblíbená tzv. buzzwords. Jasně, jsou to jenom takové nálepky, pod kterými si každý představuje něco jiného a které samy o sobě žádnou zvláštní informaci nenesou. Ale přesto - rád bych
         zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.</p>
         <p>
@@ -80,7 +93,7 @@ zaměstnaný od roku 2008.</p>
         tabindex="0" class="badge badge-pill badge-dark  m-1 p-3" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" 
         :title="b.title" :data-content="b.text" v-on:click.prevent>{{ b.badge }}</a>
         </p>
-<h2>Dr. Kompjůtr</h2>
+<h3>Dr. Kompjůtr</h3>
 <p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
 <code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
@@ -94,18 +107,7 @@ zaměstnaný od roku 2008.</p>
                 <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
             </ul>
 
-            <h2 id="what" class="display-4">Co nabízím</h2>
-            
-<p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
-    <ul class="list-unstyled">
-    <code-li>Mikroslužby a API;</code-li>
-    <code-li>Jednoduché webové aplikace;</code-li> 
-    <code-li>Jednoúčelové pluginy pro prohlížeče.</code-li> 
-    </ul>
-<p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
-ale vyžadují pouze menší množství času.</p>
-
-            <h2>Co za to?</h2> 
+            <h2 class="display-4" id="pricing">Co za to</h2> 
 
 <p>Dávám přednost účtování hodinovou sazbou. Moje aktuální sazba je <strong>800 Kč/hod</strong>. Nejsem plátcem DPH.</p>
 <p>I pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
@@ -240,7 +242,7 @@ ale vyžadují pouze menší množství času.</p>
                     year: '2019',
                     img: require('../assets/refs/nastojte.png'),
                     repo: 'https://github.com/oookoook/nastojte-cz',
-                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS COdePipeline, CodeBuild a CodeDeploy.', 
+                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline, CodeBuild a CodeDeploy.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3', 'AWS CodeDeploy']
                 }, {
                     category: 'Microton',
@@ -351,7 +353,7 @@ ale vyžadují pouze menší množství času.</p>
                         like: [ 'REST' ], know: [ { name: 'WCF', text: true, color: '#f00' }, 'SOAP' ] },
                     */
                    { category: 'OS, servery, platformy',
-                        like: [ {name: 'Windows', cname: 'microsoft-windows' }, 'AWS' ], know: [ {name: 'Linux', cname: 'linux-tux'}, 'OpenStack', 'Tomcat' ] },
+                        like: [ {name: 'Windows', cname: 'microsoft-windows' }, 'AWS' ], know: [ {name: 'Linux', cname: 'linux-tux'}, 'OpenStack', 'Tomcat', 'Docker' ] },
                     { category: 'Vývojová prostředí',
                          like: [ 'Eclipse', { name: 'Visual Studio Code', icon: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg' }, ], know: [ 'NetBeans', ] },
                     { category: 'Správa kódu a závislostí',
