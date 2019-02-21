@@ -1,7 +1,15 @@
 <template>
   <div id="app">
        <Menu :title="title" :ico="icon">
-           <li class="nav-item">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarAppsLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Aplikace
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarAppsLink">
+          <a class="dropdown-item" href="https://schranky.nastojte.cz" target="blank">Mapa poštovních schránek</a>
+        </div>
+      </li>
+        <li class="nav-item">
             <router-link class="nav-link" to="/vonnegut">Proč Nastojte?</router-link>
         </li>
         <li class="nav-item dropdown">
@@ -15,9 +23,6 @@
           <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
           <router-link class="dropdown-item" to="/#pricing">Co za to</router-link>
           <router-link class="dropdown-item" to="/#refs">Reference</router-link>
-          
-          
-          
         </div>
       </li>
         </Menu>

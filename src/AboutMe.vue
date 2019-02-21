@@ -31,7 +31,7 @@ zaměstnaný od roku 2008.</p>
 <code-li>Věřím, že je důležité nevynalézat znovu kolo a do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.</code-li>
 <code-li>Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud máte vše na vlastních serverech na flatformě .NET. nebud vám cpát serverless řešení v Amazon cloudu. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě. Snažím se řešit existující problémy, ne vytvářet nové.</code-li>
 <code-li>Chápu, že nejdůležitější jsou požadavky uživatele. Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho. Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.</code-li>
-<code-li>Uvědomuji si, že zdaleka nevím všechno, a rád se učím - ať už úplně nové technologie, nebo vhodné best practices.</code-li>
+<code-li>Uvědomuji si, že zdaleka nevím všechno, a neustále se učím a posouvám dál - ať už úplně nové technologie, nebo vhodné best practices.</code-li>
 </ul>
 </div>
 <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
@@ -45,7 +45,7 @@ zaměstnaný od roku 2008.</p>
     <code-li>Mikroslužby a API;</code-li>
     <code-li>Webové aplikace;</code-li> 
     <code-li>Rozšíření pro prohlížeče (Chrome, Firefox);</code-li>
-    <code-li>Rozšíření existujících softwarových systémů &ndash; ať už na míru nebo komerčních řešení s podporou pro rozšíření (nová funkcionalita, datový model, UI, API);</code-li>
+    <code-li>Rozšíření existujících softwarových systémů &ndash; ať už na míru nebo komerčních řešení s podporou rozšíření (nová funkcionalita, datový model, UI, API);</code-li>
     <code-li>Konzultace v oblasti návrhu software a nasazení (např. v cloudových PaaS, zejména AWS).</code-li>  
     </ul>
 <p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
@@ -109,10 +109,23 @@ ale vyžadují pouze menší množství času.</p>
 
             <h2 class="display-4" id="pricing">Co za to</h2> 
 
-<p>Dávám přednost účtování hodinovou sazbou. Moje aktuální sazba je <strong>800 Kč/hod</strong>. Nejsem plátcem DPH.</p>
-<p>I pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
-že pro mnoho zákazníků je to preferovaná varianta.</p>
+<p>Moje aktuální hodinová sazba je <strong>800 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
+ochotný poskytovat slevu z hodinové sazby.</p>
+<p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
+že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) iss dostatečným časem na analýzu a návrh
+řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás
+tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.</p>
 
+<p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:
+    <code-li>Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.</code-li>
+    <code-li>Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. 
+        Toto jsou náklady, které musím pokrýt ze své hodinové sazby. Mnohem podrobněji je tato argumentace rozvinuta v 
+        <a href="https://www.superlectures.com/barcampbrno2017/nenechte-se-sebou-vydrbavat-kolik-doopravdy-stoji-hodina-prace-freelancera">přednášce</a> 
+        Petra "Jezevce" Pouchlého z <a href="https://www.linkedin.com/company/court-of-moravia/">Court of Moravia</a>.</code-li>
+    <code-li>Již ve chvíli, kdy se na práci dohodneme, jsem na Vašem projektu určitý čas strávil &ndash; psaním nabídky, naceňováním, zkoumáním specifických technologií, které používáte.</code-li>
+    <code-li>Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.</code-li>
+    <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
+        pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
             <h2  class="display-4" id="refs">Reference</h2>
          
             <div class="cards">
@@ -242,8 +255,8 @@ ale vyžadují pouze menší množství času.</p>
                     year: '2019',
                     img: require('../assets/refs/nastojte.png'),
                     repo: 'https://github.com/oookoook/nastojte-cz',
-                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline, CodeBuild a CodeDeploy.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3', 'AWS CodeDeploy']
+                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
                 }, {
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
