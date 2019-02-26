@@ -14,10 +14,10 @@
     <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji jsem
 zaměstnaný od roku 2008.</p>
 
-                <p>Působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target='_blank'>Masarykově univerzitě</a>
+                <p>Působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
                 jako vývojář a systémový administrátor zaměřený na oblast Facility managementu a inteligentní budovy. Zároveň
-                působím jako vývojář na volné noze. Díky spolupráci s firmou <a href="http://www.microton.cz/">Microton</a> jsem
-                se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie).</p>
+                působím jako vývojář na volné noze. Díky spolupráci s firmou <a href="http://www.microton.cz/" target="_blank">Microton</a> jsem
+                se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy <a href="https://www.upwork.com/fl/adamkucera3" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3" target="_blank">můj profil</a> je viditlený pouze pro příhlášené uživatele).</p>
   </div>
 </div>
 <div class="jumbotron bg-light border border-info">
