@@ -102,8 +102,9 @@ ale vyžadují pouze menší množství času.</p>
 </ul>
             <h2 class="display-4" id="contact">Jak mě kontaktovat</h2>
             <ul class="list-unstyled">
-                <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">LinkedIn</a></code-li>
                 <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
+                <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
+                <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
                 <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
             </ul>
 

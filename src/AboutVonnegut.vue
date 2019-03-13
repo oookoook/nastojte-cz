@@ -4,10 +4,10 @@
         
         <div class="d-flex flex-column flex-md-row mb-3">
             <div>
-            Říkal jsem si, že když už jsem si vybral tuto doménu, měl bych vysvětlit, kde jsem k názvu přišel. Vězte, že jsem toto slovo potkal v díle 
+            Říkal jsem si, že když už jsem si vybral tuto doménu, měl bych vysvětlit, kde jsem k názvu přišel. Vězte, že jsem toto slovo potkal v knížkách 
         amerického spisovatele <a href="https://cs.wikipedia.org/wiki/Kurt_Vonnegut" target="_blank">Kurta Vonneguta</a>. Vpravo (nebo dole, pokud koukáte z mobilu) 
         můžete vidět jeho autoportrét.
-        Do češtiny ho překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" target="_blank">Jaroslava Kořán</a> (a později George Popel).
+        Do češtiny jeho dílo překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" target="_blank">Jaroslav Kořán</a> (a později George Popel).
         Jeho knížky rozhodně doporučuji k přečtení, ale ve které přesně bylo to předmětné <em>Nastojte</em>, to už nevím. Nejspíš <em>Kolíbka</em> nebo <em>Jatka č. 5</em>. 
                 <div class="media mt-4">
                     <img src="../assets/favicon.png" id="logo" class="align-self-center mr-5" alt="Logo stránek"/>
@@ -39,7 +39,7 @@
                 chtěl-li pokřiku »nastojte« uposlechnouti.</p>
                 <footer class="blockquote-footer">Heslo v <a href="https://cs.wikisource.org/wiki/Ott%C5%AFv_slovn%C3%ADk_nau%C4%8Dn%C3%BD/Nastojte" target="_blank"><cite title="Ottův slovník naučný">Ottově slovníku naučném</cite></a></footer>
         </blockquote>
-        <p>Nebo <a href="https://vokabular.ujc.cas.cz/hledani.aspx?hw=nastojte">Vokabulář Ústavu pro jazyk český Adademie věd České republiky</a> nabízí hněd několik významů,
+        <p><a href="https://vokabular.ujc.cas.cz/hledani.aspx?hw=nastojte">Vokabulář Ústavu pro jazyk český Akademie věd České republiky</a> nabízí hned několik významů,
         které toto slovo má, včechny zhruba ve smyslu <em>pomoc!</em>, <em>běda!</em>, <em>ach!</em>.</p>
         <p>Přiznám se, že ty výklady ve smyslu <em>běda</em> mě překvapily. Tak to samozřejmě myšleno není.</p>
         <p class="lead">Nastojte.cz si proto překládejte ve smyslu Hleďte.cz.</p>
