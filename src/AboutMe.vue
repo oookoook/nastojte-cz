@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="content">
+  <div class="container text-justify" id="content">
     <h1 class="display-4">Kdo jsem</h1>
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
@@ -16,8 +16,11 @@ zaměstnaný od roku 2008.</p>
 
                 <p>Působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
                 jako vývojář a systémový administrátor zaměřený na oblast Facility managementu a inteligentní budovy. Zároveň
-                působím jako vývojář na volné noze. Díky spolupráci s firmou <a href="http://www.microton.cz/" target="_blank">Microton</a> jsem
-                se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy <a href="https://www.upwork.com/fl/adamkucera3" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3" target="_blank">můj profil</a> je viditlený pouze pro příhlášené uživatele).</p>
+                působím jako vývojář na volné noze. Specializuji se na moderní <b>JavaScriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
+                Díky spolupráci s firmou <a href="http://www.microton.cz/" target="_blank">Microton</a> jsem
+                se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy 
+                <a href="https://www.upwork.com/fl/adamkucera3" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3" target="_blank">můj profil</a> 
+                je viditlený pouze pro příhlášené uživatele).</p>
   </div>
 </div>
 <div class="jumbotron bg-light border border-info">
@@ -25,13 +28,14 @@ zaměstnaný od roku 2008.</p>
 <hr>
  <ul class="list-unstyled">
 <code-li>Znám všechny aspekty vývoje: od analýzy přes návrh včetně datového modelu přes implementaci až po dlouhodobý provoz systémů.</code-li>
-<code-li>Znám nejenom programovací jazyky, ale i infrastrukturu, ve které kód běží: běhová prostředí (JRE, CLR), cloudová prostředí (AWS), aplikační servery (Tomcat, IIS, HTTPD), databáze (T-SQL, MySQL, DynamoDB), sítě, operační systémy (Windows, Linux).</code-li>
-<code-li>Vždy věnuji čas tomu, abych pochopil a přizpůsobil se filozofii produktů, se kterými pracuji. Nepochopení základních konceptů je často zdrojem nespolehlivých, nevýkonných a neflexibilních řešení.</code-li>
-<code-li>Znám široké spektrum dostupných platforem, jazyků a nástrojů. Na některé věci je nejlepší Java, na jiné .NET, někdy je nejlepší Python a jindy stačí PowerShell. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.</code-li>
-<code-li>Věřím, že je důležité nevynalézat znovu kolo a do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.</code-li>
-<code-li>Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud máte vše na vlastních serverech na flatformě .NET. nebud vám cpát serverless řešení v Amazon cloudu. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě. Snažím se řešit existující problémy, ne vytvářet nové.</code-li>
 <code-li>Chápu, že nejdůležitější jsou požadavky uživatele. Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho. Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.</code-li>
+<code-li>Věřím, že je důležité nevynalézat znovu kolo a do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.</code-li>
 <code-li>Uvědomuji si, že zdaleka nevím všechno, a neustále se učím a posouvám dál - ať už úplně nové technologie, nebo vhodné best practices.</code-li>
+<code-li>Vždy věnuji čas tomu, abych pochopil a přizpůsobil se filozofii produktů, se kterými pracuji. Nepochopení základních konceptů je často zdrojem nespolehlivých, nevýkonných a neflexibilních řešení.</code-li>
+<code-li>Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud máte vše na vlastních serverech na flatformě .NET. nebud vám nutit serverless řešení v Amazon cloudu. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě. Snažím se řešit existující problémy, ne vytvářet nové.</code-li>
+<code-li>Znám široké spektrum dostupných platforem, jazyků a nástrojů. Na některé věci je nejlepší Java, na jiné .NET, někdy je nejlepší Python a jindy stačí PowerShell. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.</code-li>
+<code-li>Znám nejenom programovací jazyky, ale i infrastrukturu, ve které kód běží: běhová prostředí (JRE, CLR), cloudová prostředí (AWS), aplikační servery (Tomcat, IIS, HTTPD), databáze (T-SQL, MySQL, DynamoDB), sítě, operační systémy (Windows, Linux).</code-li>
+
 </ul>
 </div>
 <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
@@ -47,10 +51,9 @@ zaměstnaný od roku 2008.</p>
     <code-li>Rozšíření pro prohlížeče (Chrome, Firefox);</code-li>
     <code-li>Rozšíření existujících softwarových systémů &ndash; ať už na míru nebo komerčních řešení s podporou rozšíření (nová funkcionalita, datový model, UI, API);</code-li>
     <code-li>Konzultace v oblasti návrhu software a nasazení (např. v cloudových PaaS, zejména AWS).</code-li>  
+    <code-li>Kontrakty na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
+ale vyžadují pouze menší množství času.</code-li> 
     </ul>
-<p>Zároveň jsem otevřený kontraktům na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
-ale vyžadují pouze menší množství času.</p>
-
     <h2 class="display-4" id="tools">Co umím</h2>
             <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
@@ -73,6 +76,17 @@ ale vyžadují pouze menší množství času.</p>
                 </tbody>
                 </table>
             </div>
+
+        <h3 id="cloud">Cloud</h3>
+        <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro <b>Amazon Web Services</b> (AWS). Kromě obecně platných výhod,
+        jako jsou nižší požadavky na správu (aktualizace, zabezpečení) je cloud obzvlášt vhodný pro začínající služby, kde jsou problémem
+    vyšší počáteční náklady a horší škálování v závislosti na vytíženosti služby. Řešení se nabízí v podobě tzv. serverless aplikací, které nevyžadují
+    dedikovaný (a stále běžící) web server. Ve výsledku to funguje tak, že když na stránku nikdo nepřijde, neplatíte nic, a celkové cena se odvíjí od počtu požadavků,
+    které do služby uživatelé pošlou. I když už je služba používána, náklady se pohybují v řádu korun nebo desetikorun měsíčně. Příkladem takového projektu je moje
+    <a href="https://schranky.nastojte.cz">Mapa poštovních schránek</a>.</p>
+    <p>Nabízím vývoj aplikací pro cloud (AWS) jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
+    <b>skripty pro nasazení</b>, díky kterím aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> na základě aktualizací zdrojového kódu 
+    (tzv. <i>continuous deployment</i>).</p>
 
         <h3 id="repos">Jak vypadá můj kód</h3>
             <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
@@ -240,16 +254,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     repo: 'https://github.com/oookoook/postboxes-frontend',
                     description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
                     + ' Služba běží v AWS (frontend S3+CloudFront, backend Lambda + ECS), pro ukládání dat je využívána noSQL databáze DynamoDB.', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Maják',
-                    year: '2018',
-                    img: require('../assets/refs/majak.png'),
-                    repo: 'https://github.com/oookoook/majak',
-                    description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
-                    + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
+                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
                 }, {
                     category: 'Volná noha',
                     title: 'Nastojte.cz',
@@ -257,7 +262,15 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/nastojte.png'),
                     repo: 'https://github.com/oookoook/nastojte-cz',
                     description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'AWS', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
+                }, {
+                    category: 'Volná noha',
+                    title: 'Sun Orchard Freight App (USA)',
+                    year: '2019',
+                    img: require('../assets/refs/sunorchard.png'),
+                    description: 'Databázová aplikace pro interní potřeby účetní firmy, které pro výrobce džusů řeší distribuci výrobků. Aplikace běží v AWS (frontend S3 + CloudFront, backend Lambda), '
+                    + ' pro ukládání dat je využívána SQL databáze AWS Aurora, autentizace je řešena pomocí služby AWS Cognito.', 
+                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'AWS RDS', 'AWS Cognito', 'AWS CloudFormation']
                 }, {
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
@@ -275,7 +288,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/dropair.png'),
                     description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
                     + ' vývoj nových crawlerů, scraperů a parserů.', 
-                    technologies: [{name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate']
+                    technologies: [{name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate', 'AWS', 'AWS EC2']
                 }, {
                     category: 'Microton',
                     title: 'Giftcard Checker (USA)',
@@ -283,7 +296,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/gcchecker.png'),
                     description: 'Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče,'
                     + ' frontend je vytvořený jako plugin do Google Spreadsheet.', 
-                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST']
+                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST',  'AWS', 'AWS EC2']
                 }, {
                     category: 'Microton',
                     title: 'Bookování letenek (USA)',
@@ -294,6 +307,23 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
                 }, {
                     category: 'Volná noha',
+                    title: 'AWS CloudFormation templates',
+                    year: '2019',
+                    img: require('../assets/refs/awscf.png'),
+                    repo: 'https://github.com/oookoook/cloud-formation-templates',
+                    description: 'Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.', 
+                    technologies: [ 'AWS', 'AWS CloudFormation' ]
+                }, {
+                    category: 'Volná noha',
+                    title: 'Maják',
+                    year: '2018',
+                    img: require('../assets/refs/majak.png'),
+                    repo: 'https://github.com/oookoook/majak',
+                    description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
+                    + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
+                }, {
+                    category: 'Volná noha',
                     title: 'Coffee to Home',
                     year: '2014',
                     img: require('../assets/refs/cth.png'),
@@ -301,7 +331,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                         + 'umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
                         + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
                     technologies: [ 'Javascript', 'Bootstrap', 'PHP' ]
-                }, /*{{
+                }, {
                     category: 'MU',
                     title: 'CAFM',
                     year: 'od 2013',
@@ -309,7 +339,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: 'http://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'https://archibus.com/wp-content/uploads/2018/02/retina_logo_black.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'https://vignette.wikia.nocookie.net/logopedia/images/8/80/SQLServer.png' }, 'Git']
-                }, 
+                }, /*{
                     category: 'MU',
                     title: 'BMS MU',
                     img: require('../assets/code.png')
