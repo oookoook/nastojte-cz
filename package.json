@@ -24,6 +24,7 @@
     "popper.js": "^1.15.0",
     "prerender-spa-plugin": "^3.4.0",
     "rimraf": "^2.6.3",
+    "social-tags-webpack-plugin": "^1.1.0",
     "style-loader": "^0.23.1",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",

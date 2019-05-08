@@ -152,7 +152,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
             <h2>Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
-                <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, které vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
+                <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
                 title="Dave Gandy">Dave Gandy</a> a publikoval jej na portále <a href="https://www.flaticon.com/" 
                 title="Flaticon">www.flaticon.com</a> a licencoval jako <a href="http://creativecommons.org/licenses/by/3.0/" 
                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. 
@@ -161,7 +161,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
             <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektu 
                 <a href="https://svgporn.com/" target="_blank">SVG Porn</a>.</p>
 
-            <p>Nakonec, o obrázku z favicon a hlavičky si víc můžete přečíst 
+            <p>Nakonec, o názvu webu si víc můžete přečíst 
                 <router-link to="/vonnegut">tady</router-link>.</p>
 
   </div>

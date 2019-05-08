@@ -5,7 +5,8 @@ const webpack = require('webpack');
 
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const PrerenderSpaPlugin = require('prerender-spa-plugin');
+const SocialTags = require('social-tags-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 
 module.exports = {
@@ -84,6 +85,26 @@ module.exports = {
       template: 'src/index.html',
       favicon: 'assets/favicon.ico',
       inject: true
+    }),
+    new SocialTags({
+      appUrl: 'https://nastojte.cz/',
+      facebook: {
+        'og:url': "https://nastojte.cz/",
+        'og:type': "website",
+        'og:title': "Nastojte.cz - Adam Kučera",
+        'og:image': './assets/favicon-code.png',
+        'og:description': "Adam Kučera - softwarový vývojář na volné noze.",
+        'og:site_name': "Nastojte.cz - Adam Kučera",
+        'og:locale': "cs_CZ",
+        'og:article:author': "Adam Kučera",
+      },
+      twitter: {
+        "twitter:card": "Adam Kučera - softwarový vývojář na volné noze.",
+        "twitter:url": "https://nastojte.cz/",
+        "twitter:title": "Nastojte.cz - Adam Kučera",
+        "twitter:description": "Adam Kučera - softwarový vývojář na volné noze.",
+        "twitter:image": './assets/favicon-code.png'
+      },
     }),
     new webpack.ProvidePlugin({
       $: "jquery", 

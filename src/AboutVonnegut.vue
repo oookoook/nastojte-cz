@@ -10,10 +10,10 @@
         Do češtiny jeho dílo překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" target="_blank">Jaroslav Kořán</a> (a později George Popel).
         Jeho knížky rozhodně doporučuji k přečtení, ale ve které přesně bylo to předmětné <em>Nastojte</em>, to už nevím. Nejspíš <em>Kolíbka</em> nebo <em>Jatka č. 5</em>. 
                 <div class="media mt-4">
-                    <img src="../assets/favicon.png" id="logo" class="align-self-center mr-5" alt="Logo stránek"/>
+                    <img src="../assets/asshole.png" id="logo" class="align-self-center mr-5" alt="Logo stránek"/>
                     <div class="media-body">
-                        A jestli vás zajímá, co je to za hvězdičku v logu stránek (a tady vlevo), tak to je taky od něj. Je to jeho vlastnoruční ilustrace 
-                        knihy <em>Snídaně šampionů</em> &ndash; obrázek řiti.
+                        A jestli vás zajímá, co je to za hvězdičku tady vlevo, tak to je taky od něj. Je to jeho vlastnoruční ilustrace 
+                        z knihy <em>Snídaně šampionů</em> &ndash; obrázek řiti.
                     </div>
                 </div>
             </div>
