@@ -9,6 +9,8 @@ const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const SocialTags = require('social-tags-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 
+const config = require('./src/config.js');
+
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
@@ -82,8 +84,26 @@ module.exports = {
     //new HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.html',
+      //template: 'src/index.html',
+      template: 'src/index.ejs',
       favicon: 'assets/favicon.ico',
+      title: 'Nastojte.cz - Adam Kučera',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+        description: 'Adam Kučera - softwarový vývojář na volné noze.',
+        keywords: 'vývoj, vývojář, software, aplikace, web, programátor, programování, Javascript, AWS',
+        author: 'Adam Kučera',
+        /*
+        'og:url': "https://nastojte.cz/",
+        'og:type': "website",
+        'og:title': "Nastojte.cz - Adam Kučera",
+        //'og:image': './assets/favicon-code.png',
+        'og:description': "Adam Kučera - softwarový vývojář na volné noze.",
+        'og:site_name': "Nastojte.cz - Adam Kučera",
+        'og:locale': "cs_CZ",
+        'og:article:author': "Adam Kučera"
+        */
+      },
       inject: true
     }),
     new SocialTags({
@@ -92,7 +112,7 @@ module.exports = {
         'og:url': "https://nastojte.cz/",
         'og:type': "website",
         'og:title': "Nastojte.cz - Adam Kučera",
-        'og:image': './assets/favicon-code.png',
+        'og:image': './assets/favicon.png',
         'og:description': "Adam Kučera - softwarový vývojář na volné noze.",
         'og:site_name': "Nastojte.cz - Adam Kučera",
         'og:locale': "cs_CZ",
@@ -103,8 +123,9 @@ module.exports = {
         "twitter:url": "https://nastojte.cz/",
         "twitter:title": "Nastojte.cz - Adam Kučera",
         "twitter:description": "Adam Kučera - softwarový vývojář na volné noze.",
-        "twitter:image": './assets/favicon-code.png'
+        "twitter:image": './assets/favicon.png'
       },
+      
     }),
     new webpack.ProvidePlugin({
       $: "jquery", 
