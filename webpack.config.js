@@ -87,46 +87,12 @@ module.exports = {
       //template: 'src/index.html',
       template: 'src/index.ejs',
       favicon: 'assets/favicon.ico',
-      title: 'Nastojte.cz - Adam Kučera',
-      meta: {
-        viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-        description: 'Adam Kučera - softwarový vývojář na volné noze.',
-        keywords: 'vývoj, vývojář, software, aplikace, web, programátor, programování, Javascript, AWS',
-        author: 'Adam Kučera',
-        /*
-        'og:url': "https://nastojte.cz/",
-        'og:type': "website",
-        'og:title': "Nastojte.cz - Adam Kučera",
-        //'og:image': './assets/favicon-code.png',
-        'og:description': "Adam Kučera - softwarový vývojář na volné noze.",
-        'og:site_name': "Nastojte.cz - Adam Kučera",
-        'og:locale': "cs_CZ",
-        'og:article:author': "Adam Kučera"
-        */
-      },
+      title: config.title,
+      lang: config.lang,
+      meta: config.meta,
       inject: true
     }),
-    new SocialTags({
-      appUrl: 'https://nastojte.cz/',
-      facebook: {
-        'og:url': "https://nastojte.cz/",
-        'og:type': "website",
-        'og:title': "Nastojte.cz - Adam Kučera",
-        'og:image': './assets/favicon.png',
-        'og:description': "Adam Kučera - softwarový vývojář na volné noze.",
-        'og:site_name': "Nastojte.cz - Adam Kučera",
-        'og:locale': "cs_CZ",
-        'og:article:author': "Adam Kučera",
-      },
-      twitter: {
-        "twitter:card": "Adam Kučera - softwarový vývojář na volné noze.",
-        "twitter:url": "https://nastojte.cz/",
-        "twitter:title": "Nastojte.cz - Adam Kučera",
-        "twitter:description": "Adam Kučera - softwarový vývojář na volné noze.",
-        "twitter:image": './assets/favicon.png'
-      },
-      
-    }),
+    new SocialTags(config.social),
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
@@ -135,7 +101,7 @@ module.exports = {
       // Path to compiled app
       staticDir: path.join(__dirname, 'dist'),
       // List of endpoints you wish to prerender
-      routes: [ '/', '/vonnegut'],
+      routes: config.routesToPrerender, //[ '/', '/vonnegut'],
       // Optional minification.
       minify: {
         collapseBooleanAttributes: true,
