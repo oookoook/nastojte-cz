@@ -1,6 +1,6 @@
 var url = 'https://nastojte.cz';
 var title = 'Nastojte.cz - Adam Kučera';
-var author = 'Adam Kučera bleble';
+var author = 'Adam Kučera';
 var description = 'Adam Kučera - softwarový vývojář na volné noze.';
 var keywords = 'vývoj, vývojář, software, aplikace, web, programátor, programování, Javascript, AWS';
 var locale = 'cs_CZ';
