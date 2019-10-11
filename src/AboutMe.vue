@@ -85,7 +85,7 @@ ale vyžadují pouze menší množství času.</code-li>
     které do služby uživatelé pošlou. I když už je služba používána, náklady se pohybují v řádu korun nebo desetikorun měsíčně. Příkladem takového projektu je moje
     <a href="https://schranky.nastojte.cz">Mapa poštovních schránek</a>.</p>
     <p>Nabízím vývoj aplikací pro cloud (AWS) jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
-    <b>skripty pro nasazení</b>, díky kterím aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> na základě aktualizací zdrojového kódu 
+    <b>skripty pro nasazení</b>, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> na základě aktualizací zdrojového kódu 
     (tzv. <i>continuous deployment</i>).</p>
 
         <h3 id="repos">Jak vypadá můj kód</h3>
