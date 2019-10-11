@@ -52,6 +52,10 @@ module.exports = {
         use: 'babel-loader'
       },
       {
+        test: /\.md$/,
+        use: 'file-loader'
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: 'file-loader'
       },

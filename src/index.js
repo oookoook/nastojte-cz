@@ -8,6 +8,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import AboutMe from './AboutMe.vue';
 import AboutVonnegut from './AboutVonnegut.vue';
+import Article from './Article.vue';
 
 import VueResource from 'vue-resource';
 import VueTimers from 'vue-timers';
@@ -19,7 +20,8 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: '/', component: AboutMe },
-  { path: '/vonnegut', component: AboutVonnegut }
+  { path: '/vonnegut', component: AboutVonnegut },
+  { path: '/articles/:article', component: Article }
 ]
 
 const router = new VueRouter({
