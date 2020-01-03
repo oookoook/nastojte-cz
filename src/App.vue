@@ -34,6 +34,11 @@
           >{{ a.title }}</router-link>
           <a
             class="dropdown-item"
+            href="https://medium.com/@akucera/%C3%BAvod-o-%C4%8Dem-to-bude-e57c8b397ea0"
+            target="blank"
+          >Produktivita na volné noze</a>
+          <a
+            class="dropdown-item"
             href="https://www.tzb-info.cz/facility-management/11078-bms-na-masarykove-univerzite"
             target="blank"
           >BMS na Masarykově univerzitě</a>
