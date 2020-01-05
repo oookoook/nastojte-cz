@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Menu :title="title" :ico="icon">
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown mx-2">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -18,7 +18,7 @@
           >Mapa poštovních schránek</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown mx-2">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -55,10 +55,10 @@
           
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item mx-2">
         <router-link class="nav-link" to="/vonnegut">Proč Nastojte?</router-link>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown mx-2">
         <a
           class="nav-link dropdown-toggle"
           href="#"

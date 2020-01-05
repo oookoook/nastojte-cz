@@ -154,7 +154,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
                 <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
                 title="Dave Gandy">Dave Gandy</a> a publikoval jej na portále <a href="https://www.flaticon.com/" 
-                title="Flaticon">www.flaticon.com</a> a licencoval jako <a href="http://creativecommons.org/licenses/by/3.0/" 
+                title="Flaticon">www.flaticon.com</a> a licencoval jako <a href="https://creativecommons.org/licenses/by/3.0/" 
                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. 
                 Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
             </p>
@@ -254,7 +254,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     repo: 'https://github.com/oookoook/postboxes-frontend',
                     description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
                     + ' Služba běží v AWS (frontend S3+CloudFront, backend Lambda + ECS), pro ukládání dat je využívána noSQL databáze DynamoDB.', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
+                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'https://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
                 }, {
                     category: 'Volná noha',
                     title: 'Nastojte.cz',
@@ -280,7 +280,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
                     + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
                     + ' Google Spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.',
-                    technologies: ['Zendesk', 'jQuery', 'REST', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Google GSuite']
+                    technologies: ['Zendesk', 'jQuery', 'REST', { name: 'Google Apps Script', icon: require('../assets/tech/googleappscript.png')}, 'Google GSuite']
                 }, {
                     category: 'Microton',
                     title: 'Dropair (USA)',
@@ -288,7 +288,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/dropair.png'),
                     description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
                     + ' vývoj nových crawlerů, scraperů a parserů.', 
-                    technologies: [{name: 'AngularJS', icon: 'https://angularjs.org/img/AngularJS-large.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate', 'AWS', 'AWS EC2']
+                    technologies: [{name: 'AngularJS', icon: require('../assets/tech/angularjs.png') }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate', 'AWS', 'AWS EC2']
                 }, {
                     category: 'Microton',
                     title: 'Giftcard Checker (USA)',
@@ -296,7 +296,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/gcchecker.png'),
                     description: 'Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče,'
                     + ' frontend je vytvořený jako plugin do Google Spreadsheet.', 
-                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: 'https://developers.google.com/site-assets/developers_64dp.png'}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST',  'AWS', 'AWS EC2']
+                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: require('../assets/tech/googleappscript.png')}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST',  'AWS', 'AWS EC2']
                 }, {
                     category: 'Microton',
                     title: 'Bookování letenek (USA)',
@@ -337,7 +337,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     year: 'od 2013',
                     img: require('../assets/refs/archibus.png'),
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
-                    link: 'http://ofm.ukb.muni.cz/?page_id=196',
+                    link: 'https://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'https://archibus.com/wp-content/uploads/2018/02/retina_logo_black.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'https://vignette.wikia.nocookie.net/logopedia/images/8/80/SQLServer.png' }, 'Git']
                 }, /*{
                     category: 'MU',
@@ -352,7 +352,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     img: require('../assets/refs/bmssentinel.png'),
                     about: 'https://is.muni.cz/th/i3416/',
                     description: 'Dohledový systém pro automatizační protokol BACnet.',
-                    technologies: [ { name: '.NET Framework', cname: 'dotnet'}, {name: 'C#', icon: 'https://developer.fedoraproject.org/static/logo/csharp.png'}, { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
+                    technologies: [ { name: '.NET Framework', cname: 'dotnet'}, {name: 'C#', icon: require('../assets/tech/csharp.png')}, { name: 'BACnet', icon: require('../assets/tech/bacnet.gif') }]
                 }, {
                     category: 'MU',
                     title: 'Semantic BMS',
@@ -367,9 +367,9 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     title: 'EsserNet-BACnet Gateway',
                     year: '2014',
                     img: require('../assets/refs/esser.png'),
-                    about: 'http://safecontrol.cz/index.php/vyvoj-software',
+                    about: 'https://safecontrol.cz/systemova-integrace',
                     description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
-                    technologies: ['Java', { name: 'BACnet', icon: 'http://www.bacnet.org/Images/BACnet-Logo-New.gif' }]
+                    technologies: ['Java', { name: 'BACnet', icon: require('../assets/tech/bacnet.gif') }]
                 }, {
                     category: 'Volná noha',
                     title: 'Mapa cen stavebních pozemků',
@@ -378,7 +378,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     link: 'https://reality.nastojte.cz',
                     repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
                     description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'http://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda', {name: 'Apify', icon: 'https://www.apify.com/img/logos/logo-notext.svg' }]
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'https://api.mapy.cz/img/web/logo.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda', /* {name: 'Apify', icon: 'https://www.apify.com/img/logos/logo-notext.svg' } */]
                 }, 
                 ],
                 tools: [
@@ -389,7 +389,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     { category: 'Backend',
                         like: [ 'Node.js', 'Express', 'Spring' ], know: [ 'Java', { name: '.NET Framework', cname: 'dotnet'} ] },
                     { category: 'Skriptování',
-                        like: [ 'Node.js', {name: 'PowerShell', icon: 'https://raw.githubusercontent.com/PowerShell/PowerShell/master/assets/Powershell_64.png' } ], know: [ 'Python', 'Bash' ] },
+                        like: [ 'Node.js', {name: 'PowerShell', icon: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png' } ], know: [ 'Python', 'Bash' ] },
                     { category: 'Databáze',
                         like: [{ name: 'Microsoft SQL Server', icon: 'https://vignette.wikia.nocookie.net/logopedia/images/8/80/SQLServer.png' }, 'AWS DynamoDB' ], know: [ 'SOLR', 'MySQL' ] },
                     /*
