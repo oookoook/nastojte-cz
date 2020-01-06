@@ -1,5 +1,5 @@
 <template>
-  <nav id="menu" class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg mb-3">
+  <nav id="menu" class="navbar sticky-top navbar-dark navbar-expand-lg mb-3 bg-nastojte">
     <a class="navbar-brand" href="#">
         <img :src="ico" class="d-inline-block align-top" alt="">
         {{ title }}</a>
@@ -41,6 +41,6 @@
          }
     }
 </script>
-<style scoped>
-
+<style>
+    
 </style>

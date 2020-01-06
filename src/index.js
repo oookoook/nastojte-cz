@@ -7,8 +7,8 @@ import 'bootstrap';
 import Vue from 'vue';
 import App from './App.vue';
 import AboutMe from './AboutMe.vue';
-import AboutVonnegut from './AboutVonnegut.vue';
-import Article from './Article.vue';
+//import AboutVonnegut from './AboutVonnegut.vue';
+//import Article from './Article.vue';
 
 import VueResource from 'vue-resource';
 import VueTimers from 'vue-timers';
@@ -18,10 +18,15 @@ Vue.use(VueResource);
 Vue.use(VueTimers);
 Vue.use(VueRouter);
 
+// route level code-splitting
+// this generates a separate chunk (about.[hash].js) for this route
+// which is lazy-loaded when the route is visited.
+// component: () => import(/* webpackChunkName: "about" */ './views/help/About.vue')
+
 const routes = [
   { path: '/', component: AboutMe },
-  { path: '/vonnegut', component: AboutVonnegut },
-  { path: '/articles/:article', component: Article }
+  { path: '/vonnegut', component: () => import(/* webpackChunkName: "aboutVonnegut" */ './AboutVonnegut.vue') },
+  { path: '/articles/:article', component: () => import(/* webpackChunkName: "article" */ './Article.vue') }
 ]
 
 const router = new VueRouter({

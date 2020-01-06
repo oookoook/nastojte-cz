@@ -24,12 +24,12 @@
         methods: {
             getLink: function(t) {
                 if(t.icon) {
-                    return t.icon;
+                    return require(`../assets/tech/${t.icon}`);
                 }
                 if(t.cname) {
-                    return 'https://cdn.svgporn.com/logos/' + t.cname + '.svg';
+                    return require(`../assets/tech/${t.cname}.svg`);
                 }
-                return 'https://cdn.svgporn.com/logos/' + t.toLowerCase().replace(/\./g, '').replace(/ /g, '-') + '.svg';
+                return require(`../assets/tech/${t.toLowerCase().replace(/\./g, '').replace(/ /g, '-')}.svg`);
             },
             getAlt: function(t) {
                 if(t.name) {

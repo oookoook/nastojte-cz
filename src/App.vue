@@ -78,9 +78,9 @@
       </li>
     </Menu>
     <router-view></router-view>
-    <footer class="py-3 mt-5 bg-dark">
+    <footer class="py-3 mt-5 bg-nastojte">
       <div class="container text-center">
-        <span class="text-muted">Adam Kučera, 2019</span>
+        <span class="text-white">Adam Kučera, 2019</span>
       </div>
     </footer>
   </div>
@@ -113,11 +113,4 @@ export default {
 img.photo {
   width: 200px;
 }
-
-#article img {
-        width: 100px;
-    }
-    #article blockquote {
-        font-size: 5em;
-    }
 </style>
