@@ -257,12 +257,11 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
                 }, {
                     category: 'Volná noha',
-                    title: 'Nastojte.cz',
-                    year: '2019',
-                    img: require('../assets/refs/nastojte.png'),
-                    repo: 'https://github.com/oookoook/nastojte-cz',
-                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'AWS', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
+                    title: 'Lighthouse Lambda API',
+                    year: '2020',
+                    img: require('../assets/code.png'),
+                    description: 'REST API které spouští nástroj pro testování výkonu webu Google Lighthouse a vrací výsledky jako JSON. API je nasazeno do WS pomocí nástroje CloudFormation.', 
+                    technologies: [ 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'AWS CloudFormation' ]
                 }, {
                     category: 'Volná noha',
                     title: 'Sun Orchard Freight App (USA)',
@@ -271,6 +270,28 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Databázová aplikace pro interní potřeby účetní firmy, které pro výrobce džusů řeší distribuci výrobků. Aplikace běží v AWS (frontend S3 + CloudFront, backend Lambda), '
                     + ' pro ukládání dat je využívána SQL databáze AWS Aurora, autentizace je řešena pomocí služby AWS Cognito.', 
                     technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'AWS RDS', 'AWS Cognito', 'AWS CloudFormation']
+                }, {
+                    category: 'Volná noha',
+                    title: 'Parametrizovaný SSRS report',
+                    year: '2019',
+                    img: require('../assets/refs/ssrs.png'),
+                    description: 'Jednoduchá stránka v ASP.NET, která z internetu zpřístupňuje report definovaný Microsoft SQL Server Reporting Services a umožňuje volat ho s různými parametry.', 
+                    technologies: [ { name: '.NET Framework', cname: 'dotnet'} ]
+                }, {
+                    category: 'Volná noha',
+                    title: 'Rozšíření stávajícího IS o statistiky',
+                    year: '2019',
+                    img: require('../assets/refs/jjstats.png'),
+                    description: 'Rozšíření existujícího informačního systému o reporty se statistikami. IS používá Angular, Spring Boot, a MySQL.', 
+                    technologies: [ 'Angular', 'Java', 'Spring', 'MySQL' ]
+                }, {
+                    category: 'Volná noha',
+                    title: 'Nastojte.cz',
+                    year: '2019',
+                    img: require('../assets/refs/nastojte.png'),
+                    repo: 'https://github.com/oookoook/nastojte-cz',
+                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'AWS', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
                 }, {
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
@@ -339,13 +360,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: 'https://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'archibus.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'mssql.png' }, 'Git']
-                }, /*{
-                    category: 'MU',
-                    title: 'BMS MU',
-                    img: require('../assets/code.png')
-                    description: 'Inteligentní budovy - systémová správa a údržba existující aplikace.',
-                    technologies: ['IIS', 'Windows Server', 'SVN', 'NLB', 'DFS']
-                },*/ {
+                }, {
                     category: 'MU',
                     title: 'BMS Sentinel',
                     year: '2010',
@@ -378,8 +393,8 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     link: 'https://reality.nastojte.cz',
                     repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
                     description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda', /* {name: 'Apify', icon: 'https://www.apify.com/img/logos/logo-notext.svg' } */]
-                }, 
+                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda' ]
+                },
                 ],
                 tools: [
                     { category: 'Jazyky',
