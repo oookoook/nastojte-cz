@@ -20,9 +20,7 @@ import VueGtag from "vue-gtag";
 Vue.use(VueResource);
 Vue.use(VueTimers);
 Vue.use(VueRouter);
-Vue.use(VueGtag, {
-  config: { id: "UA-171585960-1" }
-});
+
 
 // route level code-splitting
 // this generates a separate chunk (about.[hash].js) for this route
@@ -47,6 +45,10 @@ const router = new VueRouter({
 },
   routes // short for `routes: routes`
 })
+
+Vue.use(VueGtag, {
+  config: { id: "UA-171585960-1" }, router
+});
 
 var app = new Vue({
   el: '#app',
