@@ -47,7 +47,11 @@ const router = new VueRouter({
 })
 
 Vue.use(VueGtag, {
-  config: { id: "UA-171585960-1" }, router
+  config: { id: "UA-171585960-1", 
+    params: {
+      send_page_view: true
+    } 
+  }, router
 });
 
 var app = new Vue({
