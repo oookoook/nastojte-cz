@@ -51,8 +51,8 @@ Vue.use(VueGtag, {
     params: {
       send_page_view: true
     } 
-  }, router
-});
+  }}, router
+);
 
 var app = new Vue({
   el: '#app',

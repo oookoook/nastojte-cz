@@ -5,6 +5,24 @@
         <a
           class="nav-link dropdown-toggle"
           href="#"
+          id="navbarAuthorMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >O mně</a>
+        <div class="dropdown-menu" aria-labelledby="navbarAuthorMenuLink">
+          <router-link class="dropdown-item" to="/">Kdo jsem</router-link>
+          <router-link class="dropdown-item" to="/#what">Co nabízím</router-link>
+          <router-link class="dropdown-item" to="/#tools">Co umím</router-link>
+          <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
+          <router-link class="dropdown-item" to="/#pricing">Co za to</router-link>
+          <router-link class="dropdown-item" to="/#refs">Reference</router-link>
+        </div>
+      </li>
+      <li class="nav-item dropdown mx-2">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
           id="navbarAppsLink"
           data-toggle="dropdown"
           aria-haspopup="true"
@@ -58,24 +76,7 @@
       <li class="nav-item mx-2">
         <router-link class="nav-link" to="/vonnegut">Proč Nastojte?</router-link>
       </li>
-      <li class="nav-item dropdown mx-2">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarAuthorMenuLink"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >O autorovi</a>
-        <div class="dropdown-menu" aria-labelledby="navbarAuthorMenuLink">
-          <router-link class="dropdown-item" to="/">Kdo jsem</router-link>
-          <router-link class="dropdown-item" to="/#what">Co nabízím</router-link>
-          <router-link class="dropdown-item" to="/#tools">Co umím</router-link>
-          <router-link class="dropdown-item" to="/#contact">Jak mě kontaktovat</router-link>
-          <router-link class="dropdown-item" to="/#pricing">Co za to</router-link>
-          <router-link class="dropdown-item" to="/#refs">Reference</router-link>
-        </div>
-      </li>
+      
     </Menu>
     <router-view></router-view>
     <footer class="py-3 mt-5 bg-nastojte">
