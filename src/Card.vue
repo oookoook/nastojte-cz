@@ -9,10 +9,10 @@
             <tech-icon v-for="(t,i) in card.technologies" :key="i" :tech="t"/>
         </div>
         <div class="card-footer tech mt-3">
-                <a v-if="card.link" :href="card.link" class="btn btn-primary" target="_blank">Vyzkoušet</a>
-                <a v-if="card.about" :href="card.about" class="btn btn-primary" target="_blank">Zjistit více</a>
-                <a v-if="card.repo" :href="card.repo" class="btn btn-primary" target="_blank">Repozitář</a>
-                <a v-if="!(card.link || card.about || card.repo)" href="#" class="btn btn-primary disabled" target>Neveřejný projekt</a>
+                <a v-if="card.link" :href="card.link" class="btn btn-nastojte" target="_blank">Vyzkoušet</a>
+                <a v-if="card.about" :href="card.about" class="btn btn-nastojte" target="_blank">Zjistit více</a>
+                <a v-if="card.repo" :href="card.repo" class="btn btn-nastojte" target="_blank">Repozitář</a>
+                <a v-if="!(card.link || card.about || card.repo)" href="#" class="btn btn-nastojte disabled" target>Neveřejný projekt</a>
             </div>
     </div>
 </template>

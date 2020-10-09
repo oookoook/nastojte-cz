@@ -1,0 +1,233 @@
+About me
+
+I've started programming when I was 9 years old, following QBasic tutorials in a Czech magazine for children. I've been greatly enjoying it since.
+
+I am a software developer based in Brno, Czech Republic. I am IT professional since 2008.
+
+I am a freelance software developer specialized in modern JavaScript applications hosted in cloud (Amazon), but I can adjust to your specific toolset, environment, and needs. I also work part-time at the Masaryk University as a developer and sysadmin responsible for development, maintenace and operation of Facility Management and Smart Building information systems. Thanks to my cooperation with the development studio Microton, I worked for clients based in United States or Australia via the Upwork platform. 
+
+Why work with me?
+
+I am proficient in all the aspects of the software system: analysis, design, data modeling, implementation, deployment and operation.
+
+I know that fulfilling the user requirements is the top priority of a project. Application must be user friendly and conveniently laid out, otherwise users won't use it. If the development takes too long, the users grow tired of waiting and find an alterate solution. A perfect product delivered too late is equally as wrong as a bug infested app that's hard to maintain. User requirements and their benefit is of the same importance as quality of design and code. Finding the right compromise between development time and software quality is one of the most important challenges. 
+
+I know that it makes no sense to re-invent the wheel. I will gladly use existing projects and save your money ba reusing already written code.
+
+I am aware that I have to yet learn a lot and I continuously improve my skills and my knowledge, learn about new technologies and adapt best practices. 
+
+I spent enough time and effort to understand and adapt to the technologies I use. Unsufficient understanding of basic concepts is source of bugs, performance bottlenecks and unmaintainable projects.
+
+
+I respect your choice of technologies. I am versatile. If you have a Microsoft based solution in .NET hosted on your own hardware, I won't be persuading you to develop the new app in Javascript and host it in Amazon cloud. If you want me to write a plugin for your helpdesk software, I might not like it, but I won't tell you you should change it for something that suits me better if the current solution suits your business better. I solve existing problems, I don't aim to create new ones.
+
+I am proficient enough in wide spectre of development platforms, programming languages, and tools. In same cases Java is the best solution, for others .NET is the most reasonable way to go. You might want to utilize a library that is available only in Python or maybe PowerShell is the easiest way. There is a risk in konwing only one technology or language &ndash; <i>If the only thing you have is a hammer, everything looks like a nail.<i> I have a large toolbox so I can choose the right tool for the task. 
+
+I am not only a developer, I also know evironment in which applications run: runtimes (JRE, CLR), cloud services (AWS, OpenStack), application servers (Tomcat, IIS, HTTPD), databases and data stores (T-SQL, MySQL, DynamoDB, Redis, SOLR), networks, operating systems (Windows Server, Linux). 
+
+I am a full stack developer. However, there are some things I am not. I am not a graphics designer and I am not an UI/UX designer. For a good looking UI and enjoyable UX I will use a component framework and a design guidelines such as Vuetify and Material Design, but I won't design an unique web page with an original look and inovative UX. If you need a unique look and feel and UX is crucial for your business, I might not be the best choice. I make apps, not presentation web sites. I you want just a presentation of your business, I am not the right choice. You will find legions of developers ho will do it better than me and for less money. However, if you need and app with a great UI/UX, i will hapilly provide the programming and cooperate with an UI/UX designer and/or frontend developer of your choice to deliver the best result.
+
+What can we do together?
+
+At the moment I am able to deliver projects such as:
+
+Microservices and APIs
+
+Web applications
+
+Browser extension
+
+Extensions of existing software systems (new functionality, data model, UI, API)
+
+Consultations or mentoring on software development and deployment (e.g. cloud PaaS, namely AWS)
+
+Long-term contracts to maintain and enhance existing system that do not require much time per month
+
+My skills
+
+I don't think that particular technologies are that important, I am able and willing to adept to the project I am working on. On the other hand, I don't know everything (but I will gladly learn something new any time I can). The table below lists technologies I worked with. You can also see which technologies I use when I can choose what I prefer. 
+
+Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které volím, když si můžu vybrat.
+
+Category I Prefer  I am familiar
+
+Programming	JavascriptJava	C#CPython
+Frontend	Vuetify.jsBootstrapVue.js	AngularJSjQueryJavascript.NET Framework
+Backend	Node.jsExpressSpring	Java.NET Framework
+Scripting	Node.jsPowerShell	PythonBash
+Databases	Microsoft SQL ServerAWS DynamoDB	SOLRMySQL
+OS, servers, platforms	WindowsAWS	LinuxOpenStackTomcatDocker
+IDEs	EclipseVisual Studio Code	NetBeans
+Versioning, Depnedencies	WebpackMavenGit	Subversion
+
+Cloud
+Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro Amazon Web Services (AWS). Kromě obecně platných výhod, jako jsou nižší požadavky na správu (aktualizace, zabezpečení) je cloud obzvlášt vhodný pro začínající služby, kde jsou problémem vyšší počáteční náklady a horší škálování v závislosti na vytíženosti služby. Řešení se nabízí v podobě tzv. serverless aplikací, které nevyžadují dedikovaný (a stále běžící) web server. Ve výsledku to funguje tak, že když na stránku nikdo nepřijde, neplatíte nic, a celkové cena se odvíjí od počtu požadavků, které do služby uživatelé pošlou. I když už je služba používána, náklady se pohybují v řádu korun nebo desetikorun měsíčně. Příkladem takového projektu je moje Mapa poštovních schránek. Lepší představu o tom, co vývoj aplikace v cloudu obnáší, si můžete udělat z mého článku.
+
+Nabízím vývoj aplikací pro cloud (AWS) jako kompletní balíček. Aplikaci naprogramuji tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou skripty pro nasazení, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace automaticky aktualizovala na základě aktualizací zdrojového kódu (tzv. continuous deployment).
+
+Jak vypadá můj kód
+Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:
+
+...
+GitHub
+...
+GitLab @ FI MU
+Bzukot
+V IT jsou poměrně oblíbená tzv. buzzwords. Jasně, jsou to jenom takové nálepky, pod kterými si každý představuje něco jiného a které samy o sobě žádnou zvláštní informaci nenesou. Ale přesto - rád bych zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.
+
+MicroservicesSOAJAMstackHeadlessSPARESTnoSQLResponsivenessMobile-firstMaterial designSaaSPaaSServelessAgileCI/CD
+
+Dr. Kompjůtr
+Kromě práce jsem úspěšně dokončil Ph.D. studium na FI MU. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:
+
+...
+Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.
+...
+Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.
+...
+Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.
+Jak mě kontaktovat
+...
+E-mail: adam@nastojte.cz
+...
+Profil na LinkedIn
+...
+Profil na Na volné noze
+...
+Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.
+Co za to
+Moje aktuální hodinová sazba je 800 Kč/hod. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem ochotný poskytovat slevu z hodinové sazby.
+
+Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) iss dostatečným časem na analýzu a návrh řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.
+
+Zde bych jen rád doplnil drobnou poznámku – chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:
+...
+Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.
+...
+Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. Toto jsou náklady, které musím pokrýt ze své hodinové sazby. Mnohem podrobněji je tato argumentace rozvinuta v přednášce Petra "Jezevce" Pouchlého z Court of Moravia.
+...
+Již ve chvíli, kdy se na práci dohodneme, jsem na Vašem projektu určitý čas strávil – psaním nabídky, naceňováním, zkoumáním specifických technologií, které používáte.
+...
+Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.
+...
+Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.
+
+Reference
+screenshot
+Spider Trait Database
+2020
+Úložiště a vyhledávač vědeckých dat. Velkou částí práce je neveřejný editor vkládaných dat a kontrola jejich správnosti (ověřování oproti katalogu známých druhů, datové typy, apod.). Relativně Rrozsáhlý projekt, který jsem kompletně navrhoval, vyvíjel (frontend, backend, databáze, sychronizace dat) i nasazoval (napojení na OpenID autentizaci, zálohování, zprovoznění v OpenStack, optimalizace)
+
+Vuetify.jsVue.jsNode.jsExpressMySQLOpenStack
+ 
+screenshot
+Mapa poštovních schránek
+2019
+Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz. Služba běží v AWS (frontend S3+CloudFront, backend Lambda + ECS), pro ukládání dat je využívána noSQL databáze DynamoDB.
+
+Vuetify.jsVue.jsMapy.cz APIWebpackNode.jsExpressAWSAWS LambdaDockerAWS DynamoDB
+ 
+screenshot
+Lighthouse Lambda API
+2020
+REST API které spouští nástroj pro testování výkonu webu Google Lighthouse a vrací výsledky jako JSON. API je nasazeno do WS pomocí nástroje CloudFormation.
+
+Node.jsExpressAWSAWS LambdaAWS CloudFormation
+screenshot
+Sun Orchard Freight App (USA)
+2019
+Databázová aplikace pro interní potřeby účetní firmy, které pro výrobce džusů řeší distribuci výrobků. Aplikace běží v AWS (frontend S3 + CloudFront, backend Lambda), pro ukládání dat je využívána SQL databáze AWS Aurora, autentizace je řešena pomocí služby AWS Cognito.
+
+Vuetify.jsVue.jsWebpackNode.jsExpressAWSAWS LambdaAWS RDSAWS CognitoAWS CloudFormation
+screenshot
+Parametrizovaný SSRS report
+2019
+Jednoduchá stránka v ASP.NET, která z internetu zpřístupňuje report definovaný Microsoft SQL Server Reporting Services a umožňuje volat ho s různými parametry.
+
+.NET Framework
+screenshot
+Rozšíření stávajícího IS o statistiky
+2019
+Rozšíření existujícího informačního systému o reporty se statistikami. IS používá Angular, Spring Boot, a MySQL.
+
+AngularJavaSpringMySQL
+screenshot
+Nastojte.cz
+2019
+Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.
+
+Vue.jsWebpackBootstrapAWSAWS Route 53AWS CloudFrontAWS S3
+screenshot
+Formulář pro Excel VBA
+2020
+Formulář ve VBA, který na základě několika hodnot dopočítá a vyplní tabulku pro tisk štítku.
+
+screenshot
+AWS CloudFormation templates
+2019
+Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.
+
+AWSAWS CloudFormation
+screenshot
+Joolca troubleshooting (AUS)
+2018
+Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit Google Spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.
+
+ZendeskjQueryRESTGoogle Apps ScriptGoogle GSuite
+screenshot
+Dropair (USA)
+2017-2019
+Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, vývoj nových crawlerů, scraperů a parserů.
+
+AngularJSJavaSpringNode.jsSOLRMySQLHibernateAWSAWS EC2
+screenshot
+Giftcard Checker (USA)
+2018
+Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče, frontend je vytvořený jako plugin do Google Spreadsheet.
+
+Google GSuiteGoogle Aps ScriptNode.jsExpressGoogle ChromeRESTAWSAWS EC2
+screenshot
+Bookování letenek (USA)
+2018
+Plugin do Chrome, který sleduje nabídku letů na stránkách jednoho z dopravců. Prohlížeč běží ve VPS. Když se objeví nový let ze zadaných letišť, započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.
+
+JavascriptGoogle Chrome
+screenshot
+Coffee to Home
+2014
+Jednoduchá landing page pro (tehdy) začínající předplatné kávových balíčků. Cílem bylo s co nejnižším množstvím vynaloženého času na vývoj umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin a umožnilo úspěšné fungování firmy v jejích začátcích.
+
+JavascriptBootstrapPHP
+screenshot
+CAFM
+od 2013
+Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.
+
+ArchibusApache TomcatJavascriptJavaMicrosoft SQL ServerGit
+screenshot
+BMS Sentinel
+2010
+Dohledový systém pro automatizační protokol BACnet.
+
+.NET FrameworkC#BACnet
+screenshot
+Semantic BMS
+2017
+Sémantický model pro data z inteligentních budov.
+
+JavaRESTApache JenajQueryApache TomcatWeb Ontology Language
+ 
+screenshot
+EsserNet-BACnet Gateway
+2014
+Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.
+
+JavaBACnet
+Přiznání autorství (CC Atributions)
+Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.
+
+Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil Dave Gandy a publikoval jej na portále www.flaticon.com a licencoval jako CC 3.0 BY. Tento symbol původně pochází z projektu Font Awesome.
+
+Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektu SVG Porn.
+
+Nakonec, o názvu webu si víc můžete přečíst tady.

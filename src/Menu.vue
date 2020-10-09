@@ -1,7 +1,7 @@
 <template>
   <nav id="menu" class="navbar sticky-top navbar-dark navbar-expand-lg mb-3 bg-nastojte">
-    <a class="navbar-brand" href="#">
-        <img :src="ico" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand title-nastojte" href="#">
+        <img :src="ico" height="32px" class="d-inline-block align-top mr-3" alt="">
         {{ title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

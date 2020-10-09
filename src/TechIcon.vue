@@ -29,6 +29,7 @@
                 if(t.cname) {
                     return require(`../assets/tech/${t.cname}.svg`);
                 }
+                //console.dir(t);
                 return require(`../assets/tech/${t.toLowerCase().replace(/\./g, '').replace(/ /g, '-')}.svg`);
             },
             getAlt: function(t) {

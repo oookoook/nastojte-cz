@@ -1,3 +1,40 @@
+/* https://coolors.co/320d6d-ffbfb7-ffd447-50023b-4c1c00 */
+
 .bg-nastojte {
-    background-color: #0f4c75 !important;
+    background-color: #50023b !important;
+}
+
+.title-nastojte {
+    color: #FFD447 !important;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.btn-nastojte {
+    color: #fff;
+    background-color: #50023b;
+    border-color: #50023b;
+}
+
+a {
+    color:#FF8170;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400 !important;
 }

@@ -1,12 +1,10 @@
 <template>
   <div class="container text-justify" id="content">
-    <h1 class="display-4">Kdo jsem</h1>
+    <h1>Kdo jsem</h1>
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
 <div class="d-flex flex-column flex-md-row">
-    <p class="mb-3 mr-md-3 w-50">
-        <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
-    </p>
+    
     <div>
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
@@ -14,16 +12,19 @@
     <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji jsem
 zaměstnaný od roku 2008.</p>
 
-                <p>Působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
+                Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
+                <p>Zároveň působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
                 jako vývojář a systémový administrátor zaměřený na oblast Facility managementu a inteligentní budovy. Zároveň
-                působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
                 Díky spolupráci s firmou <a href="http://www.microton.cz/" target="_blank">Microton</a> jsem
                 se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy 
                 <a href="https://www.upwork.com/fl/adamkucera3" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3" target="_blank">můj profil</a> 
                 je viditlený pouze pro příhlášené uživatele).</p>
   </div>
+  <p class="mb-3 ml-md-3 w-50">
+        <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
+    </p>
 </div>
-<div class="jumbotron bg-light border border-info">
+<div class="jumbotron bg-light border border-warning">
 <p class="lead">Proč si vybrat právě mě?</p>
 <hr>
  <ul class="list-unstyled">
@@ -31,6 +32,7 @@ zaměstnaný od roku 2008.</p>
 <code-li>Chápu, že nejdůležitější jsou požadavky uživatele. Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho. Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.</code-li>
 <code-li>Věřím, že je důležité nevynalézat znovu kolo a do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.</code-li>
 <code-li>Uvědomuji si, že zdaleka nevím všechno, a neustále se učím a posouvám dál - ať už úplně nové technologie, nebo vhodné best practices.</code-li>
+<code-li>Umím odmítnout projekt. Spolupráce musí končit výledkem <i>win-win</i> a ne vždy je pro klienta zakázkový vývoj to nejlepší řešení. Mnoho klientů, poptávajících zakázkový vývoj, jsem odmítl a nasměroval je k existujícímu hotovému <i>krabicovému</i> řešení, které bývá výrazně levnější. Také se nepouštím bezhlavě do projektů, na které nemám odbornost.</code-li>
 <code-li>Vždy věnuji čas tomu, abych pochopil a přizpůsobil se filozofii produktů, se kterými pracuji. Nepochopení základních konceptů je často zdrojem nespolehlivých, nevýkonných a neflexibilních řešení.</code-li>
 <code-li>Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud máte vše na vlastních serverech na flatformě .NET. nebud vám nutit serverless řešení v Amazon cloudu. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě. Snažím se řešit existující problémy, ne vytvářet nové.</code-li>
 <code-li>Znám široké spektrum dostupných platforem, jazyků a nástrojů. Na některé věci je nejlepší Java, na jiné .NET, někdy je nejlepší Python a jindy stačí PowerShell. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.</code-li>
@@ -42,7 +44,7 @@ zaměstnaný od roku 2008.</p>
     I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
- <h2 id="what" class="display-4">Co nabízím</h2>
+ <h2 id="what">Co nabízím</h2>
             
 <p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
     <ul class="list-unstyled">
@@ -54,7 +56,7 @@ zaměstnaný od roku 2008.</p>
     <code-li>Kontrakty na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
 ale vyžadují pouze menší množství času.</code-li> 
     </ul>
-    <h2 class="display-4" id="tools">Co umím</h2>
+    <h2 id="tools">Co umím</h2>
             <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
@@ -107,14 +109,14 @@ ale vyžadují pouze menší množství času.</code-li>
         tabindex="0" class="badge badge-pill badge-dark  bg-nastojte m-1 p-3" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" 
         :title="b.title" :data-content="b.text" v-on:click.prevent>{{ b.badge }}</a>
         </p>
-<h3>Dr. Kompjůtr</h3>
+<h3>Odborné vzdělání</h3>
 <p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
 <code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
 <code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
 </ul>
-            <h2 class="display-4" id="contact">Jak mě kontaktovat</h2>
+            <h2 id="contact">Jak mě kontaktovat</h2>
             <ul class="list-unstyled">
                 <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
                 <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
@@ -122,9 +124,9 @@ ale vyžadují pouze menší množství času.</code-li>
                 <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
             </ul>
 
-            <h2 class="display-4" id="pricing">Co za to</h2> 
+            <h2 id="pricing">Co za to</h2> 
 
-<p>Moje aktuální hodinová sazba je <strong>800 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
+<p>Moje aktuální hodinová sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
 ochotný poskytovat slevu z hodinové sazby.</p>
 <p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
 že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) iss dostatečným časem na analýzu a návrh
@@ -141,7 +143,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
     <code-li>Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.</code-li>
     <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
         pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
-            <h2  class="display-4" id="refs">Reference</h2>
+            <h2  id="refs">Reference</h2>
          
             <div class="cards">
                 <div v-for="(d, di) in decks" :key="di" class="card-deck">
@@ -240,11 +242,32 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                         text: 'Agilní metodiky jsou zaměřeny na rychlé dodání funkčního software zákazníkovi a úzkou spolupráci vývojáře s klientem, aby byl výsledek spolupráce co nejlepší. I když se neřídím žádnou ucelenou metodikou, inkrementální způsob vývoje s častými aktualizacemi a úpravami je mi blízký.',
                     }, { 
                         badge: 'CI/CD',
-                        title: 'Continuous Itegration/Continuous Delivery',
+                        title: 'Continuous Integration/Continuous Delivery',
                         text: 'V podstatě jde o to, že když vývojář udělá Git Commit a Push, software se automaticky sestaví, otestuje, a pokud projde testy, i nasadí do produkce. Přiznám se, že v tomto zatím sbírám zkušenosti, ale nepochybně je to cesta, která je nyní už dobře použitelná a neuvěřitelně praktická.',
                     },
                 ],
                 cards: [
+                {
+                    category: 'Volná noha',
+                    title: 'World Spider Trait Database',
+                    year: '2020',
+                    img: require('../assets/refs/spidertraits.png'),
+                    link: 'https://spidertraits.sci.muni.cz',
+                    repo: 'https://github.com/oookoook/spider-trait-database',
+                    description: 'Úložiště a vyhledávač vědeckých dat. Aplikace je napsaná čistě v JavaScriptu a jako databázi používá MariaDB/MySQL. Velkou částí práce je neveřejný editor vkládaných dat a kontrola jejich '
+                    + 'správnosti (ověřování oproti katalogu známých druhů, datové typy, apod.). Relativně Rozsáhlý projekt, který jsem kompletně navrhoval, vyvíjel '
+                    + '(frontend, backend, databáze, sychronizace dat) i nasazoval (napojení na OpenID autentizaci, zálohování, zprovoznění v OpenStack, optimalizace)', 
+                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, 'Node.js', 'Express', 'MariaDB', {name: 'Linux', cname: 'linux-tux'}, 'OpenStack']
+                },
+                {
+                    category: 'Volná noha',
+                    title: 'Axima Voltis Controller',
+                    year: '2020',
+                    img: require('../assets/code.png'),
+                    description: `Desktopová aplikace pro Windows sloužící k ovládání nabíječů firmy AXIMA. Pro komunikaci s nabíječi je používán protokol CAN. Aplikace je napsána
+                    v .NET Core 3.1 a WPF. Ovládání je optimalizováno pro použití s dotykovou obrazovkou.`, 
+                    technologies: [ { name: '.NET Framework', cname: 'dotnet'},  {name: 'Windows', cname: 'microsoft-windows' }]
+                },
                 {
                     category: 'Volná noha',
                     title: 'Mapa poštovních schránek',
@@ -293,6 +316,21 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'AWS', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
                 }, {
+                    category: 'Volná noha',
+                    title: 'Formulář pro Excel VBA',
+                    year: '2020',
+                    img: require('../assets/refs/vba.png'),
+                    description: 'Formulář ve VBA, který na základě několika hodnot dopočítá a vyplní tabulku pro tisk štítku.', 
+                    technologies: [ 'Excel' ]
+                },  {
+                    category: 'Volná noha',
+                    title: 'AWS CloudFormation templates',
+                    year: '2019',
+                    img: require('../assets/refs/awscf.png'),
+                    repo: 'https://github.com/oookoook/cloud-formation-templates',
+                    description: 'Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.', 
+                    technologies: [ 'AWS', 'AWS CloudFormation' ]
+                }, {
                     category: 'Microton',
                     title: 'Joolca troubleshooting (AUS)',
                     year: 2018,
@@ -305,7 +343,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                 }, {
                     category: 'Microton',
                     title: 'Dropair (USA)',
-                    year: 'od 2017',
+                    year: '2017-2019',
                     img: require('../assets/refs/dropair.png'),
                     description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
                     + ' vývoj nových crawlerů, scraperů a parserů.', 
@@ -326,15 +364,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Plugin do Chrome, který sleduje nabídku letů na stránkách jednoho z dopravců. Prohlížeč běží ve VPS. Když se objeví nový let ze zadaných letišť,'
                     + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
                     technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
-                }, {
-                    category: 'Volná noha',
-                    title: 'AWS CloudFormation templates',
-                    year: '2019',
-                    img: require('../assets/refs/awscf.png'),
-                    repo: 'https://github.com/oookoook/cloud-formation-templates',
-                    description: 'Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.', 
-                    technologies: [ 'AWS', 'AWS CloudFormation' ]
-                }, {
+                }, /* {
                     category: 'Volná noha',
                     title: 'Maják',
                     year: '2018',
@@ -343,7 +373,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
                     + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
-                }, {
+                }, */ {
                     category: 'Volná noha',
                     title: 'Coffee to Home',
                     year: '2014',
@@ -352,7 +382,9 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                         + 'umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
                         + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
                     technologies: [ 'Javascript', 'Bootstrap', 'PHP' ]
-                }, {
+                }, 
+                /*
+                {
                     category: 'MU',
                     title: 'CAFM',
                     year: 'od 2013',
@@ -360,7 +392,9 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
                     link: 'https://ofm.ukb.muni.cz/?page_id=196',
                     technologies: [{ name: 'Archibus', icon: 'archibus.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'mssql.png' }, 'Git']
-                }, {
+                },
+                */ 
+                {
                     category: 'MU',
                     title: 'BMS Sentinel',
                     year: '2010',
@@ -385,7 +419,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     about: 'https://safecontrol.cz/systemova-integrace',
                     description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
                     technologies: ['Java', { name: 'BACnet', icon: 'bacnet.png' }]
-                }, {
+                }, /* {
                     category: 'Volná noha',
                     title: 'Mapa cen stavebních pozemků',
                     year: '2019',
@@ -394,7 +428,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                     repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
                     description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
                     technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda' ]
-                },
+                }, */
                 ],
                 tools: [
                     { category: 'Jazyky',

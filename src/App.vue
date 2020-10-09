@@ -80,7 +80,7 @@
     <router-view></router-view>
     <footer class="py-3 mt-5 bg-nastojte">
       <div class="container text-center">
-        <span class="text-white">Adam Kučera, 2019</span>
+        <span class="text-white">Adam Kučera, 2020</span>
       </div>
     </footer>
   </div>
@@ -97,7 +97,7 @@ export default {
   data: function() {
     return {
       title: "Nastojte.cz",
-      icon: require("../assets/favicon-dark.png")
+      icon: require("../assets/favicon-purple.png")
     };
   },
   computed: {

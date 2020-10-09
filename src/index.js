@@ -13,10 +13,16 @@ import AboutMe from './AboutMe.vue';
 import VueResource from 'vue-resource';
 import VueTimers from 'vue-timers';
 import VueRouter from 'vue-router'; 
+import VueGtag from "vue-gtag";
+
+
 
 Vue.use(VueResource);
 Vue.use(VueTimers);
 Vue.use(VueRouter);
+Vue.use(VueGtag, {
+  config: { id: "UA-171585960-1" }
+});
 
 // route level code-splitting
 // this generates a separate chunk (about.[hash].js) for this route

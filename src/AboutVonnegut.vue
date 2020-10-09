@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="content">
-        <h1 class="display-4">Proč Nastojte.cz?</h1>
+        <h1>Proč Nastojte.cz?</h1>
         
         <div class="d-flex flex-column flex-md-row mb-3">
             <div>
