@@ -42,7 +42,8 @@ const router = new VueRouter({
     } else {
         return { x: 0, y: 0 }
     }
-},
+  },
+  mode: 'history',
   routes // short for `routes: routes`
 })
 
