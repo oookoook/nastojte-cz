@@ -89,7 +89,7 @@
 
 <script>
 import Menu from "./Menu.vue";
-import articlesList from "./articles/list"
+import articlesList from "./articles-md/list"
 export default {
   name: "nastojteApp",
   components: {

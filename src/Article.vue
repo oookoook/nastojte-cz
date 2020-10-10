@@ -6,7 +6,7 @@
 
 <script>
     import VueResource from 'vue-resource'
-    import articlesList from './articles/list'
+    import articlesList from './articles-md/list'
     import MarkdownIt from 'markdown-it'
 
     export default {
@@ -39,8 +39,8 @@
                var id = this.$route.params.article;
                 var record = articlesList[id];
                 // adding markdown references to images
-                this.$http.get(record.content).then((response) => {
-                this.article = response.body + '\n\n' + record.images.map(i => `[${i.key}]: ${i.img}`).join('\n\n');
+                this.$http.get(`/${record.content}`).then((response) => {
+                this.article = response.body + '\n\n' + record.images.map(i => `[${i.key}]: /${i.img}`).join('\n\n');
                 //console.log(this.article);
                 });
            } 
