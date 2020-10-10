@@ -40,5 +40,12 @@ module.exports = {
             'twitter:description': description,
             'twitter:image': './assets/favicon.png'
         },
+    },
+    robots: {
+        policy: [{
+            userAgent: "*",
+            allow: "/"
+        }],
+        host: 'https://nastojte.cz'
     }
 }

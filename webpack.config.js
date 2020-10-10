@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const SocialTags = require('social-tags-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
+const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 
 const config = require('./src/config.js');
 
@@ -80,6 +81,12 @@ module.exports = {
           loader: 'file-loader',
           options: { name: '[name].[ext]' }
         }
+      },
+      {
+        test: /robots\.ico$/, use: {
+          loader: 'file-loader',
+          options: { name: '[name].[ext]' }
+        }
       }
     ]
   },
@@ -100,7 +107,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
-    })].concat(process.env.NODE_ENV === 'development' ? [] : 
+    }),
+    new RobotstxtPlugin(config.robots)
+    ].concat(process.env.NODE_ENV === 'development' ? [] : 
     [new PrerenderSpaPlugin({
       // Path to compiled app
       staticDir: path.join(__dirname, 'dist'),
