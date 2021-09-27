@@ -1,4 +1,5 @@
 <template>
+<!-- https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates -->
 <footer id="footer" class="footer-distributed bg-nastojte">
 			<div class="footer-left">
                 <h3 class="title-nastojte"><img :src="ico" height="36px" class="d-inline-block align-top mr-3" alt="Logo">{{ title }}</h3>
