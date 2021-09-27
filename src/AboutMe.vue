@@ -45,7 +45,7 @@
 <reasons-carousel :authors.sync="authors"/>
 <!--
 <p class="text-center lead pt-5">Zaujalo vás to?
-<b-button size="lg" :href="`mailto:${mail}`" class="text-nastojte bg-nastojte ml-4">Napište mi</b-button></p>
+<b-button size="lg" :href="`mailto:${email}`" class="text-nastojte bg-nastojte ml-4">Napište mi</b-button></p>
 -->
 <h2 class="mt-5" id="what">Co nabízím</h2>
             
@@ -100,7 +100,7 @@ ale vyžadují pouze menší množství času.</code-li>
 </ul>
 <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
 <ul class="list-unstyled">
-    <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
+    <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank"></a></code-li>
     <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
     <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
     <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
@@ -153,7 +153,8 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
     import ReasonsCarousel from './ReasonsCarousel.vue';
     import TechTable from './TechTable.vue';
     import Buzzwords from './Buzzwords.vue';
-    import References from './References.vue'
+    import References from './References.vue';
+    import Email from './Email.vue';
     export default {
         name: 'AboutMe',
         components: {
@@ -164,9 +165,9 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
             Buzzwords,
             References
         },
+        mixins: [Email],
         data: function () {
             return {
-                mail: 'adam@nastojte.cz',
                 authors: []
             }
         },

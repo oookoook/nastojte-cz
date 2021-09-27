@@ -34,7 +34,7 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a :href="`mailto:${email}`"><span>{{ email }}</span></a></p>
+					<p><a :href="`mailto:${email}`" @click="decode" target="_blank" v-html="email"></a></p>
 				</div>
 
 			</div>
@@ -63,9 +63,13 @@
 		</footer>
 </template>
 <script>
+
+import Email from './Email.vue';
+
 export default {
     name: "Footer",
-    props: { email: String, title: String, ico: String }
+    mixins: [Email],
+    props: { title: String, ico: String }
 }
 </script>
 <style scoped>
