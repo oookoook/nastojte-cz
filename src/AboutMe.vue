@@ -9,8 +9,7 @@
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
     </p>
-    <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji jsem
-zaměstnaný od roku 2008.</p>
+    <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku 2008.</p>
 
                 Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
                 <p>Zároveň působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
@@ -24,6 +23,7 @@ zaměstnaný od roku 2008.</p>
         <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
     </p>
 </div>
+<!--
 <div class="jumbotron bg-light border border-warning">
 <p class="lead">Proč si vybrat právě mě?</p>
 <hr>
@@ -40,11 +40,14 @@ zaměstnaný od roku 2008.</p>
 
 </ul>
 </div>
-<p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
-    I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
-    Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
-
- <h2 id="what">Co nabízím</h2>
+-->
+<h2 class="mt-3" id="why">Proč si vybrat právě mě</h2>
+<reasons-carousel :authors.sync="authors"/>
+<!--
+<p class="text-center lead pt-5">Zaujalo vás to?
+<b-button size="lg" :href="`mailto:${mail}`" class="text-nastojte bg-nastojte ml-4">Napište mi</b-button></p>
+-->
+<h2 class="mt-5" id="what">Co nabízím</h2>
             
 <p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
     <ul class="list-unstyled">
@@ -56,28 +59,15 @@ zaměstnaný od roku 2008.</p>
     <code-li>Kontrakty na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
 ale vyžadují pouze menší množství času.</code-li> 
     </ul>
-    <h2 id="tools">Co umím</h2>
+    <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
+    I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
+    Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
+
+    <h2  class="mt-5" id="tools">Co umím</h2>
             <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
-            <div class="table-responsive">
-            <table class="table">
-                <thead class="thead-dark bg-nastojte">
-                    <tr>
-                        <th scope="col" class="bg-nastojte">Kategorie</th>
-                        <th scope="col" class="bg-nastojte">Mám rád</th>
-                        <th scope="col" class="bg-nastojte">Znám</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr v-for="c in tools" :key="c.category">
-                    <th scope="row">{{ c.category }}</th>
-                    <td><tech-icon v-for="(t,i) in c.like" :key="i" :tech="t"/></td>
-                    <td><tech-icon v-for="(t,i) in c.know" :key="i" :tech="t"/></td>
-                </tr>
-                </tbody>
-                </table>
-            </div>
+          <tech-table />  
 
         <h3 id="cloud">Cloud</h3>
         <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro <b>Amazon Web Services</b> (AWS). Kromě obecně platných výhod,
@@ -100,15 +90,7 @@ ale vyžadují pouze menší množství času.</code-li>
  <h3>Bzukot</h3>
         <p>V IT jsou poměrně oblíbená tzv. buzzwords. Jasně, jsou to jenom takové nálepky, pod kterými si každý představuje něco jiného a které samy o sobě žádnou zvláštní informaci nenesou. Ale přesto - rád bych
         zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.</p>
-        <p>
-        <!--
-        <span class="m-1 p-3 badge badge-pill badge-dark" v-for="(b, bi) in buzzwords" :key="bi"
-        data-toggle="tooltip" data-placement="top" :title="b.title" :data-content="b.text">{{ b.badge }}</span>
-        -->
-        <a href="#" v-for="(b, bi) in buzzwords" :key="bi" 
-        tabindex="0" class="badge badge-pill badge-dark  bg-nastojte m-1 p-3" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" 
-        :title="b.title" :data-content="b.text" v-on:click.prevent>{{ b.badge }}</a>
-        </p>
+        <buzzwords/>
 <h3>Odborné vzdělání</h3>
 <p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
@@ -116,15 +98,15 @@ ale vyžadují pouze menší množství času.</code-li>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
 <code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
 </ul>
-            <h2 id="contact">Jak mě kontaktovat</h2>
-            <ul class="list-unstyled">
-                <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
-                <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
-                <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
-                <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
-            </ul>
+<h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
+<ul class="list-unstyled">
+    <code-li>E-mail: <a :href="'mailto:'+mail">{{ mail }}</a></code-li>
+    <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
+    <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
+    <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
+</ul>
 
-            <h2 id="pricing">Co za to</h2> 
+<h2  class="mt-5" id="pricing">Co za to</h2> 
 
 <p>Moje aktuální hodinová sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
 ochotný poskytovat slevu z hodinové sazby.</p>
@@ -144,14 +126,9 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
     <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
         pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
             <h2  id="refs">Reference</h2>
-         
-            <div class="cards">
-                <div v-for="(d, di) in decks" :key="di" class="card-deck">
-                    <Card v-bind:card="c" v-for="(c, index) in cards.slice(di*3, di*3+3)" :key="index"/>
-                </div>
-            </div>
+            <references />
 
-            <h2>Přiznání autorství (CC Atributions)</h2>
+            <h2 class="mt-5">Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
                 <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
@@ -160,6 +137,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. 
                 Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
             </p>
+            <p>Autory fotek v tzv. <i>carouselu</i> v horní části stránky jsou: <template v-for="(a,i) in authors"><a :href="a.link" :key="`ra${i}`">{{ a.name }}</a>. </template>
             <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektu 
                 <a href="https://svgporn.com/" target="_blank">SVG Porn</a>.</p>
 
@@ -170,302 +148,48 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
 </template>
 
 <script>
-    import Card from './Card.vue';
     import CodeLi from './CodeLi.vue';
     import TechIcon from './TechIcon.vue';
+    import ReasonsCarousel from './ReasonsCarousel.vue';
+    import TechTable from './TechTable.vue';
+    import Buzzwords from './Buzzwords.vue';
+    import References from './References.vue'
     export default {
         name: 'AboutMe',
         components: {
-            Card,
             CodeLi,
-            TechIcon
+            TechIcon,
+            ReasonsCarousel,
+            TechTable,
+            Buzzwords,
+            References
         },
         data: function () {
             return {
                 mail: 'adam@nastojte.cz',
-                buzzwords: [
-                    { 
-                        badge: 'Microservices',
-                        title: 'Mikroslužby',
-                        text: 'Dekompozice složitých aplikací do jednoduchých nezávislých API.',
-                    }, { 
-                        badge: 'SOA',
-                        title: 'Service oriented architecture',
-                        text: 'Komponenty aplikace si navzájem poskytují služby skrze API a komunikují přes síť.',
-                    }, { 
-                        badge: 'JAMstack',
-                        title: 'Javascript, APIs, Markup stack',
-                        text: 'Frontent napsaný čistě v Javascriptu a hostovaný jako statická stránka (např. v AWS S3). S backendem komunikuje výhradně přes síť a API (REST, mikroslužby, SOA).',
-                    }, { 
-                        badge: 'Headless',
-                        title: 'Headless systems',
-                        text: 'Aplikační logika a funkce jsou poskytovány pouze přes API, ke kterému se připojují klienti (vytvoření pomocí JAMstack). Dokonalý loose coupling mezi frontendem a backendem.',
-                    }, { 
-                        badge: 'SPA',
-                        title: 'Single Page Applications',
-                        text: 'Moderní Javascriptové aplikace, kdy je obsah vytvářen v některém z moderních frameworků (React, Angular, Vue). Navigace v aplikaci probíhá pouze pomocí Javascriptu, nikoliv načítáním různých stránek ze serveru.',
-                    }, { 
-                        badge: 'REST',
-                        title: 'Representational State Transfer',
-                        text: 'Současný standard pro Webová API. Textový protokol využívající HTTP(S).',
-                    }, { 
-                        badge: 'noSQL',
-                        title: 'noSQL',
-                        text: 'Moderní databázové systémy, které vynikají výkonem a volnější strukturou ukládaných dat. Pro mnohé aplikace jsou vhodnější než tradiční relační DB.',
-                    }, { 
-                        badge: 'Responsiveness',
-                        title: 'Responzivní design',
-                        text: 'Design webu, který se přizpůsobuje připojenému klientu a vypadá dobře (a také dobře funguje) jak na 30" monitoru, tak na smartphone.',
-                    }, { 
-                        badge: 'Mobile-first',
-                        title: 'Mobile-first',
-                        text: 'Způsob návrhu webových aplikací, kdy je zdůrazňována a preferována správná funkce pro mobilní zařízení. Google ve výsledcích vyhledávání zvýhodňuje mobile-first stránky.',
-                    }, { 
-                        badge: 'Material design',
-                        title: 'Google Material design',
-                        text: 'Designový jazyk prosazovaný Googlem, který sjednocuje zobrazení a ovládání webových a mobilních aplikací. Byl navržen primárně pro systém Android a jeho použití na webu tedy umožňuje vývoj responzivních mobile-first aplikací.',
-                    }, { 
-                        badge: 'SaaS',
-                        title: 'Software as a Service',
-                        text: 'Software jako služba je model distribuce a licencování, kdy si uživatel nekupuje krabicovou licenci, ale platí předplatné a může využívat webové verze aplikací (např. Google Suite, Office 365). Jsem schopný takto poskytovat na zakázku vyrobené aplikace.',
-                    }, { 
-                        badge: 'PaaS',
-                        title: 'Platform as a Service',
-                        text: 'Platforma jako služba popisuje moderní cloudová řešení typu Amazon Web Services nebo Microsoft Azure. Vývojáři již nemusí řešit vlastní servery. A to jak fyzické, tak ani virtuální. Výkon je poskytovatelem dodáván podle potřeby, aplikace tedy skvěle škálují a jejich provoz nikoho nezruinuje. PaaS využívám pro běh vlastních aplikací.',
-                    }, { 
-                        badge: 'Serveless',
-                        title: 'Serverless deployment',
-                        text: 'Běh aplikace v cloudu bez dedikovaného serveru (např. v AWS Lambda, ECS, Dynamo DB, AppSync a další). V podstatě synomymum k PaaS, lépe řečeno PaaS umožňuje provoz serverless aplikací.',
-                    }, { 
-                        badge: 'Agile',
-                        title: 'Agilní vývoj software',
-                        text: 'Agilní metodiky jsou zaměřeny na rychlé dodání funkčního software zákazníkovi a úzkou spolupráci vývojáře s klientem, aby byl výsledek spolupráce co nejlepší. I když se neřídím žádnou ucelenou metodikou, inkrementální způsob vývoje s častými aktualizacemi a úpravami je mi blízký.',
-                    }, { 
-                        badge: 'CI/CD',
-                        title: 'Continuous Integration/Continuous Delivery',
-                        text: 'V podstatě jde o to, že když vývojář udělá Git Commit a Push, software se automaticky sestaví, otestuje, a pokud projde testy, i nasadí do produkce. Přiznám se, že v tomto zatím sbírám zkušenosti, ale nepochybně je to cesta, která je nyní už dobře použitelná a neuvěřitelně praktická.',
-                    },
-                ],
-                cards: [
-                {
-                    category: 'Volná noha',
-                    title: 'World Spider Trait Database',
-                    year: '2020',
-                    img: require('../assets/refs/spidertraits.png'),
-                    link: 'https://spidertraits.sci.muni.cz',
-                    repo: 'https://github.com/oookoook/spider-trait-database',
-                    description: 'Úložiště a vyhledávač vědeckých dat. Aplikace je napsaná čistě v JavaScriptu a jako databázi používá MariaDB/MySQL. Velkou částí práce je neveřejný editor vkládaných dat a kontrola jejich '
-                    + 'správnosti (ověřování oproti katalogu známých druhů, datové typy, apod.). Relativně Rozsáhlý projekt, který jsem kompletně navrhoval, vyvíjel '
-                    + '(frontend, backend, databáze, sychronizace dat) i nasazoval (napojení na OpenID autentizaci, zálohování, zprovoznění v OpenStack, optimalizace)', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, 'Node.js', 'Express', 'MariaDB', {name: 'Linux', cname: 'linux-tux'}, 'OpenStack']
-                },
-                {
-                    category: 'Volná noha',
-                    title: 'Axima Voltis Controller',
-                    year: '2020',
-                    img: require('../assets/code.png'),
-                    description: `Desktopová aplikace pro Windows sloužící k ovládání nabíječů firmy AXIMA. Pro komunikaci s nabíječi je používán protokol CAN. Aplikace je napsána
-                    v .NET Core 3.1 a WPF. Ovládání je optimalizováno pro použití s dotykovou obrazovkou.`, 
-                    technologies: [ { name: '.NET Framework', cname: 'dotnet'},  {name: 'Windows', cname: 'microsoft-windows' }]
-                },
-                {
-                    category: 'Volná noha',
-                    title: 'Mapa poštovních schránek',
-                    year: '2019',
-                    img: require('../assets/refs/schranky.png'),
-                    link: 'https://schranky.nastojte.cz',
-                    repo: 'https://github.com/oookoook/postboxes-frontend',
-                    description: 'Mapa poštovních schránek - služba zobrazující schránky na území ČR v mapě. Využívá datasetu zveřejňovaného Českou Poštou a API Mapy.cz.'
-                    + ' Služba běží v AWS (frontend S3+CloudFront, backend Lambda + ECS), pro ukládání dat je využívána noSQL databáze DynamoDB.', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'Docker', 'AWS DynamoDB']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Lighthouse Lambda API',
-                    year: '2020',
-                    img: require('../assets/code.png'),
-                    description: 'REST API které spouští nástroj pro testování výkonu webu Google Lighthouse a vrací výsledky jako JSON. API je nasazeno do WS pomocí nástroje CloudFormation.', 
-                    technologies: [ 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'AWS CloudFormation' ]
-                }, {
-                    category: 'Volná noha',
-                    title: 'Sun Orchard Freight App (USA)',
-                    year: '2019',
-                    img: require('../assets/refs/sunorchard.png'),
-                    description: 'Databázová aplikace pro interní potřeby účetní firmy, které pro výrobce džusů řeší distribuci výrobků. Aplikace běží v AWS (frontend S3 + CloudFront, backend Lambda), '
-                    + ' pro ukládání dat je využívána SQL databáze AWS Aurora, autentizace je řešena pomocí služby AWS Cognito.', 
-                    technologies: [ 'Vuetify.js', {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Node.js', 'Express', 'AWS', 'AWS Lambda', 'AWS RDS', 'AWS Cognito', 'AWS CloudFormation']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Parametrizovaný SSRS report',
-                    year: '2019',
-                    img: require('../assets/refs/ssrs.png'),
-                    description: 'Jednoduchá stránka v ASP.NET, která z internetu zpřístupňuje report definovaný Microsoft SQL Server Reporting Services a umožňuje volat ho s různými parametry.', 
-                    technologies: [ { name: '.NET Framework', cname: 'dotnet'} ]
-                }, {
-                    category: 'Volná noha',
-                    title: 'Rozšíření stávajícího IS o statistiky',
-                    year: '2019',
-                    img: require('../assets/refs/jjstats.png'),
-                    description: 'Rozšíření existujícího informačního systému o reporty se statistikami. IS používá Angular, Spring Boot, a MySQL.', 
-                    technologies: [ 'Angular', 'Java', 'Spring', 'MySQL' ]
-                }, {
-                    category: 'Volná noha',
-                    title: 'Nastojte.cz',
-                    year: '2019',
-                    img: require('../assets/refs/nastojte.png'),
-                    repo: 'https://github.com/oookoook/nastojte-cz',
-                    description: 'Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'AWS', {name: 'AWS Route 53', cname: 'aws-route53' }, 'AWS CloudFront', 'AWS S3']
-                }, {
-                    category: 'Volná noha',
-                    title: 'Formulář pro Excel VBA',
-                    year: '2020',
-                    img: require('../assets/refs/vba.png'),
-                    description: 'Formulář ve VBA, který na základě několika hodnot dopočítá a vyplní tabulku pro tisk štítku.', 
-                    technologies: [ 'Excel' ]
-                },  {
-                    category: 'Volná noha',
-                    title: 'AWS CloudFormation templates',
-                    year: '2019',
-                    img: require('../assets/refs/awscf.png'),
-                    repo: 'https://github.com/oookoook/cloud-formation-templates',
-                    description: 'Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.', 
-                    technologies: [ 'AWS', 'AWS CloudFormation' ]
-                }, {
-                    category: 'Microton',
-                    title: 'Joolca troubleshooting (AUS)',
-                    year: 2018,
-                    img: require('../assets/refs/joolca.png'),
-                    //link: '',
-                    description: 'Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu '
-                    + ' - odhalování typických potíží s prodávanými výrobky. Místo databáze byl na backendu použit ' 
-                    + ' Google Spreadsheet rozšířený o REST API, aby bylo možné snadno upravovat rozhodovací stromy.',
-                    technologies: ['Zendesk', 'jQuery', 'REST', { name: 'Google Apps Script', icon: 'googleappscript.png'}, 'Google GSuite']
-                }, {
-                    category: 'Microton',
-                    title: 'Dropair (USA)',
-                    year: '2017-2019',
-                    img: require('../assets/refs/dropair.png'),
-                    description: 'Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, '
-                    + ' vývoj nových crawlerů, scraperů a parserů.', 
-                    technologies: [{name: 'AngularJS', icon: 'angularjs.png' }, 'Java', 'Spring', 'Node.js', 'SOLR', 'MySQL', 'Hibernate', 'AWS', 'AWS EC2']
-                }, {
-                    category: 'Microton',
-                    title: 'Giftcard Checker (USA)',
-                    year: '2018',
-                    img: require('../assets/refs/gcchecker.png'),
-                    description: 'Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče,'
-                    + ' frontend je vytvořený jako plugin do Google Spreadsheet.', 
-                    technologies: [ 'Google GSuite', { name: 'Google Aps Script', icon: 'googleappscript.png'}, 'Node.js', 'Express', { name: 'Google Chrome', cname: 'chrome'}, 'REST',  'AWS', 'AWS EC2']
-                }, {
-                    category: 'Microton',
-                    title: 'Bookování letenek (USA)',
-                    year: '2018',
-                    img: require('../assets/refs/planes.png'),
-                    description: 'Plugin do Chrome, který sleduje nabídku letů na stránkách jednoho z dopravců. Prohlížeč běží ve VPS. Když se objeví nový let ze zadaných letišť,'
-                    + ' započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.', 
-                    technologies: ['Javascript', { name: 'Google Chrome', cname: 'chrome'} ]
-                }, /* {
-                    category: 'Volná noha',
-                    title: 'Maják',
-                    year: '2018',
-                    img: require('../assets/refs/majak.png'),
-                    repo: 'https://github.com/oookoook/majak',
-                    description: 'Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují '
-                    + ' hráči a plní úkoly. Raspberry zajišťuje funkce wiFi AP, DHCP, DNS a web serveru s Node.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, 'Webpack', 'Bootstrap', 'Node.js', 'Raspberry PI']
-                }, */ {
-                    category: 'Volná noha',
-                    title: 'Coffee to Home',
-                    year: '2014',
-                    img: require('../assets/refs/cth.png'),
-                    description: 'Jednoduchá landing page pro (tehdy) začínající předplatné kávových balíčků. Cílem bylo s co nejnižším množstvím vynaloženého času na vývoj '
-                        + 'umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin '
-                        + 'a umožnilo úspěšné fungování firmy v jejích začátcích.',
-                    technologies: [ 'Javascript', 'Bootstrap', 'PHP' ]
-                }, 
-                /*
-                {
-                    category: 'MU',
-                    title: 'CAFM',
-                    year: 'od 2013',
-                    img: require('../assets/refs/archibus.png'),
-                    description: 'Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.',
-                    link: 'https://ofm.ukb.muni.cz/?page_id=196',
-                    technologies: [{ name: 'Archibus', icon: 'archibus.png'}, { name: 'Apache Tomcat', cname:'tomcat' }, 'Javascript', 'Java', { name: 'Microsoft SQL Server', icon: 'mssql.png' }, 'Git']
-                },
-                */ 
-                {
-                    category: 'MU',
-                    title: 'BMS Sentinel',
-                    year: '2010',
-                    img: require('../assets/refs/bmssentinel.png'),
-                    about: 'https://is.muni.cz/th/i3416/',
-                    description: 'Dohledový systém pro automatizační protokol BACnet.',
-                    technologies: [ { name: '.NET Framework', cname: 'dotnet'}, {name: 'C#', cname: 'c-sharp'}, { name: 'BACnet', icon: 'bacnet.png' }]
-                }, {
-                    category: 'MU',
-                    title: 'Semantic BMS',
-                    year: '2017',
-                    img: require('../assets/refs/sbms.png'),
-                    about: 'https://is.muni.cz/th/umgby',
-                    repo: 'https://gitlab.fi.muni.cz/xkucer16/semanticBMS',
-                    description: 'Sémantický model pro data z inteligentních budov.',
-                    technologies: ['Java', 'REST', { name: 'Apache Jena', icon: 'jena.png' }, 'jQuery', { name: 'Apache Tomcat', cname:'tomcat' }, { name: 'Web Ontology Language', cname: 'owl' }]
-                }, {
-                    category: 'MU',
-                    title: 'EsserNet-BACnet Gateway',
-                    year: '2014',
-                    img: require('../assets/refs/esser.png'),
-                    about: 'https://safecontrol.cz/systemova-integrace',
-                    description: 'Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.',
-                    technologies: ['Java', { name: 'BACnet', icon: 'bacnet.png' }]
-                }, /* {
-                    category: 'Volná noha',
-                    title: 'Mapa cen stavebních pozemků',
-                    year: '2019',
-                    img: require('../assets/refs/reality.png'),
-                    link: 'https://reality.nastojte.cz',
-                    repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
-                    description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda' ]
-                }, */
-                ],
-                tools: [
-                    { category: 'Jazyky',
-                        like: [ 'Javascript', 'Java' ], know: [{name: 'C#', cname: 'c-sharp'}, 'C', 'Python'] },
-                    { category: 'Frontend',
-                        like: [ 'Vuetify.js', 'Bootstrap', {name: 'Vue.js', cname: 'vue' } ], know: [ {name: 'AngularJS', icon: 'angularjs.png' }, 'jQuery', 'Javascript', { name: '.NET Framework', cname: 'dotnet'} ] },
-                    { category: 'Backend',
-                        like: [ 'Node.js', 'Express', 'Spring' ], know: [ 'Java', { name: '.NET Framework', cname: 'dotnet'} ] },
-                    { category: 'Skriptování',
-                        like: [ 'Node.js', {name: 'PowerShell', icon: 'powershell.png' } ], know: [ 'Python', 'Bash' ] },
-                    { category: 'Databáze',
-                        like: [{ name: 'Microsoft SQL Server', icon: 'mssql.png' }, 'AWS DynamoDB' ], know: [ 'SOLR', 'MySQL' ] },
-                    /*
-                    { category: 'Komunikace a rozhraní',
-                        like: [ 'REST' ], know: [ { name: 'WCF', text: true, color: '#f00' }, 'SOAP' ] },
-                    */
-                   { category: 'OS, servery, platformy',
-                        like: [ {name: 'Windows', cname: 'microsoft-windows' }, 'AWS' ], know: [ {name: 'Linux', cname: 'linux-tux'}, 'OpenStack', 'Tomcat', 'Docker' ] },
-                    { category: 'Vývojová prostředí',
-                         like: [ 'Eclipse', { name: 'Visual Studio Code', cname: 'vscode' }, ], know: [ 'NetBeans', ] },
-                    { category: 'Správa kódu a závislostí',
-                         like: [ 'Webpack', { name: 'Maven', icon: 'maven.png' }, 'Git' ], know: [ 'Subversion' ] }
-                ]
+                authors: []
             }
-        },
-        computed: {
-            decks: function() { return new Array(Math.ceil(this.cards.length / 3)) },        
-        },
-        methods: {
         },
         created() {
         },
         mounted() {
             // must be here because of the router - this might get rendered after the app init when comming from other pages
+            /*
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
             $('.popover-dismiss').popover({trigger: 'focus'});
+            */
+           /* tooltip and popover are jquery plugins of Bootstrap - need to switch to vue-bootstrap
+           document.querySelectorAll('[data-toggle="tooltip"]').forEach(e => {
+                e.tooltip();
+           });
+           document.querySelectorAll('[data-toggle="popover"]').forEach(e => {
+               e.popover();
+           });
+           document.querySelectorAll('.popover-dismiss').forEach(e => {
+               e.popover({trigger: 'focus'});
+           });
+           */
         }
     }
 </script>
@@ -473,10 +197,6 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
 
 img.photo {
     width: 200px;
-}
-
-a.badge-pill {
-     outline: none;
 }
 
 </style>

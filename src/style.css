@@ -4,11 +4,15 @@
     background-color: #50023b !important;
 }
 
+.text-nastojte {
+    color: #FFD447 !important;
+}
+
 .title-nastojte {
     color: #FFD447 !important;
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .btn-nastojte {
@@ -18,6 +22,10 @@
 }
 
 a {
+    color:#FF8170;
+}
+
+a:hover {
     color:#FF8170;
 }
 

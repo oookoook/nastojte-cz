@@ -104,10 +104,12 @@ module.exports = {
       inject: true
     }),
     new SocialTags(config.social),
+    /*
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
     }),
+    */
     new RobotstxtPlugin(config.robots)
     ].concat(process.env.NODE_ENV === 'development' ? [] : 
     [new PrerenderSpaPlugin({

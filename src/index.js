@@ -1,10 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './style.css';
 import '../assets/favicon.ico';
 
 import 'bootstrap';
 
 import Vue from 'vue';
+import { BootstrapVue } from 'bootstrap-vue'
+
 import App from './App.vue';
 import AboutMe from './AboutMe.vue';
 //import AboutVonnegut from './AboutVonnegut.vue';
@@ -16,7 +19,8 @@ import VueRouter from 'vue-router';
 import VueGtag from "vue-gtag";
 
 
-
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue);
 Vue.use(VueResource);
 Vue.use(VueTimers);
 Vue.use(VueRouter);
@@ -38,7 +42,7 @@ const router = new VueRouter({
     if (to.hash) {
         //alert(to.hash);
         //return { x: 0, y: 0 };
-        return {selector: to.hash, offset : { x: 0, y: 50 }}
+        return {selector: to.hash, offset : { x: 0, y: 70 }}
     } else {
         return { x: 0, y: 0 }
     }
