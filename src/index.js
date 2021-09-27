@@ -3,7 +3,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './style.css';
 import '../assets/favicon.ico';
 
-import 'bootstrap';
+//import 'bootstrap';
 
 import Vue from 'vue';
 import { BootstrapVue } from 'bootstrap-vue'
