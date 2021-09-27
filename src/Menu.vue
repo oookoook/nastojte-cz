@@ -1,17 +1,17 @@
 <template>
-  <nav id="menu" class="navbar sticky-top navbar-dark navbar-expand-lg mb-3 bg-nastojte">
-    <a class="navbar-brand title-nastojte" href="#">
-        <img :src="ico" height="32px" class="d-inline-block align-top mr-2" alt="Logo">
-        {{ title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+  
+  <b-navbar id="menu" type="dark" toggleable="sm" sticky class="mb-3 bg-nastojte">
+    <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+    <b-navbar-brand class="title-nastojte" href="#"><img :src="ico" height="32px" class="d-inline-block align-top mr-2" alt="Logo">
+        {{ title }}
+    </b-navbar-brand>
+
+    <b-collapse id="nav-text-collapse" is-nav>
+    <b-navbar-nav>
         <slot></slot>
-    </ul>
-  </div>
-  </nav>
+    </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
