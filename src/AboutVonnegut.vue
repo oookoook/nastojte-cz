@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="content">
+  <b-container class="text-justify" id="content">
         <h1>Proč Nastojte.cz?</h1>
         
         <div class="d-flex flex-column flex-md-row mb-3">
@@ -44,7 +44,7 @@
         <p>Přiznám se, že ty výklady ve smyslu <em>běda</em> mě překvapily. Tak to samozřejmě myšleno není.</p>
         <p class="lead">Nastojte.cz si proto překládejte ve smyslu Hleďte.cz.</p>
         <p>Jestli chcete, můžete se teď podívat na to, <router-link to="/">čím se živím</router-link>.</p>
-  </div>
+  </b-container>
 </template>
 
 <script>

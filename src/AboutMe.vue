@@ -1,5 +1,5 @@
 <template>
-  <div class="container text-justify" id="content">
+  <b-container class="text-justify" id="content">
     <h1>Kdo jsem</h1>
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
@@ -144,7 +144,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
             <p>Nakonec, o názvu webu si víc můžete přečíst 
                 <router-link to="/vonnegut">tady</router-link>.</p>
 
-  </div>
+  </b-container>
 </template>
 
 <script>

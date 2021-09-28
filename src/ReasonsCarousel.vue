@@ -1,4 +1,5 @@
 <template>
+    <b-container class="m-0 p-0">
     <b-carousel
         dark
       id="carousel"
@@ -9,39 +10,46 @@
       background="#ababab"
       img-width="640"
       img-height="480"
-      style="text-shadow: 2px 2px 2px #50023b;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-    <b-carousel-slide v-for="(r,i) in reasons" :key="`r${i}`"
-        :xcaption="r.title"
-        :xtext="r.text"
+    <b-carousel-slide v-for="(r,i) in reasons" :key="`r${i}`" 
         :img-src="r.image"
       >
-      <h3 :style="{ color: '#FFD447'}">{{ r.title}}</h3>
-      <p><span :style="{ color: '#FFD447', /* background: '#50023b', padding: '5px 5px 5px 5px' */}">{{r.text}}</span></p>
+      <div :style="{ backdropFilter: 'blur(4px)', borderRadius: '35px', color: r.dark ? '#50023B' : '#FFD447', textShadow: `2px 2px 2px ${r.dark ? '#FFD447': '#50023b'}` }">
+      <h3>{{ r.title}}</h3>
+      <p class="d-none d-md-block"><span>{{r.text}}</span></p>
       <!-- <div :style="{ position: absolute, bottom: 40, right: 40 }">Fotka od <a :href="r.author.link">{{r.author.name}}</a></div> -->
-      </b-carousel-slide>
+        </div>
+    </b-carousel-slide>
     </b-carousel>
+    <ul class="list-unstyled d-block d-md-none">
+        <code-li v-for="(r,i) in reasons" :key="`r${i}`"><b>{{ r.title }}</b> &ndash; {{r.text}}</code-li>
+    </ul>
+    </b-container>
 </template>
 <script>
+import CodeLi from './CodeLi.vue'
+
 export default {
     name: 'ReasonsCarousel',
+    components: {CodeLi},
     props: { authors: Array},
     data() {
         return {
+            showDetail: false,
             slide: 0,
                 sliding: null,
                 reasons: [
                     { 
                         image: require('../assets/reasons/experience1.jpg'), author: {name: 'Mark Potterton', link: 'https://unsplash.com/@markpot123' }, 
-                        title: 'Mám přehled a zkušenosti', text: 'Znám všechny aspekty vývoje: od analýzy přes návrh včetně datového modelu přes implementaci až po dlouhodobý provoz systémů.'},
+                        title: 'Mám přehled a zkušenosti', dark: true, text: 'Znám všechny aspekty vývoje: od analýzy přes návrh včetně datového modelu přes implementaci až po dlouhodobý provoz systémů.'},
                     {
                         image: require('../assets/reasons/users1.jpg'), author: {name: 'Kaleidico', link: 'https://unsplash.com/@kaleidico' },
-                        title: 'Naslouchám uživatelům', text: 'Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. To samé platí ve chvíli, kdy její vývoj trvá příliš dlouho. Dokonalý produkt doručený ve chvíli, kdy už není potřeba, je stejně špatný jako nepohodlná a chybami zamořená aplikace, která se navíc nedá udržovat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu. Tyto věci musí být v rovnováze.'},
+                        title: 'Naslouchám uživatelům', text: 'Aplikaci, která je pro uživatele nepřehledná nebo nepohodlná, nebudou používat. Požadavky uživatelů a maximální užitek pro ně je pro mě stejně důležitý jako kvalita návrhu a samotného kódu.'},
                     {
                         image: require('../assets/reasons/steering1.jpg'), author: {name: 'OC Gonzalez', link: 'https://unsplash.com/@ocvisual' },
-                        title: 'Dodávám kompletní řešení', text: 'Chápu, že dodávka automaticky musí obsahovat i věci, které nejsou explicitně zmíněny v zadání. Můj bývalý šéf říkal, že když si jde koupit auto, také nemusí říkat, že má mít volant.'},
+                        title: 'Dodávám kompletní řešení', dark: false, text: 'Chápu, že dodávka automaticky musí obsahovat i věci, které nejsou explicitně zmíněny v zadání. Můj bývalý šéf říkal, že když si jde koupit auto, také nemusí říkat, že má mít volant.'},
                     { 
                         image: require('../assets/reasons/wheel1.jpg'), author: {name: 'Colter Olmstead', link: 'https://unsplash.com/@colterolmstead' },
                         title: 'Nevynalézám kolo', text: 'Věřím, že je důležité do nejvyšší možné míry používat již existující projekty. Tím šetřím vaše peníze.'},
@@ -53,7 +61,7 @@ export default {
                         title: 'Umím říct ne', text: 'Umím odmítnout projekt. Spolupráce musí být výhodná pro obě strany a ne vždy je pro klienta zakázkový vývoj to nejlepší řešení. Když není nutný, směruji klienty k vhodnému krabicovému řešení, které bývá levnější. Také se nepouštím do projektů, na které nemám odbornost.'},
                     { 
                         image: require('../assets/reasons/hammer1.jpg'), author: {name: 'Jozsef Hocza', link: 'https://unsplash.com/@hocza' },
-                        title: 'Nemám jen jedno kladívko', text: 'Znám široké spektrum dostupných platforem, jazyků a nástrojů. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.'},
+                        title: 'Nemám jen jedno kladívko', dark: true, text: 'Znám široké spektrum dostupných platforem, jazyků a nástrojů. Cílem je nalézt nástroj, který je nejvhodnější na řešení daného problému, ne snažit se za každou cenu přizpůsobit problém známé technologii.'},
                     {
                         image: require('../assets/reasons/problems1.jpg'), author: {name: 'Sebastian Herrmann', link: 'https://unsplash.com/@officestock' },
                         title: 'Nevytvářím nové problémy', text: 'Snažím se řešit existující problémy, ne vytvářet nové. Jsem přizpůsobivý. Pokud je to aspoň trochu možné, respektuji váš výběr technologií. Pokud chcete napsat plugin do vašeho hepldesk software, nebudu vás převědčovat, že ho máte změnit, protože se v něm pluginy píší příliš složitě.'},
@@ -69,6 +77,9 @@ export default {
         }
     },
     methods: {
+            toggleOverlay(isHovered) {
+                this.showDetail = isHovered;
+            },
             onSlideStart(slide) {
                 this.sliding = true
             },
