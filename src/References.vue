@@ -121,6 +121,19 @@ export default {
         },
         {
           category: "Volná noha",
+          title: "eVe Label UI",
+          //link: 'https://www.evecobrno.cz/vyzkum-vyvoj/mpo-evelabel',
+          year: "2020",
+          img: require("../assets/refs/evelabel.png"),
+          description: `Přepsání existujícího frontendu aplikace do Material Designu s pomocí frameworku Vuetify.js. Aplikace funguje jednak jako webová, jednak jako mobilní pro Andorid i iOS s použitím frameworku Cordova.`,
+          technologies: [
+            "Vuetify.js",
+            { name: "Vue.js", cname: "vue" },
+            "Cordova"
+          ],
+        },
+        {
+          category: "Volná noha",
           title: "Lighthouse Lambda API",
           year: "2020",
           img: require("../assets/code.png"),
@@ -308,6 +321,7 @@ export default {
             "a umožnilo úspěšné fungování firmy v jejích začátcích.",
           technologies: ["Javascript", "Bootstrap", "PHP"],
         },
+        /*
         {
           category: "MU",
           title: "CAFM",
@@ -324,7 +338,7 @@ export default {
             { name: "Microsoft SQL Server", cname: "mssql" },
             "Git",
           ],
-        },
+        },*/
         {
           category: "MU",
           title: "BMS Sentinel",
