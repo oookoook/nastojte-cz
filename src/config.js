@@ -16,7 +16,7 @@ module.exports = {
     title,
     lang,
     meta: {
-        viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
         author,
         description,
         keywords,

@@ -5,9 +5,9 @@
         <div class="d-flex flex-column flex-md-row mb-3">
             <div>
             Říkal jsem si, že když už jsem si vybral tuto doménu, měl bych vysvětlit, kde jsem k názvu přišel. Vězte, že jsem toto slovo potkal v knížkách 
-        amerického spisovatele <a href="https://cs.wikipedia.org/wiki/Kurt_Vonnegut" target="_blank">Kurta Vonneguta</a>. Vpravo (nebo dole, pokud koukáte z mobilu) 
+        amerického spisovatele <a href="https://cs.wikipedia.org/wiki/Kurt_Vonnegut" rel="noopener" target="_blank">Kurta Vonneguta</a>. Vpravo (nebo dole, pokud koukáte z mobilu) 
         můžete vidět jeho autoportrét.
-        Do češtiny jeho dílo překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" target="_blank">Jaroslav Kořán</a> (a později George Popel).
+        Do češtiny jeho dílo překládal <a href="https://cs.wikipedia.org/wiki/Jaroslav_Ko%C5%99%C3%A1n" rel="noopener" target="_blank">Jaroslav Kořán</a> (a později George Popel).
         Jeho knížky rozhodně doporučuji k přečtení, ale ve které přesně bylo to předmětné <em>Nastojte</em>, to už nevím. Nejspíš <em>Kolíbka</em> nebo <em>Jatka č. 5</em>. 
                 <div class="media mt-4">
                     <img src="../assets/asshole.png" id="logo" class="align-self-center mr-5" alt="Logo stránek"/>
@@ -25,7 +25,7 @@
         To mi potvrzuje i příspěvek na jednom fóru:</p>
         <blockquote class="blockquote jumbotron">
             <p class="mb-0">Znamená to "pohleďte/poslyšte (a divte se se mnou)!" - výraz, kterým se uvádí něco šokujícího, překvapivého, kterým se upoutává pozornost.</p>
-            <footer class="blockquote-footer">Neznámá Jana337 na <a href="https://forum.wordreference.com/threads/nastojte.565006/" target="_blank"><cite title="WordReference.com">WordReference.com</cite></a></footer>
+            <footer class="blockquote-footer">Neznámá Jana337 na <a href="https://forum.wordreference.com/threads/nastojte.565006/" rel="noopener" target="_blank"><cite title="WordReference.com">WordReference.com</cite></a></footer>
         </blockquote>
         <p>Nicméně jiné zdroje uvádí trochu jiný význam:</p>
         <blockquote class="blockquote jumbotron">
@@ -37,9 +37,9 @@
                 povinnost úpění uposlechnouti a, komu se ubližovalo, přispěti. V zemích českých trvala ta povinnost pouze 
                 do konce XII. stol. Bylať zrušena § 25. práv Konrádových, dle něhož bylo dobrou vůlí každého jednotlivce, 
                 chtěl-li pokřiku »nastojte« uposlechnouti.</p>
-                <footer class="blockquote-footer">Heslo v <a href="https://cs.wikisource.org/wiki/Ott%C5%AFv_slovn%C3%ADk_nau%C4%8Dn%C3%BD/Nastojte" target="_blank"><cite title="Ottův slovník naučný">Ottově slovníku naučném</cite></a></footer>
+                <footer class="blockquote-footer">Heslo v <a href="https://cs.wikisource.org/wiki/Ott%C5%AFv_slovn%C3%ADk_nau%C4%8Dn%C3%BD/Nastojte" rel="noopener" target="_blank"><cite title="Ottův slovník naučný">Ottově slovníku naučném</cite></a></footer>
         </blockquote>
-        <p><a href="https://vokabular.ujc.cas.cz/hledani.aspx?hw=nastojte">Vokabulář Ústavu pro jazyk český Akademie věd České republiky</a> nabízí hned několik významů,
+        <p><a href="https://vokabular.ujc.cas.cz/hledani.aspx?hw=nastojte" rel="noopener" target="_blank">Vokabulář Ústavu pro jazyk český Akademie věd České republiky</a> nabízí hned několik významů,
         které toto slovo má, včechny zhruba ve smyslu <em>pomoc!</em>, <em>běda!</em>, <em>ach!</em>.</p>
         <p>Přiznám se, že ty výklady ve smyslu <em>běda</em> mě překvapily. Tak to samozřejmě myšleno není.</p>
         <p class="lead">Nastojte.cz si proto překládejte ve smyslu Hleďte.cz.</p>

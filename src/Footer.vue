@@ -51,10 +51,10 @@
 				<div class="footer-icons">
 
 					<!--<a href="https://navolnenoze.cz/prezentace/adam-kucera/"><i class="ico-navolnenoze"></i></a>-->
-                    <a href="https://m.me/oookoook" target="_blank"><b-icon-facebook /></a>
+                    <a href="https://m.me/oookoook" rel="noopener" target="_blank"><b-icon-facebook /></a>
 					<!--<a href="https://medium.com/@akucera"><i class="ico-medium"></i></a>-->
-                    <a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" target="_blank"><!--<i class="fa fa-linkedin"></i>--><b-icon-linkedin /></a>
-					<a href="https://github.com/oookoook" target="_blank"><b-icon-github /></a>
+                    <a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank"><!--<i class="fa fa-linkedin"></i>--><b-icon-linkedin /></a>
+					<a href="https://github.com/oookoook" rel="noopener" target="_blank"><b-icon-github /></a>
 
 				</div>
 

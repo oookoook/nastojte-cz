@@ -12,11 +12,11 @@
     <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku 2008.</p>
 
                 Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
-                <p>Zároveň působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" target="_blank">Masarykově univerzitě</a>
+                <p>Zároveň působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykově univerzitě</a>
                 jako vývojář a systémový administrátor zaměřený na oblast Facility managementu a inteligentní budovy. Zároveň
-                Díky spolupráci s firmou <a href="http://www.microton.cz/" target="_blank">Microton</a> jsem
+                Díky spolupráci s firmou <a href="http://www.microton.cz/" rel="noopener" target="_blank">Microton</a> jsem
                 se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy 
-                <a href="https://www.upwork.com/fl/adamkucera3" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3" target="_blank">můj profil</a> 
+                <a href="https://www.upwork.com/" rel="noopener" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3"  rel="noopener" target="_blank">můj profil</a> 
                 je viditlený pouze pro příhlášené uživatele).</p>
   </div>
   <p class="mb-3 ml-md-3 w-50">
@@ -83,8 +83,8 @@ ale vyžadují pouze menší množství času.</code-li>
         <h3 id="repos">Jak vypadá můj kód</h3>
             <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
             <ul>
-                <code-li><a href="https://github.com/oookoook?tab=repositories">GitHub</a></code-li>
-                <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS">GitLab @ FI MU</a></code-li>
+                <code-li><a href="https://github.com/oookoook?tab=repositories" rel="noopener" target="_blank">GitHub</a></code-li>
+                <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS" rel="noopener" target="_blank">GitLab @ FI MU</a></code-li>
             </ul>
 
  <h3>Bzukot</h3>
@@ -92,7 +92,7 @@ ale vyžadují pouze menší množství času.</code-li>
         zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.</p>
         <buzzwords/>
 <h3>Odborné vzdělání</h3>
-<p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
+<p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/"  rel="noopener" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
 <code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
@@ -101,7 +101,7 @@ ale vyžadují pouze menší množství času.</code-li>
 <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
 <ul class="list-unstyled">
     <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank"></a></code-li>
-    <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/">Profil na LinkedIn</a></code-li>
+    <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
     <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
     <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
 </ul>
@@ -116,30 +116,32 @@ ochotný poskytovat slevu z hodinové sazby.</p>
 tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.</p>
 
 <p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:
+    <ul class="list-unstyled">
     <code-li>Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.</code-li>
     <code-li>Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. 
         Toto jsou náklady, které musím pokrýt ze své hodinové sazby. Mnohem podrobněji je tato argumentace rozvinuta v 
-        <a href="https://www.superlectures.com/barcampbrno2017/nenechte-se-sebou-vydrbavat-kolik-doopravdy-stoji-hodina-prace-freelancera">přednášce</a> 
-        Petra "Jezevce" Pouchlého z <a href="https://www.linkedin.com/company/court-of-moravia/">Court of Moravia</a>.</code-li>
+        <a href="https://www.superlectures.com/barcampbrno2017/nenechte-se-sebou-vydrbavat-kolik-doopravdy-stoji-hodina-prace-freelancera" rel="noopener" target="_blank">přednášce</a> 
+        Petra "Jezevce" Pouchlého z <a href="https://www.linkedin.com/company/court-of-moravia/" rel="noopener" target="_blank">Court of Moravia</a>.</code-li>
     <code-li>Již ve chvíli, kdy se na práci dohodneme, jsem na Vašem projektu určitý čas strávil &ndash; psaním nabídky, naceňováním, zkoumáním specifických technologií, které používáte.</code-li>
     <code-li>Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.</code-li>
     <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
         pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
-            <h2  id="refs">Reference</h2>
+    </ul>
+    <h2  id="refs">Reference</h2>
             <references />
 
             <h2 class="mt-5">Přiznání autorství (CC Atributions)</h2>
             <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
                 z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
                 <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
-                title="Dave Gandy">Dave Gandy</a> a publikoval jej na portále <a href="https://www.flaticon.com/" 
-                title="Flaticon">www.flaticon.com</a> a licencoval jako <a href="https://creativecommons.org/licenses/by/3.0/" 
-                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. 
-                Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+                title="Dave Gandy"  target="_blank" rel="noopener">Dave Gandy</a> a publikoval jej na portále <a href="https://www.flaticon.com/" 
+                title="Flaticon" rel="noopener" target="_blank">www.flaticon.com</a> a licencoval jako <a href="https://creativecommons.org/licenses/by/3.0/" 
+                title="Creative Commons BY 3.0" rel="noopener" target="_blank">CC 3.0 BY</a>. 
+                Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>.
             </p>
             <p>Autory fotek v tzv. <i>carouselu</i> v horní části stránky jsou: <template v-for="(a,i) in authors"><a :href="a.link" :key="`ra${i}`">{{ a.name }}</a>. </template>
             <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektů 
-                <a href="https://svgporn.com/" target="_blank">SVG Porn</a> nebo z <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>.</p>
+                <a href="https://svgporn.com/" target="_blank" rel="noopener">SVG Porn</a> nebo z <a href="https://www.svgrepo.com/" target="_blank" rel="noopener">SVG Repo</a>.</p>
 
             <p>Nakonec, o názvu webu si víc můžete přečíst 
                 <router-link to="/vonnegut">tady</router-link>.</p>
