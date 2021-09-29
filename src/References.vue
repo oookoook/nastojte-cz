@@ -1,4 +1,5 @@
 <template>
+  <!--
   <div class="cards">
     <div v-for="(d, di) in decks" :key="di" class="card-deck">
       <Card
@@ -7,7 +8,28 @@
         :key="index"
       />
     </div>
-  </div>
+    -->
+  <b-container class="p-0 m-0">
+    
+    
+    <b-row>
+      <b-col sm="12" md="6" lg="4" class="d-flex align-items-stretch" v-for="(c, index) in cards" :key="index">
+        <Card
+        :card="c"
+      />
+      </b-col>
+    </b-row>
+    
+    <!--
+    <b-card-group deck>
+    <Card
+        v-bind:card="c"
+        v-for="(c, index) in cards"
+        :key="index"
+      />
+    </b-card-group>
+    -->
+  </b-container>
 </template>
 <script>
 import TechIcon from "./TechIcon.vue";

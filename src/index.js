@@ -8,7 +8,8 @@ import '../assets/favicon.ico';
 import Vue from 'vue';
 //import { BootstrapVue } from 'bootstrap-vue'
 
-import { ButtonPlugin, LayoutPlugin, CarouselPlugin, NavbarPlugin, DropdownPlugin, BadgePlugin, PopoverPlugin, TooltipPlugin } from 'bootstrap-vue'
+import { ButtonPlugin, LayoutPlugin, CarouselPlugin, NavbarPlugin, 
+  DropdownPlugin, BadgePlugin, PopoverPlugin, TooltipPlugin, CardPlugin, ImagePlugin } from 'bootstrap-vue'
 
 
 import App from './App.vue';
@@ -32,6 +33,8 @@ Vue.use(DropdownPlugin);
 Vue.use(BadgePlugin);
 Vue.use(PopoverPlugin);
 Vue.use(TooltipPlugin);
+Vue.use(CardPlugin);
+Vue.use(ImagePlugin);
 
 Vue.use(VueResource);
 //Vue.use(VueTimers);

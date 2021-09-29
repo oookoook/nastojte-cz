@@ -10,6 +10,8 @@ const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 //const RobotstxtPlugin = require("robotstxt-webpack-plugin");
+const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const config = require('./src/config.js');
@@ -117,6 +119,7 @@ module.exports = {
       { from: 'src/robots.txt', to: 'robots.txt' },
       { from: 'assets/favicon.png', to: 'favicon.png' }
     ]}),
+    new ImageminWebpWebpackPlugin()
   ].concat((process.env.BUNDLE_REPORT==1) ? new BundleAnalyzerPlugin() : [])
   .concat(process.env.NODE_ENV === 'development' ? [] : 
     [new PrerenderSpaPlugin({
