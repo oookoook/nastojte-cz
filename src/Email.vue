@@ -10,7 +10,7 @@ export default {
             'encodeEverything': true
             });
             */
-           return 'obfuscated@dev.null';
+           return '&#x61;&#x64;&#x61;&#x6D;&#x40;&#x6E;&#x61;&#x73;&#x74;&#x6F;&#x6A;&#x74;&#x65;&#x2E;&#x63;&#x7A;';
         }
     },
     methods: {

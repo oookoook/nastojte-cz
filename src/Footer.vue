@@ -23,17 +23,17 @@
 			<div class="footer-center">
 
 				<div>
-					<i class="fa fa-map-marker"></i>
+					<b-icon-geo-alt-fill class="nastojte-i" />
 					<p><span>Voříškova 45</span> 623 00 Brno</p>
 				</div>
 
 				<div>
-					<i class="fa fa-phone"></i>
+					<b-icon-telephone-fill class="nastojte-i"/>
 					<a href="tel:+420775397795">+420 775 397 795</a>
 				</div>
 
 				<div>
-					<i class="fa fa-envelope"></i>
+					<b-icon-envelope-fill class="nastojte-i nastojte-envelope"/>
 					<p><a :href="`mailto:${email}`" @click="decode" target="_blank" v-html="email"></a></p>
 				</div>
 
@@ -51,10 +51,10 @@
 				<div class="footer-icons">
 
 					<!--<a href="https://navolnenoze.cz/prezentace/adam-kucera/"><i class="ico-navolnenoze"></i></a>-->
-                    <a href="https://m.me/oookoook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://m.me/oookoook" target="_blank"><b-icon-facebook /></a>
 					<!--<a href="https://medium.com/@akucera"><i class="ico-medium"></i></a>-->
-                    <a href="https://www.linkedin.com/in/adam-kucera-sw-dev/"><i class="fa fa-linkedin"></i></a>
-					<a href="https://github.com/oookoook"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" target="_blank"><!--<i class="fa fa-linkedin"></i>--><b-icon-linkedin /></a>
+					<a href="https://github.com/oookoook" target="_blank"><b-icon-github /></a>
 
 				</div>
 
@@ -65,11 +65,21 @@
 <script>
 
 import Email from './Email.vue';
+import { BIconLinkedin, BIconFacebook, BIconGithub, BIconGeoAltFill, BIconTelephoneFill, BIconEnvelopeFill } from 'bootstrap-vue'
 
 export default {
     name: "Footer",
     mixins: [Email],
-    props: { title: String, ico: String }
+    props: { title: String, ico: String },
+	components: {
+		//BIcon,
+		BIconLinkedin,
+		BIconFacebook, 
+		BIconGithub, 
+		BIconGeoAltFill, 
+		BIconTelephoneFill, 
+		BIconEnvelopeFill
+	}
 }
 </script>
 <style scoped>
@@ -137,13 +147,13 @@ export default {
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-center .nastojte-i{
 	/* background-color:  #33383b;
 	color: #ffffff;*/
     color: #FFD447;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
+	/* font-size: 25px; */
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	text-align: center;
 	line-height: 42px;
@@ -151,7 +161,7 @@ export default {
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center .nastojte-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
