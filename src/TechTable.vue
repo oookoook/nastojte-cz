@@ -35,9 +35,9 @@ export default {
                     { category: 'Backend',
                         like: [ 'Node.js', 'Express', 'Spring' ], know: [ 'Java', { name: '.NET Framework', cname: 'dotnet'} ] },
                     { category: 'Skriptování',
-                        like: [ 'Node.js', {name: 'PowerShell', icon: 'powershell.png' } ], know: [ 'Python', 'Bash' ] },
+                        like: [ 'Node.js', {name: 'PowerShell' } ], know: [ 'Python', 'Bash' ] },
                     { category: 'Databáze',
-                        like: [{ name: 'Microsoft SQL Server', icon: 'mssql.png' }, 'AWS DynamoDB' ], know: [ 'SOLR', 'MySQL' ] },
+                        like: [{ name: 'Microsoft SQL Server', cname: 'mssql' }, 'AWS DynamoDB' ], know: [ 'SOLR', 'MySQL' ] },
                     { category: 'Komunikace a rozhraní',
                         like: [ 'REST', 'GraphQL' ], know: [ { name: 'WCF', text: true, color: '#f00' }, { name: 'SOAP', text: true } ] },
                     { category: 'OS, servery, platformy',
@@ -45,7 +45,7 @@ export default {
                     { category: 'Vývojová prostředí',
                          like: [ 'Eclipse', { name: 'Visual Studio Code', cname: 'vscode' }, ], know: [ 'NetBeans', ] },
                     { category: 'Správa kódu a závislostí',
-                         like: [ 'Webpack', { name: 'Maven', icon: 'maven.png' }, 'Git' ], know: [ 'Subversion' ] }
+                         like: [ 'Webpack', { name: 'Maven' }, 'Git' ], know: [ 'Subversion' ] }
                 ]
     };
   },

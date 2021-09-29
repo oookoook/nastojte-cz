@@ -20,7 +20,7 @@
                 je viditlený pouze pro příhlášené uživatele).</p>
   </div>
   <p class="mb-3 ml-md-3 w-50">
-        <img src="../assets/photo.jpg" class="img-fluid" alt="My face">
+        <b-img :src="photo" :srcset="[`${photo.replace(/jpe?g|png/, 'webp')} 200w`, `${photo} 200w`]" class="img-fluid" alt="My face" />
     </p>
 </div>
 <!--
@@ -138,8 +138,8 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
                 Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
             </p>
             <p>Autory fotek v tzv. <i>carouselu</i> v horní části stránky jsou: <template v-for="(a,i) in authors"><a :href="a.link" :key="`ra${i}`">{{ a.name }}</a>. </template>
-            <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektu 
-                <a href="https://svgporn.com/" target="_blank">SVG Porn</a>.</p>
+            <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektů 
+                <a href="https://svgporn.com/" target="_blank">SVG Porn</a> nebo z <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>.</p>
 
             <p>Nakonec, o názvu webu si víc můžete přečíst 
                 <router-link to="/vonnegut">tady</router-link>.</p>
@@ -168,7 +168,8 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
         mixins: [Email],
         data: function () {
             return {
-                authors: []
+                authors: [],
+                photo: require('../assets/photo.jpg')
             }
         },
         created() {

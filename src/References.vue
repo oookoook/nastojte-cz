@@ -224,7 +224,7 @@ export default {
             "Zendesk",
             "jQuery",
             "REST",
-            { name: "Google Apps Script", icon: "googleappscript.png" },
+            { name: "Google Apps Script" },
             "Google GSuite",
           ],
         },

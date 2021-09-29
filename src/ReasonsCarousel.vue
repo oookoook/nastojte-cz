@@ -8,14 +8,13 @@
       indicators
       :interval="7000"
       background="#ababab"
-      img-width="640"
-      img-height="480"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-    <b-carousel-slide v-for="(r,i) in reasons" :key="`r${i}`" 
-        :img-src="r.image"
-      >
+    <b-carousel-slide v-for="(r,i) in reasons" :key="`r${i}`" >
+      <template #img>
+          <b-img :src="r.image" :srcset="[`${r.image.replace(/jpe?g|png/, 'webp')} 640w`, `${r.image} 640w`]" width="640" height="480" class="img-fluid w-100 d-block" />
+      </template>
       <div :style="{ backdropFilter: 'blur(4px)', borderRadius: '35px', color: r.dark ? '#50023B' : '#FFD447', textShadow: `2px 2px 2px ${r.dark ? '#FFD447': '#50023b'}` }">
       <h3>{{ r.title}}</h3>
       <p class="d-none d-md-block"><span>{{r.text}}</span></p>
