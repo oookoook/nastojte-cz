@@ -3,7 +3,7 @@
     <page-menu :title="title" :ico="icon">
       <b-nav-item-dropdown text="O mně">
         <b-dropdown-item to="/"><b>Kdo jsem</b></b-dropdown-item>
-        <b-dropdown-item to="/#why"><b>Výhody</b> • Proč si vybrat mě</b-dropdown-item>
+        <b-dropdown-item to="/#why"><b>Mé zásady</b> • Proč si vybrat mě</b-dropdown-item>
         <b-dropdown-item to="/#what"><b>Služby</b> • Co nabízím</b-dropdown-item>
         <b-dropdown-item to="/#tools"><b>Schopnosti</b> • Co umím</b-dropdown-item>
         <b-dropdown-item to="/#contact"><b>Kontakt</b> • Jak mě oslovit</b-dropdown-item>

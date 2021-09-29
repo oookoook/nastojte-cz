@@ -6,9 +6,11 @@ const webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
-const SocialTags = require('social-tags-webpack-plugin');
+//const SocialTags = require('social-tags-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
-const RobotstxtPlugin = require("robotstxt-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const RobotstxtPlugin = require("robotstxt-webpack-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const config = require('./src/config.js');
 
@@ -16,7 +18,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -26,7 +28,7 @@ module.exports = {
       poll: true
     }
     */
-    contentBase: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'dist'),
     
   },
   module: {
@@ -103,15 +105,20 @@ module.exports = {
       meta: config.meta,
       inject: true
     }),
-    new SocialTags(config.social),
+    //new SocialTags(config.social),
     /*
     new webpack.ProvidePlugin({
       $: "jquery", 
       jQuery: "jquery"
     }),
     */
-    new RobotstxtPlugin(config.robots)
-    ].concat(process.env.NODE_ENV === 'development' ? [] : 
+    //new RobotstxtPlugin(config.robots),
+    new CopyWebpackPlugin({ patterns: [
+      { from: 'src/robots.txt', to: 'robots.txt' },
+      { from: 'assets/favicon.png', to: 'favicon.png' }
+    ]}),
+  ].concat((process.env.BUNDLE_REPORT==1) ? new BundleAnalyzerPlugin() : [])
+  .concat(process.env.NODE_ENV === 'development' ? [] : 
     [new PrerenderSpaPlugin({
       // Path to compiled app
       staticDir: path.join(__dirname, 'dist'),

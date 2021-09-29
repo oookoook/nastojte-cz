@@ -6,7 +6,10 @@ import '../assets/favicon.ico';
 //import 'bootstrap';
 
 import Vue from 'vue';
-import { BootstrapVue } from 'bootstrap-vue'
+//import { BootstrapVue } from 'bootstrap-vue'
+
+import { ButtonPlugin, LayoutPlugin, CarouselPlugin, NavbarPlugin, DropdownPlugin, BadgePlugin, PopoverPlugin, TooltipPlugin } from 'bootstrap-vue'
+
 
 import App from './App.vue';
 import AboutMe from './AboutMe.vue';
@@ -14,15 +17,24 @@ import AboutMe from './AboutMe.vue';
 //import Article from './Article.vue';
 
 import VueResource from 'vue-resource';
-import VueTimers from 'vue-timers';
+//import VueTimers from 'vue-timers';
 import VueRouter from 'vue-router'; 
 import VueGtag from "vue-gtag";
 
 
 // Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue);
+//Vue.use(BootstrapVue);
+Vue.use(ButtonPlugin);
+Vue.use(LayoutPlugin); 
+Vue.use(CarouselPlugin);
+Vue.use(NavbarPlugin);
+Vue.use(DropdownPlugin);
+Vue.use(BadgePlugin);
+Vue.use(PopoverPlugin);
+Vue.use(TooltipPlugin);
+
 Vue.use(VueResource);
-Vue.use(VueTimers);
+//Vue.use(VueTimers);
 Vue.use(VueRouter);
 
 

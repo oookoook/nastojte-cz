@@ -10,7 +10,7 @@
 					·
 					<a href="/#what">Služby</a>
 					·
-					<a href="/#tools">Schopnosti</a>
+					<a href="/#tools">Mé zásady</a>
 					·
 					<a href="/#pricing">Ceník</a>
 					·
