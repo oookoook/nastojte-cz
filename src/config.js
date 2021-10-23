@@ -34,6 +34,7 @@ module.exports = {
         'twitter:description': description,
         'twitter:image': 'favicon.png'
     },
+    /*
     social: {
         appUrl: url,
         facebook: {
@@ -54,6 +55,8 @@ module.exports = {
             'twitter:image': './assets/favicon.png'
         },
     },
+    */
+    /*
     robots: {
         policy: [{
             userAgent: "*",
@@ -61,4 +64,5 @@ module.exports = {
         }],
         host: 'https://nastojte.cz'
     }
+    */
 }

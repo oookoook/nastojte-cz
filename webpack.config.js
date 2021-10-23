@@ -6,10 +6,8 @@ const webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
-//const SocialTags = require('social-tags-webpack-plugin');
 const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-//const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
@@ -19,6 +17,7 @@ const config = require('./src/config.js');
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
+  //devtool: 'source-map', // bundle is too big
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
@@ -86,12 +85,14 @@ module.exports = {
           options: { name: '[name].[ext]' }
         }
       },
+      /*
       {
         test: /robots\.ico$/, use: {
           loader: 'file-loader',
           options: { name: '[name].[ext]' }
         }
       }
+      */
     ]
   },
   plugins: [
@@ -107,14 +108,6 @@ module.exports = {
       meta: config.meta,
       inject: true
     }),
-    //new SocialTags(config.social),
-    /*
-    new webpack.ProvidePlugin({
-      $: "jquery", 
-      jQuery: "jquery"
-    }),
-    */
-    //new RobotstxtPlugin(config.robots),
     new CopyWebpackPlugin({ patterns: [
       { from: 'src/robots.txt', to: 'robots.txt' },
       { from: 'assets/favicon.png', to: 'favicon.png' }

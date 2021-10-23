@@ -41,7 +41,7 @@ export default {
                 sliding: null,
                 reasons: [
                     { 
-                        image: require('../assets/reasons/experience1.jpg'), author: {name: 'Mark Potterton', link: 'https://unsplash.com/@markpot123' }, 
+                        image: require('../assets/reasons/experience1_sm.jpg'), author: {name: 'Mark Potterton', link: 'https://unsplash.com/@markpot123' }, 
                         title: 'Mám přehled a zkušenosti', dark: true, text: 'Znám všechny aspekty vývoje: od analýzy přes návrh včetně datového modelu přes implementaci až po dlouhodobý provoz systémů.'},
                     {
                         image: require('../assets/reasons/users1.jpg'), author: {name: 'Kaleidico', link: 'https://unsplash.com/@kaleidico' },
