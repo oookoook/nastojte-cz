@@ -30,15 +30,15 @@
 <script>
 import CodeLi from './CodeLi.vue'
 import experience from '../assets/reasons/experience1.jpg?srcset'
-import users from '../assets/reasons/users1.jpg'
-import steering from '../assets/reasons/steering1.jpg'
-import wheel from '../assets/reasons/wheel1.jpg'
-import learning from '../assets/reasons/learning1.jpg'
-import reject from '../assets/reasons/reject1.jpg'
-import hammer from '../assets/reasons/hammer1.jpg'
-import problems from '../assets/reasons/problems1.jpg'
-import practices from '../assets/reasons/practices1.jpg'
-import goodbye from '../assets/reasons/goodbye1.jpg'
+import users from '../assets/reasons/users1.jpg?srcset'
+import steering from '../assets/reasons/steering1.jpg?srcset'
+import wheel from '../assets/reasons/wheel1.jpg?srcset'
+import learning from '../assets/reasons/learning1.jpg?srcset'
+import reject from '../assets/reasons/reject1.jpg?srcset'
+import hammer from '../assets/reasons/hammer1.jpg?srcset'
+import problems from '../assets/reasons/problems1.jpg?srcset'
+import practices from '../assets/reasons/practices1.jpg?srcset'
+import goodbye from '../assets/reasons/goodbye1.jpg?srcset'
 
 export default {
     name: 'ReasonsCarousel',
@@ -99,7 +99,7 @@ export default {
                 if(!srcset) {
                     return [`${image.replace(/jpe?g|png/, 'webp')} 1024w`, `${image} 1024w`];
                 }
-                return `${srcset} ${srcset.replace(/jpe?g|png/g, 'webp')}`;
+                return `${srcset.replace(/jpe?g|png/g, 'webp')} ${srcset}`;
             },
             getImage(srcset, image) {
                 if(!srcset) {
