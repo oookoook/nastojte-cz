@@ -59,9 +59,39 @@ module.exports = {
         test: /\.md$/,
         use: 'file-loader'
       },
+      /*
       {
         test: /\.(png|svg|jpg|gif|svg)$/,
         use: 'file-loader'
+      },
+      */
+      {
+        test: /\.(svg|gif)$/,
+        use: 'file-loader'
+      },
+      {
+        test: /\.(png|jpe?g|webp|tiff?)$/i,
+        oneOf: [
+          {
+            // if the import url looks like "some.png?srcset..."
+            resourceQuery: /srcset/,
+            use: [
+              {
+                loader: "webpack-image-srcset-loader",
+                options: {
+                  sizes: ["320w","480w", "640w", "800w", "1024w", "original"],
+                },
+              },
+              "file-loader",
+              "webpack-image-resize-loader",
+              // add webpack-sharp-loader if you want to pre-process your image e.g. rotating, flipping
+              ],
+          },
+          {
+            // if no previous resourceQuery match
+            use: "file-loader",
+          },
+        ],
       },
       /*
       {
