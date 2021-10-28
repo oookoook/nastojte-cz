@@ -10,11 +10,11 @@
 					·
 					<a href="/#what">Služby</a>
 					·
-					<a href="/#tools">Mé zásady</a>
-					·
 					<a href="/#pricing">Ceník</a>
 					·
-					<a href="#refs">Reference</a>
+					<a href="/#refs">Reference</a>
+					·
+					<a href="/vonnegut">Proč nastojte?</a>
 				</p>
 
 				<p class="footer-company-name">Adam Kučera &copy; 2021</p>
