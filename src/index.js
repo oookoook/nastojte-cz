@@ -49,6 +49,8 @@ Vue.use(VueRouter);
 const routes = [
   { path: '/', component: AboutMe },
   { path: '/vonnegut', component: () => import(/* webpackChunkName: "aboutVonnegut" */ './AboutVonnegut.vue') },
+  { path: '/references', component: () => import(/* webpackChunkName: "references" */ './References.vue') },
+  { path: '/attributions', component: () => import(/* webpackChunkName: "attributions" */ './Attributions.vue') },
   { path: '/articles/:article', component: () => import(/* webpackChunkName: "article" */ './Article.vue') }
 ]
 
@@ -82,11 +84,3 @@ var app = new Vue({
     document.dispatchEvent(new Event('render-event'));
   }
 });
-
-/* moved to the AboutMe.vue component
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-  $('[data-toggle="popover"]').popover();
-  $('.popover-dismiss').popover({trigger: 'focus'});
-})
-*/

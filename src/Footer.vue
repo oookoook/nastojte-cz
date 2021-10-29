@@ -12,12 +12,12 @@
 					·
 					<a href="/#pricing">Ceník</a>
 					·
-					<a href="/#refs">Reference</a>
+					<a href="/references">Reference</a>
 					·
 					<a href="/vonnegut">Proč nastojte?</a>
 				</p>
 
-				<p class="footer-company-name">Adam Kučera &copy; 2021</p>
+				<p class="footer-company-name">Adam Kučera a <a href="/attributions">další</a> &copy; 2021.</p>
 			</div>
 
 			<div class="footer-center">
@@ -229,6 +229,11 @@ export default {
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.footer-company-name > a {
+	color: inherit;
+	text-decoration: underline;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

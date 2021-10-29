@@ -64,7 +64,7 @@ ale vyžadují pouze menší množství času.</code-li>
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
     <h2  class="mt-5" id="tools">Co umím</h2>
-            <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu. Samozřejmě ale neznám všechno 
+            <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu, jak se můžete přesvědčit v mých <a href="/references">referencích</a>. Samozřejmě ale neznám všechno 
                 (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
                 volím, když si můžu vybrat.</p>
           <tech-table />  
@@ -115,7 +115,7 @@ ochotný poskytovat slevu z hodinové sazby.</p>
 řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás
 tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.</p>
 
-<p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:
+<p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:</p>
     <ul class="list-unstyled">
     <code-li>Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.</code-li>
     <code-li>Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. 
@@ -127,24 +127,6 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
     <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
         pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
     </ul>
-    <h2  id="refs">Reference</h2>
-            <references />
-
-            <h2 class="mt-5">Přiznání autorství (CC Atributions)</h2>
-            <p>Při vývoji využívám množství volně dostupných knihoven, nástrojů, multimédií a dalších autorských děl. Některá
-                z nich požadují, aby byl autor zřetelně uveden, pokud používáme jeho dílo.</p> 
-                <p>Na těchto stránkách se toto týká symbolu použitého v odrážkových seznamech, v hlavičce a v ikoně stránek, který vytvořil <a href="https://www.flaticon.com/authors/dave-gandy" 
-                title="Dave Gandy"  target="_blank" rel="noopener">Dave Gandy</a> a publikoval jej na portále <a href="https://www.flaticon.com/" 
-                title="Flaticon" rel="noopener" target="_blank">www.flaticon.com</a> a licencoval jako <a href="https://creativecommons.org/licenses/by/3.0/" 
-                title="Creative Commons BY 3.0" rel="noopener" target="_blank">CC 3.0 BY</a>. 
-                Tento symbol původně pochází z projektu <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>.
-            </p>
-            <p>Autory fotek v tzv. <i>carouselu</i> v horní části stránky jsou: <template v-for="(a,i) in authors"><a :href="a.link" :key="`ra${i}`">{{ a.name }}</a>. </template>
-            <p>Ikony programovacíh jazyků a dalších IT nástrojů jsou většinou stahovány z projektů 
-                <a href="https://svgporn.com/" target="_blank" rel="noopener">SVG Porn</a> nebo z <a href="https://www.svgrepo.com/" target="_blank" rel="noopener">SVG Repo</a>.</p>
-
-            <p>Nakonec, o názvu webu si víc můžete přečíst 
-                <router-link to="/vonnegut">tady</router-link>.</p>
 
   </b-container>
 </template>
@@ -155,7 +137,6 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
     import ReasonsCarousel from './ReasonsCarousel.vue';
     import TechTable from './TechTable.vue';
     import Buzzwords from './Buzzwords.vue';
-    import References from './References.vue';
     import Email from './Email.vue';
     export default {
         name: 'AboutMe',
@@ -164,8 +145,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
             TechIcon,
             ReasonsCarousel,
             TechTable,
-            Buzzwords,
-            References
+            Buzzwords
         },
         mixins: [Email],
         data: function () {
@@ -177,23 +157,6 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
         created() {
         },
         mounted() {
-            // must be here because of the router - this might get rendered after the app init when comming from other pages
-            /*
-            $('[data-toggle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover();
-            $('.popover-dismiss').popover({trigger: 'focus'});
-            */
-           /* tooltip and popover are jquery plugins of Bootstrap - need to switch to vue-bootstrap
-           document.querySelectorAll('[data-toggle="tooltip"]').forEach(e => {
-                e.tooltip();
-           });
-           document.querySelectorAll('[data-toggle="popover"]').forEach(e => {
-               e.popover();
-           });
-           document.querySelectorAll('.popover-dismiss').forEach(e => {
-               e.popover({trigger: 'focus'});
-           });
-           */
         }
     }
 </script>

@@ -16,7 +16,7 @@
       <b-nav-item to="/#what">Služby</b-nav-item>
       <b-nav-item to="/#tools">Technologie</b-nav-item>
       <b-nav-item to="/#pricing">Ceník</b-nav-item>
-      <b-nav-item to="/#refs">Reference</b-nav-item>
+      <b-nav-item to="/references">Reference</b-nav-item>
       <b-nav-item-dropdown text="Projekty">
         <b-dropdown-item href="https://schranky.nastojte.cz" target="_blank">Mapa poštovních schránek</b-dropdown-item>
         <b-dropdown-item href="https://spidertraits.sci.muni.cz" target="_blank">World Spider Trait Database</b-dropdown-item>
