@@ -54,9 +54,10 @@ export default {
             },
             getSrcSet(srcset, image) {
                 if(!srcset) {
-                    return [`${image.replace(/jpe?g|png/, 'webp')} 1024w`, `${image} 1024w`];
+                    let wpimg = image.replace(/jpe?g|png/, 'webp');
+                    return `${wpimg} 1024w, ${wpimg}`;
                 }
-                return `${srcset.replace(/jpe?g|png/g, 'webp')}, ${srcset}`;
+                return `${srcset.replace(/jpe?g|png/g, 'webp')}`;
             },
             getImage(srcset, image) {
                 if(!srcset) {
