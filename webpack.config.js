@@ -20,7 +20,8 @@ module.exports = {
   //devtool: 'source-map', // bundle is too big
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
   },
   devServer: {
     /*

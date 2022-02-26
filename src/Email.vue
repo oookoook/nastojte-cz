@@ -17,7 +17,7 @@ export default {
         decode(evt) {
             //console.debug('arg1', evt);
             //console.debug('arg2', arg2);
-            evt.srcElement.href = 'adam@nastojte.cz';
+            evt.srcElement.href = 'mailto:adam@nastojte.cz';
             return true;
         }
     }

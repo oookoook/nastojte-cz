@@ -5,21 +5,32 @@
 <!-- https://codepen.io/machal/pen/mqmNyz -->
 <div class="d-flex flex-column flex-md-row">
     
-    <div>
+    <div class="order-2 order-md-1">
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
     </p>
     <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku 2008.</p>
 
-                Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).
+                <p>Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).</p>
+                <p>Mám zkušenosti se startupovými projekty (<a href="https://dreamroi.com" rel="noopener" target="_blank">DreamROI</a>), s prací 
+                na informačních systémech ve velké organizaci (<a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykova univerzita – Facility management a inteligentní budovy</a>)
+                i se zahraničními klienty (USA, Austrálie). Provedu Vás <router-link to="articles/customer-dilemmata">všemi úskalími</router-link>
+                 softwarového vývoje a dodám výsledek přesně podle Vašich požadavků. Včetně těch, o kterých ještě ani nevíte, že byste je vůbec měli mít.</p>
+                 <b-row class="justify-content-center">
+                 <b-col lg="4" md="6">
+                 <b-button block class="bg-nastojte text-nastojte" :href="'mailto:'+email"  @click="decode" rel="noopener" target="_blank">Napište mi</b-button>
+                 </b-col>
+                 </b-row>
+                <!--
                 <p>Zároveň působím na částečný úvazek na <a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykově univerzitě</a>
                 jako vývojář a systémový administrátor zaměřený na oblast Facility managementu a inteligentní budovy. Zároveň
                 Díky spolupráci s firmou <a href="http://www.microton.cz/" rel="noopener" target="_blank">Microton</a> jsem
                 se dostal i k práci na projektech pro zahraniční klienty (USA, Austrálie) prostřednictvím platformy 
                 <a href="https://www.upwork.com/" rel="noopener" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3"  rel="noopener" target="_blank">můj profil</a> 
                 je viditlený pouze pro příhlášené uživatele).</p>
+                -->
   </div>
-  <p class="mb-3 ml-md-3 w-50">
+  <p class="mb-3 ml-md-3 mt-3 mt-md-0 w-50 order-1 order-md-2">
         <b-img :src="photo" :srcset="[`${photo.replace(/jpe?g|png/, 'webp')} 200w`, `${photo} 200w`]" class="img-fluid" alt="My face" />
     </p>
 </div>
@@ -100,7 +111,7 @@ ale vyžadují pouze menší množství času.</code-li>
 </ul>
 <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
 <ul class="list-unstyled">
-    <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank"></a></code-li>
+    <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
     <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
     <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
     <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
