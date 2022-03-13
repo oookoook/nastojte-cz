@@ -10,7 +10,7 @@ Jako use case použiji službu [Mapa poštovních schránek](https://schranky.na
 
 Nejdříve rozebereme komponenty, ze kterých se aplikace skládá, spolu s požadavky, které zajistí, že aplikaci lze provozovat v serverless režimu. Architektura aplikace je vidět na následujícím schématu:
 
-![Schéma aplikace][app-schema]
+![Schéma aplikace](serverless-aws-app-schema.png)
 
 ## Frontend
 

@@ -15,6 +15,7 @@
   "dependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
+    "@sindresorhus/slugify": "^2.1.0",
     "babel-loader": "^8.2.2",
     "bootstrap": "~4.5.3",
     "bootstrap-vue": "^2.21.2",
@@ -25,6 +26,9 @@
     "html-webpack-plugin": "^4.5.2",
     "imagemin-webp-webpack-plugin": "^3.3.6",
     "markdown-it": "^11.0.1",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-toc-done-right": "^4.2.0",
     "popper.js": "^1.16.1",
     "prerender-spa-plugin": "^3.4.0",
     "rimraf": "^2.7.1",

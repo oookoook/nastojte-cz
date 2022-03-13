@@ -51,7 +51,7 @@ const routes = [
   { path: '/vonnegut', component: () => import(/* webpackChunkName: "aboutVonnegut" */ './AboutVonnegut.vue') },
   { path: '/references', component: () => import(/* webpackChunkName: "references" */ './References.vue') },
   { path: '/attributions', component: () => import(/* webpackChunkName: "attributions" */ './Attributions.vue') },
-  { path: '/articles/:article', component: () => import(/* webpackChunkName: "article" */ './Article.vue') }
+  { path: '/articles/:article', component: () => import(/* webpackChunkName: "article" */ './Article.vue'), meta: { waitForScroll: 200 } }
 ]
 
 const router = new VueRouter({
@@ -59,7 +59,16 @@ const router = new VueRouter({
     if (to.hash) {
         //alert(to.hash);
         //return { x: 0, y: 0 };
-        return {selector: to.hash, offset : { x: 0, y: 70 }}
+        let output = {selector: decodeURI(to.hash), behavior: 'smooth' };
+        //console.debug('Analyzing path', to.path, from?.path, to.meta?.waitForScroll, savedPosition);
+        if(to.meta?.waitForScroll) {
+          //console.debug('Waiting for scroll');
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve(output)
+            }, to.meta?.waitForScroll)});
+        }
+        return output;
     } else {
         return { x: 0, y: 0 }
     }
