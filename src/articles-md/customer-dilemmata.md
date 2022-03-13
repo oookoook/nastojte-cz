@@ -228,7 +228,7 @@ Základní varianty provozu aplikace v cloudu jsou tedy následující:
 
 ### Cloud-native aplikace
 
-Jedná se opět z pohledu uživatele o webové nebo mobilní aplikace. V takové chvíli nemáte žádný vlastní server, ale aplikace se skládá ze velkého množství nezávislých komponent, které využívají různé služby, které daná cloudová platforma nabízí. Tato řešení mají své výhody i nevýhody: 
+Jedná se opět z pohledu uživatele o webové nebo mobilní aplikace. V takové chvíli nemáte žádný vlastní server, ale aplikace se skládá ze velkého množství nezávislých komponent, které využívají různé služby, které daná cloudová platforma nabízí. Tato řešení mají své výhody i nevýhody:
 
 * Není třeba se starat o servery -- Aktualizace, kompatibilita software, apod. Vše je zajištěno provozovatelem.
 * Automaticky je zajištěna vysoká dostupnost -- Vaše služby budou dostupné prakticky kdykoliv, postará se o to provozovatel cloudové platformy.
