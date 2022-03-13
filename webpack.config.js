@@ -14,6 +14,17 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const config = require('./src/config.js');
 
+//https://forum.vuejs.org/t/how-to-pre-render-multiple-vue-app-pages/69625
+const addHydration = html => html
+  .replace(/<script (.*?)>/g, '<script $1 defer>')
+  .replace('id="app"', 'id="app" data-server-rendered="true"');
+
+const postProcessRoute = (route) => {
+  // eslint-disable-next-line no-param-reassign
+  route.html = addHydration(route.html);
+  return route;
+};
+
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
@@ -159,7 +170,7 @@ module.exports = {
         keepClosingSlash: true,
         sortAttributes: true
       },
-
+      postProcess: postProcessRoute,
       renderer: new Renderer({
         renderAfterDocumentEvent: 'render-event',
         headless: true,
