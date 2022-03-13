@@ -5,7 +5,7 @@
                 data-toggle="tooltip" data-placement="top" :title="getAlt(tech)" />
                 <span 
   class="m-1 badge badge-pill badge-success" v-if="tech.text" :style="{ backgroundColor: tech.color }">{{ tech.name }}</span>-->
-  <img ref="t" v-if="!tech.text" class="icon m-1" :src="getLink(tech)" :alt="getAlt(tech)" :title="getAlt(tech)" 
+  <b-img-lazy ref="t" v-if="!tech.text" class="icon m-1" :src="getLink(tech)" :alt="getAlt(tech)" :title="getAlt(tech)" 
   v-b-tooltip.hover />
   <b-badge pill variant="success" v-if="tech.text" class="m-1 p-2" :style="{ backgroundColor: tech.color }">{{ tech.name }}</b-badge>
   </span>
