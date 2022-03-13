@@ -3,9 +3,9 @@
     <h1>Kdo jsem</h1>
  
 <!-- https://codepen.io/machal/pen/mqmNyz -->
-<div class="d-flex flex-column flex-md-row">
+<b-row class="justify-content-center">
     
-    <div class="order-2 order-md-1">
+    <b-col class="order-2 order-md-1" cols="12" md="8" xl="9">
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
     </p>
@@ -17,7 +17,7 @@
                 i se zahraničními klienty (USA, Austrálie). Provedu Vás <router-link to="articles/customer-dilemmata">všemi úskalími</router-link>
                  softwarového vývoje a dodám výsledek přesně podle Vašich požadavků. Včetně těch, o kterých ještě ani nevíte, že byste je vůbec měli mít.</p>
                  <b-row class="justify-content-center">
-                 <b-col lg="4" md="6">
+                 <b-col xl="4" md="6">
                  <b-button block class="bg-nastojte text-nastojte" :href="'mailto:'+email"  @click="decode" rel="noopener" target="_blank">Napište mi</b-button>
                  </b-col>
                  </b-row>
@@ -29,11 +29,16 @@
                 <a href="https://www.upwork.com/" rel="noopener" target="_blank">Upwork</a> (<a href="https://www.upwork.com/fl/adamkucera3"  rel="noopener" target="_blank">můj profil</a> 
                 je viditlený pouze pro příhlášené uživatele).</p>
                 -->
-  </div>
-  <p class="mb-3 ml-md-3 mt-3 mt-md-0 w-50 order-1 order-md-2">
-        <b-img :src="photo" :srcset="[`${photo.replace(/jpe?g|png/, 'webp')} 200w`, `${photo} 200w`]" class="img-fluid" alt="My face" />
+  </b-col>
+  <b-col cols="6" md="4" xl="3" class=" order-1 order-md-2">
+      <b-img :src="photo" :srcset="[`${photo.replace(/jpe?g|png/, 'webp')} 200w`, `${photo} 200w`]" class="img-fluid mx-auto" alt="My face" />
+  <!--
+  <p class="mb-3 ml-md-3 mt-3 mt-md-0 w-50">
+        
     </p>
-</div>
+    -->
+  </b-col>
+</b-row>
 <!--
 <div class="jumbotron bg-light border border-warning">
 <p class="lead">Proč si vybrat právě mě?</p>
@@ -52,7 +57,7 @@
 </ul>
 </div>
 -->
-<h2 class="mt-3" id="why">Proč si vybrat právě mě</h2>
+<h2 class="mt-5" id="why">Proč si vybrat právě mě</h2>
 <reasons-carousel :authors.sync="authors"/>
 <!--
 <p class="text-center lead pt-5">Zaujalo vás to?
@@ -73,6 +78,36 @@ ale vyžadují pouze menší množství času.</code-li>
     <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
     I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
     Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
+
+    <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
+<ul class="list-unstyled">
+    <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
+    <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
+    <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
+    <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
+</ul>
+
+<h2  class="mt-5" id="pricing">Co za to</h2> 
+
+<p>Moje aktuální hodinová sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
+ochotný poskytovat slevu z hodinové sazby.</p>
+<p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
+že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) i s dostatečným časem na analýzu a návrh
+řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás
+tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.</p>
+
+<p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:</p>
+    <ul class="list-unstyled">
+    <code-li>Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.</code-li>
+    <code-li>Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. 
+        Toto jsou náklady, které musím pokrýt ze své hodinové sazby. Mnohem podrobněji je tato argumentace rozvinuta v 
+        <a href="https://www.superlectures.com/barcampbrno2017/nenechte-se-sebou-vydrbavat-kolik-doopravdy-stoji-hodina-prace-freelancera" rel="noopener" target="_blank">přednášce</a> 
+        Petra "Jezevce" Pouchlého z <a href="https://www.linkedin.com/company/court-of-moravia/" rel="noopener" target="_blank">Court of Moravia</a>.</code-li>
+    <code-li>Již ve chvíli, kdy se na práci dohodneme, jsem na Vašem projektu určitý čas strávil &ndash; psaním nabídky, naceňováním, zkoumáním specifických technologií, které používáte.</code-li>
+    <code-li>Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.</code-li>
+    <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
+        pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
+    </ul>
 
     <h2  class="mt-5" id="tools">Co umím</h2>
             <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu, jak se můžete přesvědčit v mých <a href="/references">referencích</a>. Samozřejmě ale neznám všechno 
@@ -109,35 +144,7 @@ ale vyžadují pouze menší množství času.</code-li>
 <code-li>Jsem schopný konstruktivně přijímat kritiku - pár nelichotivých peer review vás naučí nebrat si věci osobně.</code-li>
 <code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
 </ul>
-<h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
-<ul class="list-unstyled">
-    <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
-    <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
-    <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
-    <code-li>Fakturační údaje: RNDr. Adam Kučera, Voříškova 667/45, 623 00 Brno - Kohoutovice. IČ 06422268, Neplátce DPH.</code-li>
-</ul>
 
-<h2  class="mt-5" id="pricing">Co za to</h2> 
-
-<p>Moje aktuální hodinová sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
-ochotný poskytovat slevu z hodinové sazby.</p>
-<p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
-že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) iss dostatečným časem na analýzu a návrh
-řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás
-tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam jsem ho původně umístil.</p>
-
-<p>Zde bych jen rád doplnil drobnou poznámku &ndash; chápu, že Vám tato sazba může přijít vysoká, nicméně mám pro následující argumenty:</p>
-    <ul class="list-unstyled">
-    <code-li>Za hodinu své práce po deseti letech praxe a neustálému sebezdokonalování za hodinu stihnu více, než je průměr.</code-li>
-    <code-li>Neplatíte mi pronájem kancelář a energie, počítač, software, telefon, stravenky, ani dovolenou nebo nemocenskou. Neplatíte mi zdravotní ani sociální pojištění. 
-        Toto jsou náklady, které musím pokrýt ze své hodinové sazby. Mnohem podrobněji je tato argumentace rozvinuta v 
-        <a href="https://www.superlectures.com/barcampbrno2017/nenechte-se-sebou-vydrbavat-kolik-doopravdy-stoji-hodina-prace-freelancera" rel="noopener" target="_blank">přednášce</a> 
-        Petra "Jezevce" Pouchlého z <a href="https://www.linkedin.com/company/court-of-moravia/" rel="noopener" target="_blank">Court of Moravia</a>.</code-li>
-    <code-li>Již ve chvíli, kdy se na práci dohodneme, jsem na Vašem projektu určitý čas strávil &ndash; psaním nabídky, naceňováním, zkoumáním specifických technologií, které používáte.</code-li>
-    <code-li>Platíte si profesionála, ovládajícícho technologie, které nabízí. Učení se nové technologii nefakturuji (pokud opravdu není specifická jen pro váš projekt). Nemusíte mě zaučovat.</code-li>
-    <code-li>Nacenění zakázky vždy obnáší určitou míru rizika, ale já se vždy snažím, aby moje nabídková cena byla dodržena. Neočekávané problémy se téměř vždy objeví. Vyšší hodinová sazba mi sazba umožňuje 
-        pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
-    </ul>
 
   </b-container>
 </template>
