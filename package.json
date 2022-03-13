@@ -25,7 +25,7 @@
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^4.5.2",
     "imagemin-webp-webpack-plugin": "^3.3.6",
-    "markdown-it": "^11.0.1",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-container": "^3.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
