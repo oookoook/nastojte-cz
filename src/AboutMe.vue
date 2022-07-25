@@ -74,7 +74,11 @@
     <p>Co je pro Vás důležité &ndash; Nabízím vývoj aplikací pro cloud jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
     <b>skripty pro nasazení</b>, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> vždy, když se v kódu provede nějaká úprava.</p>
 
-<h3 id="cloud">Typy zakázek</h3>
+<p>Níže se podívejte i na další typy úkolů, na kterých pro Vás budu rád pracovat.</p>
+
+<!--
+    <h3 id="cloud">Typy zakázek</h3>
+-->
     <services />
 
 <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>

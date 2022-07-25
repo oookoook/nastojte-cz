@@ -13,7 +13,11 @@
     >
     <b-carousel-slide v-for="(r,i) in reasons" :key="`r${i}`" >
       <template #img>
-          <b-img :src="getImage(r.srcset, r.image)" :srcset="getSrcSet(r.srcset, r.image)" width="1024" height="480" class="img-fluid w-100 d-block" alt="illustration image" />
+          <b-img 
+          :src="getImage(r.srcset, r.image)" 
+          :srcset="getSrcSet(r.srcset, r.image)" 
+          sizes="(max-width: 320px) 320px, (max-width: 320px) 480px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+          width="1024" height="480" class="img-fluid w-100 d-block" alt="illustration image" />
       </template>
       <div :style="{ backdropFilter: 'blur(4px)', borderRadius: '35px', color: r.dark ? '#50023B' : '#FFD447', textShadow: `2px 2px 2px ${r.dark ? '#FFD447': '#50023b'}` }">
       <h3>{{ r.title}}</h3>
@@ -30,10 +34,11 @@
 <script>
 import CodeLi from './CodeLi.vue'
 import CarouselImages from './CarouselImages.vue'
+import Srcset from './Srcset.vue'
 export default {
     name: 'ReasonsCarousel',
     components: {CodeLi},
-    mixins:[CarouselImages],
+    mixins:[CarouselImages, Srcset],
     props: { authors: Array},
     data() {
         return {
@@ -52,19 +57,7 @@ export default {
             onSlideEnd(slide) {
                 this.sliding = false
             },
-            getSrcSet(srcset, image) {
-                if(!srcset) {
-                    let wpimg = image.replace(/jpe?g|png/, 'webp');
-                    return `${wpimg} 1024w, ${wpimg}`;
-                }
-                return `${srcset.replace(/jpe?g|png/g, 'webp')}`;
-            },
-            getImage(srcset, image) {
-                if(!srcset) {
-                    return image;
-                }
-                return srcset.substring(srcset.lastIndexOf(' ') + 1);
-            }
+            
     },
     created() {
         this.$emit('update:authors', this.reasons.map(r => r.author));

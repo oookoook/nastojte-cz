@@ -91,7 +91,7 @@ module.exports = {
               {
                 loader: "webpack-image-srcset-loader",
                 options: {
-                  sizes: ["320w","480w", "640w", "800w", "1024w", "original"],
+                  sizes: ["128w","256w","320w","480w", "640w", "800w", "1024w", "original"],
                 },
               },
               "file-loader",
