@@ -5,8 +5,8 @@ const webpack = require('webpack');
 
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PrerenderSpaPlugin = require('prerender-spa-plugin');
-const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
+const PrerenderSPAPlugin = require('prerender-spa-plugin-next');
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 
@@ -19,10 +19,13 @@ const addHydration = html => html
   .replace(/<script (.*?)>/g, '<script $1 defer>')
   .replace('id="app"', 'id="app" data-server-rendered="true"');
 
-const postProcessRoute = (route) => {
+const postProcessRoute = (context) => {
   // eslint-disable-next-line no-param-reassign
-  route.html = addHydration(route.html);
-  return route;
+  context.html = addHydration(context.html);
+  console.log('Prerender postprocess', context.route);
+  //context.route = context.route.replace('.hwp.', '.');
+  console.log('Prerender postprocess 2', context.html);
+  return context;
 };
 
 module.exports = {
@@ -30,7 +33,7 @@ module.exports = {
   entry: './src/index.js',
   //devtool: 'source-map', // bundle is too big
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
@@ -42,7 +45,8 @@ module.exports = {
     }
     */
     static: path.join(__dirname, 'dist'),
-    historyApiFallback: true
+    historyApiFallback: true,
+    compress: true,
   },
   module: {
     rules: [
@@ -101,7 +105,10 @@ module.exports = {
           },
           {
             // if no previous resourceQuery match
-            use: "file-loader",
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+            }
           },
         ],
       },
@@ -111,7 +118,7 @@ module.exports = {
         use: 'file-loader'
       },
       */
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader", options: { limit: 10000, mimetype: 'application/font-woff'}  },
       { test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
       {
         test: /\.(wav|ogg|mp3)$/,
@@ -140,6 +147,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     //new HotModuleReplacementPlugin(),
+    
     new HtmlWebpackPlugin({
       filename: 'index.html',
       //template: 'src/index.html',
@@ -150,31 +158,37 @@ module.exports = {
       meta: config.meta,
       inject: true
     }),
+    
     new CopyWebpackPlugin({ patterns: [
       { from: 'src/robots.txt', to: 'robots.txt' },
       { from: 'assets/favicon.png', to: 'favicon.png' }
     ]}),
     new ImageminWebpWebpackPlugin()
-  ].concat((process.env.BUNDLE_REPORT==1) ? new BundleAnalyzerPlugin() : [])
+  ]
+  .concat((process.env.BUNDLE_REPORT==1) ? new BundleAnalyzerPlugin() : [])
   .concat(process.env.NODE_ENV === 'development' ? [] : 
-    [new PrerenderSpaPlugin({
+    [new PrerenderSPAPlugin({
       // Path to compiled app
-      staticDir: path.join(__dirname, 'dist'),
+      //staticDir: path.join(__dirname, 'dist'),
       // List of endpoints you wish to prerender
       routes: config.routesToPrerender, //[ '/', '/vonnegut'],
+      //indexPath: 'src/index.html',
       // Optional minification.
+      /* not supported in Webpack 5 rewrite
       minify: {
         collapseBooleanAttributes: true,
         collapseWhitespace: true,
         decodeEntities: true,
         keepClosingSlash: true,
         sortAttributes: true
-      },
+      },*/
       postProcess: postProcessRoute,
-      renderer: new Renderer({
+      
+      rendererOptions: {
         renderAfterDocumentEvent: 'render-event',
         headless: true,
-      })
+      }
+      
     }),
   ])
 };
