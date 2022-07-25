@@ -11,7 +11,7 @@
     </p>
     <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku 2008.</p>
 
-                <p>Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/#cloud"><b>cloudu</b></router-link> (Amazon).</p>
+                <p>Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/tech#cloud"><b>cloudu</b></router-link> (Amazon).</p>
                 <p>Mám zkušenosti se startupovými projekty (<a href="https://dreamroi.com" rel="noopener" target="_blank">DreamROI</a>), s prací 
                 na informačních systémech ve velké organizaci (<a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykova univerzita – Facility management a inteligentní budovy</a>)
                 i se zahraničními klienty (USA, Austrálie). Provedu Vás <router-link to="articles/customer-dilemmata">všemi úskalími</router-link>
@@ -64,22 +64,20 @@
 <b-button size="lg" :href="`mailto:${email}`" class="text-nastojte bg-nastojte ml-4">Napište mi</b-button></p>
 -->
 <h2 class="mt-5" id="what">Co nabízím</h2>
-            
-<p>V současné době mám kapacitu na menší jednorázové projekty jako například:</p>
-    <ul class="list-unstyled">
-    <code-li>Mikroslužby a API;</code-li>
-    <code-li>Webové aplikace;</code-li> 
-    <code-li>Rozšíření pro prohlížeče (Chrome, Firefox);</code-li>
-    <code-li>Rozšíření existujících softwarových systémů &ndash; ať už na míru nebo komerčních řešení s podporou rozšíření (nová funkcionalita, datový model, UI, API);</code-li>
-    <code-li>Konzultace v oblasti návrhu software a nasazení (např. v cloudových PaaS, zejména AWS).</code-li>  
-    <code-li>Kontrakty na udržování a rozvoj existujícího systému, které sice jsou dlouhodobé, 
-ale vyžadují pouze menší množství času.</code-li> 
-    </ul>
-    <p>Jsem full stack developer, ale návrhy a implementace UI nejsou můj šálek kávy, zvlášť v situaci, kdy vaše UX je klíčové pro váš úspěch. 
-    I když s nimi mám určité zkušenosti, specializovaný UI/UX designér a webkodér vám v této oblasti poskytnou lepší služby. Vytvářím aplikace, ne prezentace.
-    Nemá tedy smysl u mě poptávat jednoduchou firemní prezentaci - dobrý specialista vám vyrobí web na základě šablony rychleji, levněji a lépe než já.</p>
 
-    <h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
+<p>V zásadě nabízím řešení problémů, které lze řešit pomocí softwarových systémů. Nechci zde vypisovat seznamy technologií, 
+    které nabízím, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
+    je moje práce, ne Vaše.</b> Vaším úkolem naopak je ujasnit si, <router-link to="/articles/customer-dilemmata">co přesně chcete a potřebujete</router-link>.</p>
+
+        <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro <router-link to="/tech#cloud"><b>cloud</b></router-link>. Cloud je obzvlášt vhodný pro začínající služby, kde jsou problémem
+    vyšší počáteční náklady a naopak zhroucení ve chvíli, kdy služba začne být úspěšná, kvůli nedostatečnému výkonu. Ve výsledku to funguje tak, že když na stránku nikdo nepřijde, neplatíte nic, a celkové cena se odvíjí od počtu uživatelů. A jejich počet může růst v podstatě neomezeně a aplikace bude stále stíhat.</p>
+    <p>Co je pro Vás důležité &ndash; Nabízím vývoj aplikací pro cloud jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
+    <b>skripty pro nasazení</b>, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> vždy, když se v kódu provede nějaká úprava.</p>
+
+<h3 id="cloud">Typy zakázek</h3>
+    <services />
+
+<h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
 <ul class="list-unstyled">
     <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
     <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
@@ -109,35 +107,7 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
         pokrýt určitou míru neočekávatelných vícenákladů bez zvyšování celkové ceny.</code-li>
     </ul>
 
-    <h2  class="mt-5" id="tools">Co umím</h2>
-            <p>Konkrétním technologiím nepřikládám zas tak velkou důležitost, přizpůsobuji se konkrétnímu projektu, jak se můžete přesvědčit v mých <a href="/references">referencích</a>. Samozřejmě ale neznám všechno 
-                (i když se rád něco nového naučím). V tabulce najdete seznam technologií, se kterými mám zkušenosti. Pro úplnost také uvádím, které 
-                volím, když si můžu vybrat.</p>
-          <tech-table />  
-
-        <h3 id="cloud">Cloud</h3>
-        <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro <b>Amazon Web Services</b> (AWS). Kromě obecně platných výhod,
-        jako jsou nižší požadavky na správu (aktualizace, zabezpečení) je cloud obzvlášt vhodný pro začínající služby, kde jsou problémem
-    vyšší počáteční náklady a horší škálování v závislosti na vytíženosti služby. Řešení se nabízí v podobě tzv. serverless aplikací, které nevyžadují
-    dedikovaný (a stále běžící) web server. Ve výsledku to funguje tak, že když na stránku nikdo nepřijde, neplatíte nic, a celkové cena se odvíjí od počtu požadavků,
-    které do služby uživatelé pošlou. I když už je služba používána, náklady se pohybují v řádu korun nebo desetikorun měsíčně. Příkladem takového projektu je moje
-    <a href="https://schranky.nastojte.cz">Mapa poštovních schránek</a>. Lepší představu o tom, co vývoj aplikace v cloudu obnáší, si můžete udělat z mého <router-link to="/articles/serverless-aws">článku</router-link>.</p>
-    <p>Nabízím vývoj aplikací pro cloud (AWS) jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
-    <b>skripty pro nasazení</b>, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> na základě aktualizací zdrojového kódu 
-    (tzv. <i>continuous deployment</i>).</p>
-
-        <h3 id="repos">Jak vypadá můj kód</h3>
-            <p>Na ukázky kódu se můžete nejpohodlněji podívat do následujících veřejných Git repozitářů:</p>
-            <ul>
-                <code-li><a href="https://github.com/oookoook?tab=repositories" rel="noopener" target="_blank">GitHub</a></code-li>
-                <code-li><a href="https://gitlab.fi.muni.cz/xkucer16/semanticBMS" rel="noopener" target="_blank">GitLab @ FI MU</a></code-li>
-            </ul>
-
- <h3>Bzukot</h3>
-        <p>V IT jsou poměrně oblíbená tzv. buzzwords. Jasně, jsou to jenom takové nálepky, pod kterými si každý představuje něco jiného a které samy o sobě žádnou zvláštní informaci nenesou. Ale přesto - rád bych
-        zde zmínil pár trendů a technologií, které mi přijdou zajímavé, užitečné, použitelné, a se kterými již mám zkušenosti. Klikejte na termíny pro více informací.</p>
-        <buzzwords/>
-<h3>Odborné vzdělání</h3>
+<h2>Odborné vzdělání</h2>
 <p>Kromě práce jsem úspěšně dokončil Ph.D. studium na <a href="https://fi.muni.cz/"  rel="noopener" target='_blank'>FI MU</a>. I když jsou požadavky na software vyvíjený v akademické sféře odlišné od těch, které se objevují v komerční, jsem přesvědčen, že tato zkušenost přináší výhody i při "klasickém" vývoji:</p>
 <ul class="list-unstyled">
 <code-li>Mám solidní teoretické základy, které jsem schopný použít v praxi - např při vývoji vícevláknových aplikací, efektivních datových struktur a datových modelů a dalších problémů, které představují úzká hrdla v aplikacích nebo rovnou způsobují jejich nespolehlivost.</code-li>
@@ -145,25 +115,22 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
 <code-li>Umím porovnat dostupné možnosti na základě objektivních kritérií, umět se rozhodnout a svoji volbu si i obhájit.</code-li>
 </ul>
 
-
   </b-container>
 </template>
 
 <script>
     import CodeLi from './CodeLi.vue';
-    import TechIcon from './TechIcon.vue';
+    //import TechIcon from './TechIcon.vue';
     import ReasonsCarousel from './ReasonsCarousel.vue';
-    import TechTable from './TechTable.vue';
-    import Buzzwords from './Buzzwords.vue';
+    import Services from './Services.vue'
     import Email from './Email.vue';
     export default {
         name: 'AboutMe',
         components: {
             CodeLi,
-            TechIcon,
+            //TechIcon,
             ReasonsCarousel,
-            TechTable,
-            Buzzwords
+            Services
         },
         mixins: [Email],
         data: function () {

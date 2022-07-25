@@ -50,6 +50,7 @@ const routes = [
   { path: '/', component: AboutMe },
   { path: '/vonnegut', component: () => import(/* webpackChunkName: "aboutVonnegut" */ './AboutVonnegut.vue') },
   { path: '/references', component: () => import(/* webpackChunkName: "references" */ './References.vue') },
+  { path: '/tech', component: () => import(/* webpackChunkName: "tech" */ './Tech.vue') },
   { path: '/attributions', component: () => import(/* webpackChunkName: "attributions" */ './Attributions.vue') },
   { path: '/articles/:article', component: () => import(/* webpackChunkName: "article" */ './Article.vue'), meta: { waitForScroll: 200 } }
 ]

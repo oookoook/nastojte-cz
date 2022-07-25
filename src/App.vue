@@ -14,7 +14,7 @@
       -->
       <b-nav-item to="/">O mně</b-nav-item>
       <b-nav-item to="/#what">Služby</b-nav-item>
-      <b-nav-item to="/#tools">Technologie</b-nav-item>
+      <b-nav-item to="/tech">Technologie</b-nav-item>
       <b-nav-item to="/#pricing">Ceník</b-nav-item>
       <b-nav-item to="/references">Reference</b-nav-item>
       <b-nav-item-dropdown text="Projekty">
