@@ -24,11 +24,12 @@ http-server dist
 ## Creating docker container
 
 + On host: `docker build -t "nastojtewebpackfive:Dockerfile" .`
-+ Then in interactive shell in the container:
++ Then in interactive shell in the container (this can't be automated as each of the RUN commands in Dockerfile runs in a new shell so ssh agent won't keep runing):
 
 ```sh
 apt update
 apt install --assume-yes libx11-xcb1 libasound2 x11-apps libice6 libsm6 libxaw7 libxft2 libxmu6 libxpm4 libxt6 x11-apps xbitmaps x11-common libxcomposite1 libxdamage1 chromium libxss1
+mkdir /root/.ssh
 cd /root/.ssh
 echo "<PRIVATE KEY>" > id_rsa
 cd /root
