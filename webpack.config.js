@@ -9,6 +9,7 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin-next');
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 //const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
@@ -36,6 +37,10 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
   devServer: {
     /*
