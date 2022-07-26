@@ -31,7 +31,7 @@
                 -->
   </b-col>
   <b-col cols="6" md="4" xl="3" class=" order-1 order-md-2">
-      <b-img :src="photo" :srcset="[`${photo.replace(/jpe?g|png/, 'webp')} 200w`, `${photo} 200w`]" class="img-fluid mx-auto" alt="My face" />
+      <b-img :src="photo" :srcset="photoSrcSet" class="img-fluid mx-auto" alt="My face" />
   <!--
   <p class="mb-3 ml-md-3 mt-3 mt-md-0 w-50">
         
@@ -140,7 +140,8 @@ tahat vícepráce za to, že chcete dát tlačítko na opačnou stranu, než kam
         data: function () {
             return {
                 authors: [],
-                photo: require('../assets/photo.jpg')
+                photo: require('../assets/photo.jpg'),
+                photoSrcSet: require('../assets/photo.jpg?srcset&format=webp')
             }
         },
         created() {

@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PrerenderSPAPlugin = require('prerender-spa-plugin-next');
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+//const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
@@ -24,7 +24,7 @@ const postProcessRoute = (context) => {
   context.html = addHydration(context.html);
   console.log('Prerender postprocess', context.route);
   //context.route = context.route.replace('.hwp.', '.');
-  console.log('Prerender postprocess 2', context.html);
+  //console.log('Prerender postprocess 2', context.html);
   return context;
 };
 
@@ -83,7 +83,13 @@ module.exports = {
       */
       {
         test: /\.(svg|gif)$/,
-        use: 'file-loader'
+        use: {
+          // if no previous resourceQuery match
+          loader: 'file-loader',
+          options: {
+            esModule: false,
+          }
+        }
       },
       {
         test: /\.(png|jpe?g|webp|tiff?)$/i,
@@ -96,8 +102,16 @@ module.exports = {
                 loader: "webpack-image-srcset-loader",
                 options: {
                   sizes: ["128w","256w","320w","480w", "640w", "800w", "1024w", "original"],
+                  esModule: false
                 },
               },
+              /*
+              {
+                loader: 'file-loader',
+                options: {
+                  //esModule: false,
+                }
+              },*/
               "file-loader",
               "webpack-image-resize-loader",
               // add webpack-sharp-loader if you want to pre-process your image e.g. rotating, flipping
@@ -163,7 +177,7 @@ module.exports = {
       { from: 'src/robots.txt', to: 'robots.txt' },
       { from: 'assets/favicon.png', to: 'favicon.png' }
     ]}),
-    new ImageminWebpWebpackPlugin()
+    //new ImageminWebpWebpackPlugin()
   ]
   .concat((process.env.BUNDLE_REPORT==1) ? new BundleAnalyzerPlugin() : [])
   .concat(process.env.NODE_ENV === 'development' ? [] : 
