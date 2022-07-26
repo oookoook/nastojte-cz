@@ -6,7 +6,7 @@ var keywords = 'vývoj, vývojář, software, aplikace, web, programátor, progr
 var locale = 'cs_CZ';
 var lang = 'cs';
 
-var routesToPrerender = ['/', '/vonnegut', '/references', '/attributions'];
+var routesToPrerender = ['/', '/vonnegut', '/references', '/attributions', '/tech'];
 
 // do not touch code bellow if not necessary
 // this is loaded into the webpack.config.js
