@@ -23,7 +23,7 @@ const addHydration = html => html
 const postProcessRoute = (context) => {
   // eslint-disable-next-line no-param-reassign
   context.html = addHydration(context.html);
-  console.log('Prerender postprocess', context.route);
+  //console.log('Prerender postprocess', context.route);
   //context.route = context.route.replace('.hwp.', '.');
   //console.log('Prerender postprocess 2', context.html);
   return context;
