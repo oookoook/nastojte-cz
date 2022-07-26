@@ -1,5 +1,5 @@
 <template>
-  <li class="media mt-2 text-justify"><img src="../assets/bullet-24.png" class="align-self-start mr-3" alt="..."><div id="media-body"><slot></slot></div></li>
+  <li class="media mt-2 text-justify"><img src="../assets/bullet-24.png" width="24" height="24" class="align-self-start mr-3" alt="..."><div id="media-body"><slot></slot></div></li>
 </template>
 
 <script>

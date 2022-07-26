@@ -30,8 +30,8 @@
                 je viditlený pouze pro příhlášené uživatele).</p>
                 -->
   </b-col>
-  <b-col cols="6" md="4" xl="3" class="order-1 order-md-2 text-right">
-      <b-img :src="photo" :srcset="photoSrcSet" class="img-fluid" alt="My face" />
+  <b-col cols="12" md="4" xl="3" class="order-1 order-md-2 text-center text-md-right">
+      <b-img :src="photo" :srcset="photoSrcSet" width="200" height="243" sizes="200px" class="mb-3 mb-md-0" alt="My face" />
   <!--
   <p class="mb-3 ml-md-3 mt-3 mt-md-0 w-50">
         

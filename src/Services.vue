@@ -5,6 +5,7 @@
     <b-col class="px-5 px-md-0 px-lg-4 px-xl-5" cols="6" md="2" :order-md="i % 2 > 0 ? 2 : null" offset="3" :offset-md="i % 2 == 0 ? 5 : 0">
         <b-img-lazy fluid :src="getImage(s.srcset, s.image)" :srcset="getSrcSet(s.srcset, s.image)" 
         sizes="(max-width: 768px) 256px, 128px"
+        :alt="s.content"
         /></b-col>
     <b-col cols="12" md="5" class="px-5" >
         <h3 :class="{'text-md-right': i % 2 > 0, 'text-md-left': i % 2 == 0, 'text-center': true}" v-html="s.content"></h3>

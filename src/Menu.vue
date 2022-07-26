@@ -2,7 +2,7 @@
   
   <b-navbar id="menu" type="dark" toggleable="sm" sticky class="mb-3 bg-nastojte">
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
-    <b-navbar-brand class="title-nastojte" href="#"><img :src="ico" height="32px" class="d-inline-block align-top mr-2" alt="Logo">
+    <b-navbar-brand class="title-nastojte" href="#"><img :src="ico" width="42" height="32" class="d-inline-block align-top mr-2" alt="Logo">
         {{ title }}
     </b-navbar-brand>
 
