@@ -15,7 +15,7 @@
         name: 'Article',
         props: [],
         components: {
-            VueResource
+            //VueResource
         },
         data: function () {
             return {
