@@ -65,8 +65,8 @@
 -->
 <h2 class="mt-5" id="what">Co nabízím</h2>
 
-<p>V zásadě nabízím řešení problémů, které lze řešit pomocí softwarových systémů. Nechci zde vypisovat seznamy technologií, 
-    které nabízím, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
+<p>V zásadě nabízím řešení problémů, které lze řešit pomocí softwarových systémů. Nechci na tomto místě uvádět <router-link to="/tech">seznam technologií</router-link>, 
+    se kterými pracuji, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
     je moje práce, ne Vaše.</b> Vaším úkolem naopak je ujasnit si, <router-link to="/articles/customer-dilemmata">co přesně chcete a potřebujete</router-link>.</p>
 
         <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro <router-link to="/tech#cloud"><b>cloud</b></router-link>. Cloud je obzvlášt vhodný pro začínající služby, kde jsou problémem
