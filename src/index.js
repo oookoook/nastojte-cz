@@ -17,7 +17,7 @@ import AboutMe from './AboutMe.vue';
 //import AboutVonnegut from './AboutVonnegut.vue';
 //import Article from './Article.vue';
 
-import VueResource from 'vue-resource';
+//import VueResource from 'vue-resource';
 //import VueTimers from 'vue-timers';
 import VueRouter from 'vue-router'; 
 import VueGtag from "vue-gtag";
@@ -36,7 +36,7 @@ Vue.use(TooltipPlugin);
 Vue.use(CardPlugin);
 Vue.use(ImagePlugin);
 
-Vue.use(VueResource);
+//Vue.use(VueResource);
 //Vue.use(VueTimers);
 Vue.use(VueRouter);
 

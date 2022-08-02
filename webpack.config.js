@@ -78,7 +78,12 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: 'file-loader'
+        use: {
+          loader: 'file-loader',
+          options: {
+            esModule: false,
+          }
+        }
       },
       /*
       {

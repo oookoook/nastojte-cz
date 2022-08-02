@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import VueResource from 'vue-resource'
+    //import VueResource from 'vue-resource'
     //import articlesList from './articles-md/list'
     import MarkdownIt from 'markdown-it'
     import * as MarkdownContainer from 'markdown-it-container'
@@ -46,11 +46,16 @@
                 //console.debug('articleList', articlesList);
                 //var record = articlesList[id];
                 // adding markdown references to images
-                this.$http.get(require(`./articles-md/${this.id}.md`)).then((response) => {
+                let articleurl = require(`./articles-md/${this.id}.md`);
+                console.debug('md url', articleurl);
+                /*
+                this.$http.get(article).then((response) => {
                 this.article = response.body; // obsolete + '\n\n' + record.images.map(i => `[${i.key}]: /${i.img}`).join('\n\n');
                 //console.log(this.article);
 
                 });
+                */
+                fetch(articleurl).then(response => response.text()).then(response => { /*console.debug('fetch response', response);*/ this.article = response});
            },
            initParser() {
                 let md = new MarkdownIt({html: true, typographer: true, quotes: '„“‚‘',})
@@ -84,7 +89,7 @@
                     var hIndex = tokens[idx].attrIndex('href');
                     
                     // ignore TOC links
-                    console.debug(`TOC link?`, tokens[idx].attrs[hIndex][1][0], tokens[idx].attrs[hIndex][1]);
+                    //console.debug(`TOC link?`, tokens[idx].attrs[hIndex][1][0], tokens[idx].attrs[hIndex][1]);
                     if(!['#', '/'].includes(tokens[idx].attrs[hIndex][1][0])) {
                         if (aIndex < 0) {
                             tokens[idx].attrPush(['target', '_blank']); // add new attribute
@@ -110,7 +115,7 @@
                     aIndex = token.attrIndex('src');
                     tokens[idx].attrs[aIndex][1] = require(`../assets/articles-md/${getArticleId()}/${token.attrs[aIndex][1]}`);
                     tokens[idx].attrPush(['class', '_blank']);
-                    console.debug(`Image renderer called, adjusting src to ${tokens[idx].attrs[aIndex][1]}`);
+                    //console.debug(`Image renderer called, adjusting src to ${tokens[idx].attrs[aIndex][1]}`);
 
                     // pass token to default renderer.
                     return defaultImgRender(tokens, idx, options, env, self);
