@@ -24,7 +24,7 @@
 
 				<div>
 					<b-icon-geo-alt-fill class="nastojte-i" />
-					<p><span>Voříškova 45</span> 623 00 Brno</p>
+					<p><span>Zengrova 8</span> 615 00 Brno</p>
 				</div>
 
 				<div>
