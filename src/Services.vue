@@ -8,7 +8,7 @@
         :alt="s.content"
         /></b-col>
     <b-col cols="12" md="5" class="px-5" >
-        <h3 :class="{'text-md-right': i % 2 > 0, 'text-md-left': i % 2 == 0, 'text-center': true}" v-html="s.content"></h3>
+        <h3 :class="{'text-md-right': i % 2 > 0, 'text-md-left': i % 2 == 0, 'text-center': true, 'mt-3': true, 'mt-md-0': true }" v-html="s.content"></h3>
         <p :class="{lead: false, 'text-md-right': i % 2 > 0}" v-html="s.detail"></p>
         </b-col>
 </b-row>

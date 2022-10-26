@@ -1,8 +1,12 @@
 # Serverless aplikace v Amazon Web Services
 
-Napsáno 3. 5. 2019, aktualizováno 11. 10. 2019
+> Napsáno 3. 5. 2019, aktualizováno 11. 10. 2019
 
-> Představme si následující scénář: Chceme rozjet malý projekt, který nemá být aspoň ze začátku nijak výdělečný, návštěvnost aspoň ze začátku neočekáváme nijak velkou, a nám se nechce platit měsíční poplatky. Pokud navíc nepoužíváme PHP, ale např. Node.js, v podstatě jsme odsouzeni k vlastnímu VPS, který už je relativně nákladný i při slabším výkonu. Pokud však aplikaci budeme hostovat v cloudovém prostředí, můžeme zvolit jiný přístup.
+::: note
+
+Představme si následující scénář: Chceme rozjet malý projekt, který nemá být aspoň ze začátku nijak výdělečný, návštěvnost aspoň ze začátku neočekáváme nijak velkou, a nám se nechce platit měsíční poplatky. Pokud navíc nepoužíváme PHP, ale např. Node.js, v podstatě jsme odsouzeni k vlastnímu VPS, který už je relativně nákladný i při slabším výkonu. Pokud však aplikaci budeme hostovat v cloudovém prostředí, můžeme zvolit jiný přístup.
+
+:::
 
 Tradiční způsob provozování webových aplikací spočívá v používání webhostingu případně VPS, kde běží webový server vyřizující příchozí požadavky. Tento přístup však nemusí být vhodný pro všechny druhy projektů &ndash; jedná se např. o hobby projekty nebo začínající služby, kde jsou problémem vyšší počáteční náklady a horší škálování v závislosti na vytíženosti služby. Řešení se nabízí v podobě tzv. serverless aplikací, které nevyžadují dedikovaný (a stále běžící) web server. Tento článek představuje architekturu serverless aplikace v prostředí [Amazon Web Services](https://aws.amazon.com/) (AWS). V Azure, Google Cloud Platform nebo Herouku to bude nejspíše obdobné.
 

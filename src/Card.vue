@@ -1,6 +1,6 @@
 <template>
     <b-card class="mb-3 full-height" no-body>
-        <b-img-lazy top v-if="card.img" :src="card.img" :srcset="srcset" class="card-img-top border-bottom" alt="screenshot" />
+        <b-img-lazy top v-if="card.img" :src="card.img" :srcset="card.srcset || srcset" class="card-img-top border-bottom" alt="screenshot" />
         <b-card-body>
             <b-card-title class="text-left">{{ card.title }}</b-card-title>
             <b-card-sub-title>{{ card.year }}</b-card-sub-title>

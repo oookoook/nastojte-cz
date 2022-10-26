@@ -9,7 +9,7 @@ import Vue from 'vue';
 //import { BootstrapVue } from 'bootstrap-vue'
 
 import { ButtonPlugin, LayoutPlugin, CarouselPlugin, NavbarPlugin, 
-  DropdownPlugin, BadgePlugin, PopoverPlugin, TooltipPlugin, CardPlugin, ImagePlugin } from 'bootstrap-vue'
+  DropdownPlugin, BadgePlugin, PopoverPlugin, TooltipPlugin, CardPlugin, ImagePlugin, BIcon, BIconChevronDown } from 'bootstrap-vue'
 
 
 import App from './App.vue';
@@ -35,6 +35,9 @@ Vue.use(PopoverPlugin);
 Vue.use(TooltipPlugin);
 Vue.use(CardPlugin);
 Vue.use(ImagePlugin);
+
+Vue.component('BIcon', BIcon)
+Vue.component('BIconChevronDown', BIconChevronDown)
 
 //Vue.use(VueResource);
 //Vue.use(VueTimers);

@@ -26,9 +26,26 @@
         </div>
     </b-carousel-slide>
     </b-carousel>
+    <!--
     <ul class="list-unstyled d-block d-md-none">
         <code-li v-for="(r,i) in reasons" :key="`r${i}`"><b>{{ r.title }}</b> &ndash; {{r.text}}</code-li>
     </ul>
+    -->
+    <div class="accordion d-md-none" role="tablist">
+    <b-card 
+        no-body 
+        style="border:none"
+        class="mb-1" v-for="(r,i) in reasons" :key="`r${i}`">
+      <b-card-header  header-bg-variant="transparent" header-border-variant="transparent" header-tag="header" class="p-1" role="tab">
+        <b-button block v-b-toggle:[`reasons-accordion-${i}`] variant="transparent" class="xbg-nastojte xtext-nastojte">{{ r.title }} <b-icon icon="chevron-down" aria-hidden="true"></b-icon></b-button>
+      </b-card-header>
+      <b-collapse :id="`reasons-accordion-${i}`" accordion="reasons-accordion" role="tabpanel">
+        <b-card-body body-border-variant="transparent">
+          <b-card-text>{{ r.text }}</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+    </div>
     </b-container>
 </template>
 <script>

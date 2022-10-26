@@ -9,13 +9,13 @@
     <p class="lead">
         Začal jsem programovat ve třetí třídě v QBASICu podle návodů v časopise ABC a pořád mě to baví.
     </p>
-    <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku 2008.</p>
+    <p>Jsem softwarový vývojář z Brna. V IT a SW vývoji pracuji od roku <b>2008</b>.</p>
 
-                <p>Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/tech#cloud"><b>cloudu</b></router-link> (Amazon).</p>
-                <p>Mám zkušenosti se startupovými projekty (<a href="https://dreamroi.com" rel="noopener" target="_blank">DreamROI</a>), s prací 
-                na informačních systémech ve velké organizaci (<a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykova univerzita – Facility management a inteligentní budovy</a>)
-                i se zahraničními klienty (USA, Austrálie). Provedu Vás <router-link to="articles/customer-dilemmata">všemi úskalími</router-link>
+                <p>Působím jako vývojář na volné noze. Specializuji se na moderní <b>Javascriptové</b> aplikace v <router-link to="/tech#cloud"><b>cloudu</b></router-link> (Amazon). Provedu Vás <router-link to="articles/customer-dilemmata">všemi úskalími</router-link>
                  softwarového vývoje a dodám výsledek přesně podle Vašich požadavků. Včetně těch, o kterých ještě ani nevíte, že byste je vůbec měli mít.</p>
+                <p>Mám zkušenosti jak se <b>startupovými</b> projekty (<a href="https://dreamroi.com" rel="noopener" target="_blank">DreamROI</a>), tak s prací 
+                na <b>informačních systémech</b> ve velké organizaci (<a href="https://ofm.ukb.muni.cz/" rel="noopener" target="_blank">Masarykova univerzita – Facility management a inteligentní budovy</a>)
+                i se <b>zahraničními klienty</b> (USA, Austrálie). Podívejte se na moje <router-link to="references">reference</router-link>.</p>
                  <b-row class="justify-content-center">
                  <b-col xl="4" md="6">
                  <b-button block class="bg-nastojte text-nastojte" :href="'mailto:'+email"  @click="decode" rel="noopener" target="_blank">Napište mi</b-button>
@@ -65,6 +65,10 @@
 -->
 <h2 class="mt-5" id="what">Co nabízím</h2>
 
+<services />
+
+<h2 class="mt-5" id="what">Jak pracuji</h2>
+
 <p>V zásadě nabízím řešení problémů, které lze řešit pomocí softwarových systémů. Nechci na tomto místě uvádět <router-link to="/tech">seznam technologií</router-link>, 
     se kterými pracuji, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
     je moje práce, ne Vaše.</b> Vaším úkolem naopak je ujasnit si, <router-link to="/articles/customer-dilemmata">co přesně chcete a potřebujete</router-link>.</p>
@@ -79,9 +83,9 @@
 <!--
     <h3 id="cloud">Typy zakázek</h3>
 -->
-    <services />
+    
 
-<h2  class="mt-5" id="contact">Jak mě kontaktovat</h2>
+<h2  class="mt-5" id="contact">Jak mě&nbsp;kontaktovat</h2>
 <ul class="list-unstyled">
     <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
     <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>

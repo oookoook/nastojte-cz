@@ -30,7 +30,7 @@ const postProcessRoute = (context) => {
 };
 
 module.exports = {
-  mode: 'production',
+  //mode: 'production',
   entry: './src/index.js',
   //devtool: 'source-map', // bundle is too big
   output: {
@@ -43,12 +43,7 @@ module.exports = {
     minimizer: [new TerserPlugin()],
   },
   devServer: {
-    /*
     hot: true,
-    watchOptions: {
-      poll: true
-    }
-    */
     static: path.join(__dirname, 'dist'),
     historyApiFallback: true,
     compress: true,
@@ -170,7 +165,6 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    //new HotModuleReplacementPlugin(),
     
     new HtmlWebpackPlugin({
       filename: 'index.html',

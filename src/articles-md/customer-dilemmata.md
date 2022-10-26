@@ -1,5 +1,7 @@
 # Zákazníkova dilemata při vývoji software
 
+> Publikováno 13.3.2022
+
 Při vývoji zakázkového software na míru čekají zákazníka různá rozhodnutí, která mohou celou záležitost zásadně prodražit (nebo naopak zlevnit), nebo třeba učinit nepoužitelnou (nebo samozřejmě naopak -- použitelnost zvýšit).
 
 ![Otazník](towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg)

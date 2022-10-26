@@ -35,18 +35,45 @@
 import TechIcon from "./TechIcon.vue";
 import Card from './Card.vue';
 
+import dreamroi from '../assets/refs/dreamroi.png?srcset&format=webp'
+import aximon from '../assets/refs/aximon.png?srcset&format=webp'
+import spidertraits from '../assets/refs/spidertraits.png?srcset&format=webp'
+import axima from '../assets/refs/axima.jpg?srcset&format=webp'
+import postboxes from '../assets/refs/schranky.png?srcset&format=webp'
+import evelabel from '../assets/refs/evelabel.png?srcset&format=webp'
+import code from '../assets/code.png?srcset&format=webp'
+import sunorchard from '../assets/refs/sunorchard.png?srcset&format=webp'
+import ssrs from '../assets/refs/ssrs.png?srcset&format=webp'
+import jjstats from '../assets/refs/jjstats.png?srcset&format=webp'
+import nastojte from '../assets/refs/nastojte.png?srcset&format=webp'
+import vba from '../assets/refs/vba.png?srcset&format=webp'
+import awscf from '../assets/refs/awscf.png?srcset&format=webp'
+import joolca from '../assets/refs/joolca.png?srcset&format=webp'
+import dropair from '../assets/refs/dropair.png?srcset&format=webp'
+import gcchecker from '../assets/refs/gcchecker.png?srcset&format=webp'
+import planes from '../assets/refs/planes.png?srcset&format=webp'
+import majak from '../assets/refs/majak.png?srcset&format=webp'
+import cth from '../assets/refs/cth.png?srcset&format=webp'
+import bmssentinel from '../assets/refs/bmssentinel.png?srcset&format=webp'
+import sbms from '../assets/refs/sbms.png?srcset&format=webp'
+import archibus from '../assets/refs/archibus.png?srcset&format=webp'
+import esser from '../assets/refs/esser.png?srcset&format=webp'
+import rochcard from '../assets/refs/rochcard.png?srcset&format=webp'
+
 export default {
   name: "ReferencesTable",
   components: { TechIcon, Card },
   data() {
     return {
       cards: [
+        // TODO Frank Bold
         {
           category: "Volná noha",
           title: "DreamROI 2.0",
-          year: "2021",
+          year: "2022",
           img: require("../assets/refs/dreamroi.png"),
-          link: "https://dreamroi.com",
+          srcset: dreamroi,
+          about: "https://dreamroi.com",
           description:
             "Marketingový nástroj využívající umělou inteligenci pro doporučování těch správných produktů zákazníkům e-shopů. Obsahuje komponentu pro vložení do e-shopu a nástroj pro mailing. Vzhledem k tomu, že se jedná o startupovou SaaS, je nutné zajistit, aby systém snadno škáloval. Aplikace proto využívá kompletně serverless architekturu. Aplikace je postavena na GraphQL API a noSQL. Jsem softwarový architekt a hlavní vývojář systému.",
           technologies: [
@@ -65,9 +92,44 @@ export default {
         },
         {
           category: "Volná noha",
+          title: "Rochova karta",
+          year: "2022",
+          img: require("../assets/refs/rochcard.png"),
+          srcset: rochcard,
+          about: "https://rochovakarta.cz",
+          description:
+            "Startupový projekt mezinárodní karty první pomoci. Kartu je možné přiložit k telefonu a pomocí technologie NFC zobrazit webovou stránku, která poskytne zachránci údaje o majiteli – medikaci, alergie, chorobopis. Technicky se jedná o webovou stránku s plně respoznivním, mobile-first designem. Jako úložiště dat je kvůli snížení nákladů na vývoj použit Google Spreadsheet. Cílem projektu bylo s co nejnižšími náklady vyvinout funkční MVP (minimum viable product). Projekt využívá dvoufázové přihlašování pomocí SMS.",
+          technologies: [
+            "Vuetify.js",
+            { name: "Vue.js", cname: "vue" },
+            "Javascript",
+            "HTML 5",
+            "CSS 3",
+            "Google Apps Script",
+            "Google GSuite"
+          ],
+        },
+        {
+          category: "Volná noha",
+          title: "Aximon",
+          year: "2021",
+          img: require("../assets/refs/aximon.png"),
+          srcset: aximon,
+          about: "https://www.axima-power.cz/sites/default/files/2022-01/Aximon%20CZ%20prospekt.pdf",
+          description:
+              `Desktopová aplikace pro Windows sloužící k ovládání nabíječů FLEXIS firmy AXIMA. Pro komunikaci s nabíječi je používán protokol CAN. Aplikace je napsána
+                    v .NET Core 3.1 a WPF. Ovládání je optimalizováno pro použití s dotykovou obrazovkou.`,
+          technologies: [
+            { name: ".NET Framework", cname: "dotnet" },
+            { name: "Windows", cname: "microsoft-windows" },
+          ],
+        },
+        {
+          category: "Volná noha",
           title: "World Spider Trait Database",
           year: "2020",
           img: require("../assets/refs/spidertraits.png"),
+          srcset: spidertraits,
           link: "https://spidertraits.sci.muni.cz",
           repo: "https://github.com/oookoook/spider-trait-database",
           description:
@@ -89,7 +151,8 @@ export default {
           title: "Axima Voltis Controller",
           year: "2020",
           img: require("../assets/refs/axima.jpg"),
-          description: `Desktopová aplikace pro Windows sloužící k ovládání nabíječů firmy AXIMA. Pro komunikaci s nabíječi je používán protokol CAN. Aplikace je napsána
+          srcset: axima,
+          description: `Desktopová aplikace pro Windows sloužící k ovládání nabíječů VOLTIS firmy AXIMA. Pro komunikaci s nabíječi je používán protokol CAN. Aplikace je napsána
                     v .NET Core 3.1 a WPF. Ovládání je optimalizováno pro použití s dotykovou obrazovkou.`,
           technologies: [
             { name: ".NET Framework", cname: "dotnet" },
@@ -101,6 +164,7 @@ export default {
           title: "Mapa poštovních schránek",
           year: "2019",
           img: require("../assets/refs/schranky.png"),
+          srcset: postboxes,
           link: "https://schranky.nastojte.cz",
           repo: "https://github.com/oookoook/postboxes-frontend",
           description:
@@ -122,9 +186,10 @@ export default {
         {
           category: "Volná noha",
           title: "eVe Label UI",
-          //link: 'https://www.evecobrno.cz/vyzkum-vyvoj/mpo-evelabel',
+          about: 'https://www.evecobrno.cz/vyzkum-vyvoj/mpo-evelabel',
           year: "2020",
           img: require("../assets/refs/evelabel.png"),
+          srcset: evelabel,
           description: `Přepsání existujícího frontendu aplikace do Material Designu s pomocí frameworku Vuetify.js. Aplikace funguje jednak jako webová, jednak jako mobilní pro Andorid i iOS s použitím frameworku Cordova.`,
           technologies: [
             "Vuetify.js",
@@ -137,6 +202,7 @@ export default {
           title: "Lighthouse Lambda API",
           year: "2020",
           img: require("../assets/code.png"),
+          srcset: code,
           description:
             "REST API které spouští nástroj pro testování výkonu webu Google Lighthouse a vrací výsledky jako JSON. API je nasazeno do WS pomocí nástroje CloudFormation.",
           technologies: [
@@ -152,6 +218,7 @@ export default {
           title: "Sun Orchard Freight App (USA)",
           year: "2019",
           img: require("../assets/refs/sunorchard.png"),
+          srcset: sunorchard,
           description:
             "Databázová aplikace pro interní potřeby účetní firmy, které pro výrobce džusů řeší distribuci výrobků. Aplikace běží v AWS (frontend S3 + CloudFront, backend Lambda), " +
             " pro ukládání dat je využívána SQL databáze AWS Aurora, autentizace je řešena pomocí služby AWS Cognito.",
@@ -173,6 +240,7 @@ export default {
           title: "Parametrizovaný SSRS report",
           year: "2019",
           img: require("../assets/refs/ssrs.png"),
+          srcset: ssrs,
           description:
             "Jednoduchá stránka v ASP.NET, která z internetu zpřístupňuje report definovaný Microsoft SQL Server Reporting Services a umožňuje volat ho s různými parametry.",
           technologies: [{ name: ".NET Framework", cname: "dotnet" }],
@@ -182,6 +250,7 @@ export default {
           title: "Rozšíření stávajícího IS o statistiky",
           year: "2019",
           img: require("../assets/refs/jjstats.png"),
+          srcset: jjstats,
           description:
             "Rozšíření existujícího informačního systému o reporty se statistikami. IS používá Angular, Spring Boot, a MySQL.",
           technologies: ["Angular", "Java", "Spring", "MySQL"],
@@ -191,6 +260,7 @@ export default {
           title: "Nastojte.cz",
           year: "2019",
           img: require("../assets/refs/nastojte.png"),
+          srcset: nastojte,
           repo: "https://github.com/oookoook/nastojte-cz",
           description:
             "Tyto stránky. Serverless prezentace s využitím Amazon AWS, změny jsou publikovány pomocí CI/CD služeb AWS CodePipeline a CodeBuild.",
@@ -209,6 +279,7 @@ export default {
           title: "Formulář pro Excel VBA",
           year: "2020",
           img: require("../assets/refs/vba.png"),
+          srcset: vba,
           description:
             "Formulář ve VBA, který na základě několika hodnot dopočítá a vyplní tabulku pro tisk štítku.",
           technologies: ["Excel"],
@@ -218,6 +289,7 @@ export default {
           title: "AWS CloudFormation templates",
           year: "2019",
           img: require("../assets/refs/awscf.png"),
+          srcset: awscf,
           repo: "https://github.com/oookoook/cloud-formation-templates",
           description:
             "Sada volně dostupných šablon pro nástroj CloudFormation (Infrasturcture as a Service) v AWS, které vytvářím pro své projekty. Šablony slouží pro automatizované nasazení aplikace a v mém případě i pro nastavení CI/CD pipeline.",
@@ -228,6 +300,7 @@ export default {
           title: "Joolca troubleshooting (AUS)",
           year: 2018,
           img: require("../assets/refs/joolca.png"),
+          srcset: joolca,
           //link: '',
           description:
             "Rozšíření pro systém zákaznické podpory Zendesk. Interaktivní rozhovací strom pro základní zákaznickou podporu " +
@@ -246,6 +319,7 @@ export default {
           title: "Dropair (USA)",
           year: "2017-2019",
           img: require("../assets/refs/dropair.png"),
+          srcset: dropair,
           description:
             "Aplikace pro podporu dropshipping firmy. Údržba již existující aplikace, " +
             " vývoj nových crawlerů, scraperů a parserů.",
@@ -266,6 +340,7 @@ export default {
           title: "Giftcard Checker (USA)",
           year: "2018",
           img: require("../assets/refs/gcchecker.png"),
+          srcset: gcchecker,
           description:
             "Nástroj pro automatické ověřování zůstatků na dárkových poukazech obchodního řetězce. Backend využívá nástro Puppeteer pro automatizaci prohlížeče," +
             " frontend je vytvořený jako plugin do Google Spreadsheet.",
@@ -285,6 +360,7 @@ export default {
           title: "Bookování letenek (USA)",
           year: "2018",
           img: require("../assets/refs/planes.png"),
+          srcset: planes,
           description:
             "Plugin do Chrome, který sleduje nabídku letů na stránkách jednoho z dopravců. Prohlížeč běží ve VPS. Když se objeví nový let ze zadaných letišť," +
             " započne rezervaci rezervaci a odešle mailovou zprávu uživateli, aby v případě zájmu mohl v rezervaci pokračovat.",
@@ -298,6 +374,7 @@ export default {
           title: "Maják",
           year: "2018",
           img: require("../assets/refs/majak.png"),
+          srcset: majak,
           repo: "https://github.com/oookoook/majak",
           description:
             "Hra na letní tábor. Webový server běžící na Rasperry PI, ke kterému se přes WiFi připojují " +
@@ -315,18 +392,20 @@ export default {
           title: "Coffee to Home",
           year: "2014",
           img: require("../assets/refs/cth.png"),
+          srcset: cth,
           description:
             "Jednoduchá landing page pro (tehdy) začínající předplatné kávových balíčků. Cílem bylo s co nejnižším množstvím vynaloženého času na vývoj " +
             "umožnit zákazníkům objednat produkt, aby mohla firma začít co nejdříve fungovat. Výsledné řešení bylo hotové za méně jak 20 hodin " +
             "a umožnilo úspěšné fungování firmy v jejích začátcích.",
           technologies: ["Javascript", "Bootstrap", "PHP"],
         },
-        /*
+        
         {
           category: "MU",
           title: "CAFM",
           year: "od 2013",
           img: require("../assets/refs/archibus.png"),
+          srcset: archibus,
           description:
             "Nasazování a úpravy systému pro podporu facility managementu na Masarykově univerzitě.",
           link: "https://webcentrum.muni.cz/ofm/cafm",
@@ -338,12 +417,13 @@ export default {
             { name: "Microsoft SQL Server", cname: "mssql" },
             "Git",
           ],
-        },*/
+        },
         {
           category: "MU",
           title: "BMS Sentinel",
           year: "2010",
           img: require("../assets/refs/bmssentinel.png"),
+          srcset: bmssentinel,
           about: "https://is.muni.cz/th/i3416/",
           description: "Dohledový systém pro automatizační protokol BACnet.",
           technologies: [
@@ -357,6 +437,7 @@ export default {
           title: "Semantic BMS",
           year: "2017",
           img: require("../assets/refs/sbms.png"),
+          srcset: sbms,
           about: "https://is.muni.cz/th/umgby",
           repo: "https://gitlab.fi.muni.cz/xkucer16/semanticBMS",
           description: "Sémantický model pro data z inteligentních budov.",
@@ -374,20 +455,12 @@ export default {
           title: "EsserNet-BACnet Gateway",
           year: "2014",
           img: require("../assets/refs/esser.png"),
+          srcset: esser,
           about: "https://safecontrol.cz/systemova-integrace",
           description:
             "Převodník mezi protokolem EsserNet požárního systému a obecným automatizačním protokolem BACnet. V projektu jsem měl na starost BACnet část brány.",
           technologies: ["Java", { name: "BACnet", icon: "bacnet.png" }],
-        } /* {
-                    category: 'Volná noha',
-                    title: 'Mapa cen stavebních pozemků',
-                    year: '2019',
-                    img: require('../assets/refs/reality.png'),
-                    link: 'https://reality.nastojte.cz',
-                    repo: 'https://gist.github.com/oookoook/afb6a819dca3ed14be7b58bc6cb0e8bd',
-                    description: 'Mapa cen stavebních pozemků. Technologické demo, uznávám, není příliš funkční.', 
-                    technologies: [ {name: 'Vue.js', cname: 'vue' }, {name: 'Mapy.cz API', icon: 'mapy.gif'}, 'Webpack', 'Bootstrap', 'Node.js', 'Express', 'AWS Lambda' ]
-                }, */,
+        } 
       ],
     };
   },
