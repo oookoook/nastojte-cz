@@ -20,6 +20,7 @@
       <b-nav-item-dropdown text="Projekty">
         <b-dropdown-item href="https://schranky.nastojte.cz" target="_blank">Mapa poštovních schránek</b-dropdown-item>
         <b-dropdown-item href="https://spidertraits.sci.muni.cz" target="_blank">World Spider Trait Database</b-dropdown-item>
+        <b-dropdown-item href="https://sunsetdimmer.nastojte.cz" target="_blank">Sunset Dimmer</b-dropdown-item>
       </b-nav-item-dropdown>
       <b-nav-item-dropdown text="Články">
         <b-dropdown-item v-for="a in articles" :key="a.key"

@@ -54,11 +54,12 @@ import gcchecker from '../assets/refs/gcchecker.png?srcset&format=webp'
 import planes from '../assets/refs/planes.png?srcset&format=webp'
 import majak from '../assets/refs/majak.png?srcset&format=webp'
 import cth from '../assets/refs/cth.png?srcset&format=webp'
-import bmssentinel from '../assets/refs/bmssentinel.png?srcset&format=webp'
+//import bmssentinel from '../assets/refs/bmssentinel.png?srcset&format=webp'
 import sbms from '../assets/refs/sbms.png?srcset&format=webp'
 import archibus from '../assets/refs/archibus.png?srcset&format=webp'
 import esser from '../assets/refs/esser.png?srcset&format=webp'
 import rochcard from '../assets/refs/rochcard.png?srcset&format=webp'
+import sunsetdimmer from '../assets/refs/sunset-dimmer.png?srcset&format=webp'
 
 export default {
   name: "ReferencesTable",
@@ -67,6 +68,21 @@ export default {
     return {
       cards: [
         // TODO Frank Bold
+        {
+          category: "Volná noha",
+          title: "Sunset Dimmer",
+          year: "2022",
+          img: require("../assets/refs/sunset-dimmer.png"),
+          srcset: sunsetdimmer,
+          link: "https://sunsetdimmer.nastojte.cz",
+          repo: "https://github.com/oookoook/NighttimeDisplayDimmer",
+          description:
+              `Utilita pro Windows, která zajišťuje automatické ztmavování displeje v noci. Dostupná na Microsoft Store.`,
+          technologies: [
+            { name: ".NET Framework", cname: "dotnet" },
+            { name: "Windows", cname: "microsoft-windows" },
+          ],
+        },
         {
           category: "Volná noha",
           title: "DreamROI 2.0",
@@ -418,6 +434,7 @@ export default {
             "Git",
           ],
         },
+        /*
         {
           category: "MU",
           title: "BMS Sentinel",
@@ -432,6 +449,7 @@ export default {
             { name: "BACnet", icon: "bacnet.png" },
           ],
         },
+        */
         {
           category: "MU",
           title: "Semantic BMS",
