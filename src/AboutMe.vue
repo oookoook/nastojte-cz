@@ -90,6 +90,8 @@
     <code-li>E-mail: <a :href="'mailto:'+email" v-html="email"  @click="decode" target="_blank" rel="noopener"></a></code-li>
     <code-li><a href="https://www.linkedin.com/in/adam-kucera-sw-dev/" rel="noopener" target="_blank">Profil na LinkedIn</a></code-li>
     <code-li><a href="https://navolnenoze.cz/prezentace/adam-kucera/">Profil na Na volné noze</a></code-li>
+    <code-li><a href="https://www.upwork.com/freelancers/~01b150b9ae98543b67">Profil na platformě Upwork</a></code-li>
+    <code-li><a href="https://github.com/oookoook">Profil na GitHub</a></code-li>
     <code-li>Fakturační údaje: RNDr. Adam Kučera, Zengrova 2052/8, 615 00 Brno - Židenice. IČ 06422268, Neplátce DPH.</code-li>
 </ul>
 
