@@ -97,8 +97,7 @@
 
 <h2  class="mt-5" id="pricing">Co za to</h2> 
 
-<p>Moje aktuální hodinová sazba je <strong>1000 Kč/hod</strong>. Nejsem plátcem DPH. Pro dlouhodobé projekty jsem
-ochotný poskytovat slevu z hodinové sazby.</p>
+<p>Moje aktuální hodinová sazba je <strong>1 125 Kč/hod</strong> (neboli 9 000 Kč/MD). Nejsem plátcem DPH.</p>
 <p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
 že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) i s dostatečným časem na analýzu a návrh
 řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás
