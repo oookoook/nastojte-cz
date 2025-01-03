@@ -73,12 +73,13 @@
     se kterými pracuji, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
     je moje práce, ne Vaše.</b> Vaším úkolem naopak je ujasnit si, <router-link to="/articles/customer-dilemmata">co přesně chcete a potřebujete</router-link>.</p>
 
+    <p>Mám mnoho zkušeností s psaním integrací mezi systémy. Jednak mí klienti obykle už nějaké systémy používají a já rozhodně nechci, aby je nahrazovali. A jednak je využívání existujících služeb obvykle výrazně levnější než zakázkový vývoj na míru. <router-link to="/tech#integrations">Podívejte se</router-link>, co vše si pod takovými integracemi můžeme představit.</p>
+
+
         <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro <router-link to="/tech#cloud"><b>cloud</b></router-link>. Cloud je obzvlášt vhodný pro začínající služby, kde jsou problémem
     vyšší počáteční náklady a naopak zhroucení ve chvíli, kdy služba začne být úspěšná, kvůli nedostatečnému výkonu. Ve výsledku to funguje tak, že když na stránku nikdo nepřijde, neplatíte nic, a celkové cena se odvíjí od počtu uživatelů. A jejich počet může růst v podstatě neomezeně a aplikace bude stále stíhat.</p>
     <p>Co je pro Vás důležité &ndash; Nabízím vývoj aplikací pro cloud jako <b>kompletní balíček</b>. Aplikaci <b>naprogramuji</b> tak, aby v cloudu levně, spolehlivě a efektivně běžela, poskytnou
     <b>skripty pro nasazení</b>, díky kterým aplikaci snadno zprovozníte, a nastavím tak, aby se aplikace <b>automaticky aktualizovala</b> vždy, když se v kódu provede nějaká úprava.</p>
-
-<p>Níže se podívejte i na další typy úkolů, na kterých pro Vás budu rád pracovat.</p>
 
 <!--
     <h3 id="cloud">Typy zakázek</h3>

@@ -6,7 +6,23 @@
                 volím, když si můžu vybrat.</p>
           <tech-table />  
 
-<h2 id="cloud">Cloud</h2>
+
+          <h2 id="integrations">Integrace systémů a služeb</h2>
+        
+          <p>Mám mnoho zkušeností s psaním integrací mezi systémy. Jednak mí klienti obykle už nějaké systémy používají a já rozhodně nechci, aby je nahrazovali. A jednak je využívání existujících služeb obvykle výrazně levnější než zakázkový vývoj na míru. Co vše si pod takovými integracemi můžeme představit? Níže uvádím příklady integrací, na kterých jsem pracoval.</p>
+
+    <ul class="list-unstyled">
+        <code-li>Odesílání SMS ze systému (což může být např. i tabulka <a href="https://workspace.google.com/products/sheets/">Google Sheets</a> nebo databáze <a href="https://airtable.com">Airtable.com</a>) přes SMS bránu při provedení akce</code-li>
+        <code-li>Automatické vystavování faktur ve fakturačním systému (např. <a href="https://fakturoid.cz">Fakturoid</a>) a označení objednávky za zaplacenou, když fakturační systém zaregistruje platbu.</code-li>
+        <code-li>Integrace platební brány (např. <a href="https://gopay.cz">GoPay</a>, <a href="https://stripe.com">Stripe</a>).</code-li>
+        <code-li>Automatický přenos záznamů v Vašeho systému do RCM i s příšlušnými metadaty.</code-li>
+        <code-li>Integrace fyzického platebního terminálu s POS systémem.</code-li>
+        <code-li>Rozšíření pro Goodle kalendář, které nabízí boční panel s doplňujícími informacemi  a akcemi z externího systému (např. rezervace místností).</code-li>
+        <code-li>Skriptování pro <a href="https://workspace.google.com/products/sheets/">Google Sheets</a> nebo databázi <a href="https://airtable.com">Airtable.com</a>, které automatizuje často prováděné úlohy.</code-li>
+        <code-li>Skriptování pro cloudové WYSIWYG platformy (<a href="https://webflow.com">Webflow</a>, <a href="https://wix.com">Wix.com</a>) - např. vyplnění formuláře na základě IČ a napojení na ARES.</code-li>
+    </ul>
+    
+          <h2 id="cloud">Cloud</h2>
         <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro <b>Amazon Web Services</b> (AWS). Kromě obecně platných výhod,
         jako jsou nižší požadavky na správu (aktualizace, zabezpečení) je cloud obzvlášt vhodný pro začínající služby, kde jsou problémem
     vyšší počáteční náklady a horší škálování v závislosti na vytíženosti služby. Řešení se nabízí v podobě tzv. serverless aplikací, které nevyžadují
