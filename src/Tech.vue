@@ -37,7 +37,7 @@
         <p>Současně si uvědomuji, že AI je potřeba pečlivě kontrolovat. Zvlášť opatrný jsem u bezpečnostních klíčů a credentials, zabezpečení systémů,
         datových modelů a také u spouštění příkazů na produkčních serverech i vývojových strojích, kde mohou být uložené citlivé údaje.</p>
 
-        <p>Aby AI dávalo smysluplné výsledky, nestačí jen otevřít chat a doufat. Používám skills, MCP servery, další dostupné nástroje a agent mode.
+        <p>Aby AI nástroje dávaly smysluplné výsledky, nestačí jen otevřít chat a doufat. Používám skills, MCP servery, další dostupné nástroje a agent mode.
         Zároveň udržuji pomocné soubory typu <code>AGENTS.md</code>, aby měl model v kontextu potřebné informace, nebloudil po projektu a zbytečně nehalucinoval.</p>
     
           <h2 id="cloud">Cloud</h2>
