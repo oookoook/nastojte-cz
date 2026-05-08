@@ -73,6 +73,10 @@
     se kterými pracuji, protože jejich výběr obvykle není něco, co by musel dělat zákazník. <b>Navržení správného řešení Vašeho problému 
     je moje práce, ne Vaše.</b> Vaším úkolem naopak je ujasnit si, <router-link to="/articles/customer-dilemmata">co přesně chcete a potřebujete</router-link>.</p>
 
+    <p>Při práci smysluplně využívám také <router-link to="/tech#ai">AI nástroje</router-link>. Pomáhají mi rychleji porovnávat varianty řešení,
+    psát a kontrolovat kód, připravovat testy i dokumentaci a dělat refaktoring. Pořád ale platí, že za návrh, bezpečnost a výsledné řešení ručím já,
+    ne model, který mi zrovna napovídá.</p>
+
     <p>Mám mnoho zkušeností s psaním integrací mezi systémy. Jednak mí klienti obykle už nějaké systémy používají a já rozhodně nechci, aby je nahrazovali. A jednak je využívání existujících služeb obvykle výrazně levnější než zakázkový vývoj na míru. <router-link to="/tech#integrations">Podívejte se</router-link>, co vše si pod takovými integracemi můžeme představit.</p>
 
 
@@ -98,7 +102,7 @@
 
 <h2  class="mt-5" id="pricing">Co za to</h2> 
 
-<p>Moje aktuální hodinová sazba je <strong>1 125 Kč/hod</strong> (neboli 9 000 Kč/MD). Nejsem plátcem DPH.</p>
+<p>Moje aktuální hodinová sazba je <strong>1 250 Kč/hod</strong> (neboli 10 000 Kč/MD). Nejsem plátcem DPH.</p>
 <p>Pokud se domluvíme na úkolovém ocenění, budu cenu zakládat na svém časovém odhadu a této hodinové sazbě, ale chápu, 
 že pro mnoho zákazníků je to preferovaná varianta. Moje nabídkové ceny za kompletní projekty vždy počítají (kromě času na vývoj) i s dostatečným časem na analýzu a návrh
 řešení, dostatečné testování, zapracování připomínek uživatele a finální nasazení. Pokud se neobjeví zásadní neočekávatelné problémy, cena je konečná. Nebudu z vás

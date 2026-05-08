@@ -21,6 +21,24 @@
         <code-li>Skriptování pro <a href="https://workspace.google.com/products/sheets/">Google Sheets</a> nebo databázi <a href="https://airtable.com">Airtable.com</a>, které automatizuje často prováděné úlohy.</code-li>
         <code-li>Skriptování pro cloudové WYSIWYG platformy (<a href="https://webflow.com">Webflow</a>, <a href="https://wix.com">Wix.com</a>) - např. vyplnění formuláře na základě IČ a napojení na ARES.</code-li>
     </ul>
+
+          <h2 id="ai">AI při vývoji</h2>
+        <p>AI beru jako další nástroj pro efektivní práci, ne jako náhradu za zkušenosti a odpovědnost vývojáře. Největší přínos pro mě má tam, kde umí zrychlit
+        průzkum možností, odhalit slepá místa a pomoct s rutinními částmi vývoje, které by dříve byly příliš nákladné.</p>
+
+    <ul class="list-unstyled">
+        <code-li><b>Analýza a návrh</b> &ndash; porovnávání různých způsobů řešení problému, hledání kompromisů a kontrola, jestli jsem nepřehlédl důležitou variantu.</code-li>
+        <code-li><b>Tvorba kódu</b> &ndash; rychlejší příprava robustních řešení, která počítají i se situacemi, na které by bez dostatečného rozpočtu často nezbyl čas.</code-li>
+        <code-li><b>Code review</b> &ndash; hledání chyb, optimalizace, ošetření okrajových případů, lepší logování a rychlejší debugging.</code-li>
+        <code-li><b>Dokumentace a testy</b> &ndash; příprava srozumitelných popisů, technických poznámek a testů, které pomáhají udržet projekt dlouhodobě čitelný a bezpečně upravitelný.</code-li>
+        <code-li><b>Refaktoring</b> &ndash; úpravy existujícího kódu, sjednocování stylu a postupné snižování technického dluhu bez zbytečného rizika.</code-li>
+    </ul>
+
+        <p>Současně si uvědomuji, že AI je potřeba pečlivě kontrolovat. Zvlášť opatrný jsem u bezpečnostních klíčů a credentials, zabezpečení systémů,
+        datových modelů a také u spouštění příkazů na produkčních serverech i vývojových strojích, kde mohou být uložené citlivé údaje.</p>
+
+        <p>Aby AI nástroje dávaly smysluplné výsledky, nestačí jen otevřít chat a doufat. Používám skills, MCP servery, další dostupné nástroje a agent mode.
+        Zároveň udržuji pomocné soubory typu <code>AGENTS.md</code>, aby měl model v kontextu potřebné informace, nebloudil po projektu a zbytečně nehalucinoval.</p>
     
           <h2 id="cloud">Cloud</h2>
         <p>Jak své vlastní, tak některé projekty pro zákazníky vyvíjím pro cloud, konkrétně pro <b>Amazon Web Services</b> (AWS). Kromě obecně platných výhod,
