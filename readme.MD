@@ -2,6 +2,8 @@
 
 The code for the <https://nastojte.cz> site.
 
+povedlo se mi sem něco zapsat
+
 ## Webpack 5
 
 `npm run build` does not work on WIndows due to Prerender SPA plugin rewriting index.html. Docker container must be used to build the web locally.
